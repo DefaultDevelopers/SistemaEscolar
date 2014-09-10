@@ -1,1 +1,10 @@
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe.config
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe.config
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.pdb
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csprojResolveAssemblyReference.cache
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.FormPrincipal.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Properties.Resources.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csproj.GenerateResource.Cache
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.exe
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.pdb
