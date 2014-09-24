@@ -1,0 +1,37 @@
+Sistema de gerenciamento escolar que integra funcionalidades que vão facilitar a relação aluno/professor. Entre estas funcionalidades está o envio de mensagens, visualização de boletins, de frequências escolares, atividades, tarefas, entre outros.
+
+Funcionalidades:
+
+1 - Aluno:
+
+-> Visualizar o Boletim;
+-> Criar\Visualizar as Tarefas (Aluno);
+-> Receber e Enviar Mensagens;
+-> Ver Histórico Escolar;
+-> Ver Calendário de Tarefas (Tarefas);
+-> Usar E-mail dedicado;
+-> Ver Dados Cadastrados;
+
+2 - Professor:
+
+-> Criar\Visualizar as Tarefas (Aluno e Professor);
+-> Inserir faltas;
+-> Inserir Notas;
+-> Receber e Enviar Mensagens;
+-> Encerrar a Disciplina;
+-> Ver Calendário de Tarefas (Tarefas);
+-> Usar E-mail dedicado;
+-> Ver Dados Cadastrados;
+-> Ver Dados dos Alunos (Limitado);
+
+3 - Servidor:
+
+-> Criar\Visualizar as Tarefas (Aluno e Professor);
+-> Relacionar Matéria, Professor e Aluno;
+-> Ver Dados Cadastrados;
+-> Criar Aluno e Criar Professor
+
+4 - Sem Supervisão do Usuário:
+
+-> Email;
+
