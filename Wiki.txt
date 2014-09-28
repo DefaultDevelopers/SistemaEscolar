@@ -1,5 +1,9 @@
 Sistema de gerenciamento escolar que integra funcionalidades que vão facilitar a relação aluno/professor. Entre estas funcionalidades está o envio de mensagens, visualização de boletins, de frequências escolares, atividades, tarefas, entre outros.
 
+Palavras-chaves:
+
+Sistema Academico Notas Alunos professores desempenho gerenciar manter escolar, aula, frequencia, curriculo, historico
+
 Funcionalidades:
 
 1 - Aluno:
