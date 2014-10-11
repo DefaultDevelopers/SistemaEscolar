@@ -1,24 +1,40 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1367" measuredH="591" mockupW="672" mockupH="410">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="938" measuredH="476" mockupW="700" mockupH="400">
   <controls>
-    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="695" y="181" w="672" h="410" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="783" y="446" w="180" h="77" measuredW="55" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="346" y="341" w="180" h="77" measuredW="82" measuredH="30" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
+        <icon>./assets/icon_AlunoButton.png%7Csmall</icon>
         <text>Aluno</text>
       </controlProperties>
     </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="1103" y="446" w="180" h="77" measuredW="80" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="681" y="341" w="180" h="77" measuredW="107" measuredH="30" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
+        <icon>./assets/icon_ProfButton.png%7Csmall</icon>
         <text>Professor</text>
       </controlProperties>
     </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="783" y="221" w="500" h="179" measuredW="1038" measuredH="399" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="346" y="138" w="500" h="179" measuredW="1038" measuredH="399" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../../../Reposit%F3rio/defaultrep/Imagens/Banner/banner.jpg</src>
+        <src>../../../../Reposit%25C3%25B3rio/defaultrep/Imagens/Banner/banner.jpg</src>
         <text>Logo</text>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::MenuBar" x="695" y="181" w="672" h="29" measuredW="125" measuredH="29" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::TitleWindow" x="238" y="76" w="700" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>Sistema%20Acad%EAmico</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::MenuBar" x="244" y="102" w="-1" h="-1" measuredW="133" measuredH="29" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <hrefs>%2C</hrefs>
+        <selectedIndex>-1</selectedIndex>
         <text>Admin%2C%20Sobre</text>
       </controlProperties>
     </control>
