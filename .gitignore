@@ -79,3 +79,9 @@ packages/
 
 #Test files
 *.testsettings
+
+#MySQL database projects
+*.mwb
+
+#Balsamiq
+*.bmml
