@@ -1,6 +1,6 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="878" measuredH="351" mockupW="298" mockupH="228">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="420" measuredH="309" mockupW="298" mockupH="228">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="580" y="123" w="298" h="228" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="122" y="81" w="298" h="228" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <bottomheight>0</bottomheight>
         <close>true</close>
@@ -8,36 +8,36 @@
         <text>Certifica%E7%E3o</text>
       </controlProperties>
     </control>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="625" y="191" w="-1" h="-1" measuredW="53" measuredH="28" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="167" y="149" w="-1" h="-1" measuredW="53" measuredH="28" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <size>20</size>
         <text>Login</text>
         <textOrientation>right</textOrientation>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="625" y="234" w="-1" h="-1" measuredW="62" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="167" y="192" w="-1" h="-1" measuredW="62" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <size>20</size>
         <text>Senha</text>
         <textOrientation>right</textOrientation>
       </controlProperties>
     </control>
-    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextInput" x="687" y="192" w="176" h="-1" measuredW="79" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextInput" x="229" y="150" w="176" h="-1" measuredW="79" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="687" y="235" w="176" h="-1" measuredW="79" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="229" y="193" w="176" h="-1" measuredW="79" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::Button" x="668" y="288" w="122" h="37" measuredW="41" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Button" x="210" y="246" w="122" h="37" measuredW="41" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Ok</text>
       </controlProperties>
     </control>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="587" y="148" w="284" h="28" measuredW="284" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="129" y="106" w="284" h="28" measuredW="284" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <size>13</size>
         <text>Digite%20seu%20Login%20e%20Senha%20para%20acessar%20o%20sistema</text>
