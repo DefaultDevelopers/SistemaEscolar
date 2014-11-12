@@ -25,13 +25,13 @@
     <control controlID="22" controlTypeID="com.balsamiq.mockups::Image" x="284" y="103" w="64" h="64" measuredW="64" measuredH="64" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
-        <src>../../Imagens/%25C3%258Dcones/AlunoButton.png</src>
+        <src>../../../Imagens/%25c3%258dcones/AlunoButton.png</src>
         <text/>
       </controlProperties>
     </control>
     <control controlID="23" controlTypeID="com.balsamiq.mockups::Image" x="454" y="103" w="-1" h="-1" measuredW="64" measuredH="64" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../Imagens/%25C3%258Dcones/ProfButton.png</src>
+        <src>../../../Imagens/%25c3%258dcones/ProfButton.png</src>
         <text/>
       </controlProperties>
     </control>
@@ -47,13 +47,13 @@
     </control>
     <control controlID="26" controlTypeID="com.balsamiq.mockups::Image" x="284" y="255" w="64" h="64" measuredW="128" measuredH="128" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../Imagens/%25C3%258Dcones/TumaIcon.png</src>
+        <src>../../../Imagens/%25c3%258dcones/TumaIcon.png</src>
         <text/>
       </controlProperties>
     </control>
     <control controlID="27" controlTypeID="com.balsamiq.mockups::Image" x="454" y="248" w="64" h="71" measuredW="128" measuredH="128" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../Imagens/%25C3%258Dcones/DiscIcon.png</src>
+        <src>../../../Imagens/%25c3%258dcones/DiscIcon.png</src>
         <text/>
       </controlProperties>
     </control>
@@ -69,13 +69,13 @@
     </control>
     <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="284" y="391" w="64" h="64" measuredW="128" measuredH="128" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../Imagens/%25C3%258Dcones/MatriculaIcon.png</src>
+        <src>../../../Imagens/%25c3%258dcones/MatriculaIcon.png</src>
         <text/>
       </controlProperties>
     </control>
     <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="451" y="391" w="67" h="64" measuredW="128" measuredH="128" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../Imagens/%25C3%258Dcones/Prof-TurmaIcon.png</src>
+        <src>../../../Imagens/%25c3%258dcones/Prof-TurmaIcon.png</src>
         <text/>
       </controlProperties>
     </control>
@@ -86,7 +86,18 @@
     </control>
     <control controlID="34" controlTypeID="com.balsamiq.mockups::Image" x="284" y="527" w="64" h="64" measuredW="256" measuredH="256" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../Imagens/%25c3%258dcones/DeleteIcon.png</src>
+        <src>../../../Imagens/%25c3%258dcones/DeleteIcon.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Button" x="409" y="597" w="155" h="65" measuredW="125" measuredH="27" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pesquisar%20Usu%E1rio</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Image" x="454" y="527" w="64" h="64" measuredW="256" measuredH="256" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../Imagens/%25c3%258dcones/PesquisaIcon.png</src>
         <text/>
       </controlProperties>
     </control>
