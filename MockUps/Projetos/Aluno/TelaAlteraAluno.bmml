@@ -3,7 +3,7 @@
     <control controlID="1" controlTypeID="com.balsamiq.mockups::TitleWindow" x="104" y="130" w="487" h="445" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <bottomheight>0</bottomheight>
-        <text>Admin/AlteraAluno</text>
+        <text>Admin/Aluno/AlteraAluno</text>
       </controlProperties>
     </control>
     <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="173" y="518" w="103" h="42" measuredW="64" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
