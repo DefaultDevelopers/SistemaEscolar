@@ -1,0 +1,41 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1058" measuredH="540" mockupW="450" mockupH="353">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="608" y="187" w="450" h="353" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <text>TelaPrincipal/Prof/Boletim</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="623" y="219" w="68" h="64" measuredW="256" measuredH="256" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../Imagens/%25C3%258Dcones/boletim.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextArea" x="623" y="293" w="420" h="232" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lista%20com%20nomes%20de%20alunos%20e%20campos%20para%20notas</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="706" y="220" w="-1" h="-1" measuredW="114" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Selecione%20a%20turma%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::ComboBox" x="820" y="219" w="160" h="-1" measuredW="75" measuredH="23" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Turmas</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="706" y="248" w="-1" h="-1" measuredW="130" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Selecione%20a%20disciplina%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::ComboBox" x="836" y="247" w="144" h="-1" measuredW="88" measuredH="23" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Disciplinas</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

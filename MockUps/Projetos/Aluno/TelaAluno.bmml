@@ -1,0 +1,36 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1058" measuredH="540" mockupW="450" mockupH="353">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="608" y="187" w="450" h="353" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <text>TelaPrincipal/Aluno</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="676" y="391" w="122" h="47" measuredW="66" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Boletim</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="676" y="469" w="122" h="47" measuredW="88" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Frequ%EAncia</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="848" y="391" w="128" h="47" measuredW="70" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tarefas</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="848" y="469" w="128" h="47" measuredW="126" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Enviar%20Mensagem</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="766" y="240" w="134" h="130" measuredW="64" measuredH="64" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../Imagens/%25c3%258dcones/AlunoButton.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
