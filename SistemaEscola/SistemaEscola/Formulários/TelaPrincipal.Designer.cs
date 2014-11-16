@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.arrozToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feijãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAluno = new System.Windows.Forms.Button();
             this.btnProfessor = new System.Windows.Forms.Button();
-            this.realizarCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deletarCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquisarCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAluno = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.entrarComoAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemaAcadêmicoAlphaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -67,32 +69,21 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contasToolStripMenuItem});
+            this.contasToolStripMenuItem,
+            this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(551, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(541, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // contasToolStripMenuItem
             // 
             this.contasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.realizarCadastroToolStripMenuItem,
-            this.alterarCadastroToolStripMenuItem,
-            this.deletarCadastroToolStripMenuItem,
-            this.pesquisarCadastroToolStripMenuItem});
+            this.entrarComoAdminToolStripMenuItem});
             this.contasToolStripMenuItem.Name = "contasToolStripMenuItem";
             this.contasToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.contasToolStripMenuItem.Text = "Opções";
-            // 
-            // btnAluno
-            // 
-            this.btnAluno.Location = new System.Drawing.Point(81, 238);
-            this.btnAluno.Name = "btnAluno";
-            this.btnAluno.Size = new System.Drawing.Size(141, 53);
-            this.btnAluno.TabIndex = 2;
-            this.btnAluno.Text = "Aluno";
-            this.btnAluno.UseVisualStyleBackColor = true;
             // 
             // btnProfessor
             // 
@@ -103,44 +94,63 @@
             this.btnProfessor.Text = "Professor";
             this.btnProfessor.UseVisualStyleBackColor = true;
             // 
-            // realizarCadastroToolStripMenuItem
+            // btnAluno
             // 
-            this.realizarCadastroToolStripMenuItem.Name = "realizarCadastroToolStripMenuItem";
-            this.realizarCadastroToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.realizarCadastroToolStripMenuItem.Text = "Realizar cadastro";
+            this.btnAluno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAluno.Location = new System.Drawing.Point(81, 238);
+            this.btnAluno.Name = "btnAluno";
+            this.btnAluno.Size = new System.Drawing.Size(141, 53);
+            this.btnAluno.TabIndex = 2;
+            this.btnAluno.Text = "Aluno";
+            this.btnAluno.UseVisualStyleBackColor = true;
             // 
-            // alterarCadastroToolStripMenuItem
+            // pictureBox1
             // 
-            this.alterarCadastroToolStripMenuItem.Name = "alterarCadastroToolStripMenuItem";
-            this.alterarCadastroToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.alterarCadastroToolStripMenuItem.Text = "Alterar cadastro";
+            this.pictureBox1.Image = global::SistemaEscola.Properties.Resources.Projeto_Banner___Photoshop1;
+            this.pictureBox1.Location = new System.Drawing.Point(81, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(388, 148);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
-            // deletarCadastroToolStripMenuItem
+            // entrarComoAdminToolStripMenuItem
             // 
-            this.deletarCadastroToolStripMenuItem.Name = "deletarCadastroToolStripMenuItem";
-            this.deletarCadastroToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.deletarCadastroToolStripMenuItem.Text = "Deletar cadastro";
+            this.entrarComoAdminToolStripMenuItem.Name = "entrarComoAdminToolStripMenuItem";
+            this.entrarComoAdminToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.entrarComoAdminToolStripMenuItem.Text = "Entrar como Admin";
             // 
-            // pesquisarCadastroToolStripMenuItem
+            // sobreToolStripMenuItem
             // 
-            this.pesquisarCadastroToolStripMenuItem.Name = "pesquisarCadastroToolStripMenuItem";
-            this.pesquisarCadastroToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.pesquisarCadastroToolStripMenuItem.Text = "Pesquisar cadastro";
+            this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sistemaAcadêmicoAlphaToolStripMenuItem});
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
+            // sistemaAcadêmicoAlphaToolStripMenuItem
+            // 
+            this.sistemaAcadêmicoAlphaToolStripMenuItem.Name = "sistemaAcadêmicoAlphaToolStripMenuItem";
+            this.sistemaAcadêmicoAlphaToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.sistemaAcadêmicoAlphaToolStripMenuItem.Text = "Sistema Acadêmico Alpha";
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 303);
+            this.ClientSize = new System.Drawing.Size(541, 313);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnProfessor);
             this.Controls.Add(this.btnAluno);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Escolar";
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,10 +165,10 @@
         private System.Windows.Forms.ToolStripMenuItem contasToolStripMenuItem;
         private System.Windows.Forms.Button btnAluno;
         private System.Windows.Forms.Button btnProfessor;
-        private System.Windows.Forms.ToolStripMenuItem realizarCadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alterarCadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deletarCadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pesquisarCadastroToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem entrarComoAdminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sistemaAcadêmicoAlphaToolStripMenuItem;
     }
 }
 

@@ -44,16 +44,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formulários\FormPrincipal.cs">
+    <Compile Include="Formulários\AutenticaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\FormPrincipal.Designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    <Compile Include="Formulários\AutenticaForm.Designer.cs">
+      <DependentUpon>AutenticaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\JanelaDoAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\JanelaDoAdm.Designer.cs">
+      <DependentUpon>JanelaDoAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formulários\FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\AutenticaForm.resx">
+      <DependentUpon>AutenticaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\JanelaDoAdm.resx">
+      <DependentUpon>JanelaDoAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -63,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,7 +97,39 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="DAO\" />
     <Folder Include="Entidades\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Projeto Banner - Photoshop1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlunoButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlunoButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TumaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiscIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatriculaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prof-TurmaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PesquisaIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

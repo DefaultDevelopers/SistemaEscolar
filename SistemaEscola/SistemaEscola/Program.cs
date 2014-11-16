@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaEscola
+namespace SistemaEscola.Formulários
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace SistemaEscola
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+            Application.Run(new AutenticaForm());
         }
     }
 }
