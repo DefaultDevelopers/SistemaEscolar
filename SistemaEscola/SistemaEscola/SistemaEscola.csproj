@@ -56,11 +56,11 @@
     <Compile Include="Formulários\JanelaDoAdm.Designer.cs">
       <DependentUpon>JanelaDoAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\TelaPrincipal.cs">
+    <Compile Include="Formulários\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\TelaPrincipal.Designer.cs">
-      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    <Compile Include="Formulários\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +70,8 @@
     <EmbeddedResource Include="Formulários\JanelaDoAdm.resx">
       <DependentUpon>JanelaDoAdm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\TelaPrincipal.resx">
-      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

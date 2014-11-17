@@ -10,3 +10,13 @@ D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\Sistema
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.pdb
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.AutenticaForm.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.JanelaDoAdm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.exe
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.pdb
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.AutenticaForm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.JanelaDoAdm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.FormPrincipal.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Properties.Resources.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csproj.GenerateResource.Cache
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.pdb

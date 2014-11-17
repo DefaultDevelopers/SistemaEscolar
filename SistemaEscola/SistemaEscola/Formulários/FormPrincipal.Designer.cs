@@ -35,12 +35,12 @@
             this.feijãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnProfessor = new System.Windows.Forms.Button();
-            this.btnAluno = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.entrarComoAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaAcadêmicoAlphaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnProfessor = new System.Windows.Forms.Button();
+            this.btnAluno = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,39 +85,12 @@
             this.contasToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.contasToolStripMenuItem.Text = "Opções";
             // 
-            // btnProfessor
-            // 
-            this.btnProfessor.Location = new System.Drawing.Point(328, 238);
-            this.btnProfessor.Name = "btnProfessor";
-            this.btnProfessor.Size = new System.Drawing.Size(141, 53);
-            this.btnProfessor.TabIndex = 3;
-            this.btnProfessor.Text = "Professor";
-            this.btnProfessor.UseVisualStyleBackColor = true;
-            // 
-            // btnAluno
-            // 
-            this.btnAluno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAluno.Location = new System.Drawing.Point(81, 238);
-            this.btnAluno.Name = "btnAluno";
-            this.btnAluno.Size = new System.Drawing.Size(141, 53);
-            this.btnAluno.TabIndex = 2;
-            this.btnAluno.Text = "Aluno";
-            this.btnAluno.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemaEscola.Properties.Resources.Projeto_Banner___Photoshop1;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(388, 148);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // entrarComoAdminToolStripMenuItem
             // 
             this.entrarComoAdminToolStripMenuItem.Name = "entrarComoAdminToolStripMenuItem";
             this.entrarComoAdminToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.entrarComoAdminToolStripMenuItem.Text = "Entrar como Admin";
+            this.entrarComoAdminToolStripMenuItem.Click += new System.EventHandler(this.entrarComoAdminToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -132,6 +105,36 @@
             this.sistemaAcadêmicoAlphaToolStripMenuItem.Name = "sistemaAcadêmicoAlphaToolStripMenuItem";
             this.sistemaAcadêmicoAlphaToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.sistemaAcadêmicoAlphaToolStripMenuItem.Text = "Sistema Acadêmico Alpha";
+            // 
+            // btnProfessor
+            // 
+            this.btnProfessor.Location = new System.Drawing.Point(328, 238);
+            this.btnProfessor.Name = "btnProfessor";
+            this.btnProfessor.Size = new System.Drawing.Size(141, 53);
+            this.btnProfessor.TabIndex = 3;
+            this.btnProfessor.Text = "Professor";
+            this.btnProfessor.UseVisualStyleBackColor = true;
+            this.btnProfessor.Click += new System.EventHandler(this.btnProfessor_Click);
+            // 
+            // btnAluno
+            // 
+            this.btnAluno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAluno.Location = new System.Drawing.Point(81, 238);
+            this.btnAluno.Name = "btnAluno";
+            this.btnAluno.Size = new System.Drawing.Size(141, 53);
+            this.btnAluno.TabIndex = 2;
+            this.btnAluno.Text = "Aluno";
+            this.btnAluno.UseVisualStyleBackColor = true;
+            this.btnAluno.Click += new System.EventHandler(this.btnAluno_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemaEscola.Properties.Resources.Projeto_Banner___Photoshop1;
+            this.pictureBox1.Location = new System.Drawing.Point(81, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(388, 148);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // FormPrincipal
             // 
