@@ -44,16 +44,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formulários\Admin\Disciplina\AlterarDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\AlterarDisc.Designer.cs">
+      <DependentUpon>AlterarDisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\CadastrarDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\CadastrarDisc.Designer.cs">
+      <DependentUpon>CadastrarDisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\DeletarDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\DeletarDisc.Designer.cs">
+      <DependentUpon>DeletarDisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\Disciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\Disciplina.Designer.cs">
+      <DependentUpon>Disciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\AlterarMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\AlterarMatricula.Designer.cs">
+      <DependentUpon>AlterarMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\Matricula.Designer.cs">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\AutenticaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulários\AutenticaForm.Designer.cs">
       <DependentUpon>AutenticaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\JanelaDoAdm.cs">
+    <Compile Include="Formulários\Admin\JanelaDoAdm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\JanelaDoAdm.Designer.cs">
+    <Compile Include="Formulários\Admin\JanelaDoAdm.Designer.cs">
       <DependentUpon>JanelaDoAdm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\FormPrincipal.cs">
@@ -64,10 +100,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulários\Admin\Disciplina\AlterarDisc.resx">
+      <DependentUpon>AlterarDisc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Disciplina\CadastrarDisc.resx">
+      <DependentUpon>CadastrarDisc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Disciplina\DeletarDisc.resx">
+      <DependentUpon>DeletarDisc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Disciplina\Disciplina.resx">
+      <DependentUpon>Disciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Matricula\AlterarMatricula.resx">
+      <DependentUpon>AlterarMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Matricula\Matricula.resx">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\AutenticaForm.resx">
       <DependentUpon>AutenticaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\JanelaDoAdm.resx">
+    <EmbeddedResource Include="Formulários\Admin\JanelaDoAdm.resx">
       <DependentUpon>JanelaDoAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\FormPrincipal.resx">
@@ -130,6 +184,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PesquisaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatriculaIcon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

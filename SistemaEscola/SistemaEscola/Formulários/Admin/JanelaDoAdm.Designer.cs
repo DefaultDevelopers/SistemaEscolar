@@ -169,7 +169,7 @@
             // 
             // picBoxDisc
             // 
-            this.picBoxDisc.Image = global::SistemaEscola.Properties.Resources.DiscIcon;
+            this.picBoxDisc.Image = global::SistemaEscola.Properties.Resources.disc;
             this.picBoxDisc.Location = new System.Drawing.Point(276, 196);
             this.picBoxDisc.Name = "picBoxDisc";
             this.picBoxDisc.Size = new System.Drawing.Size(64, 71);

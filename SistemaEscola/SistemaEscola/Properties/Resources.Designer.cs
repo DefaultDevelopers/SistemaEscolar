@@ -93,6 +93,26 @@ namespace SistemaEscola.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap disc {
+            get {
+                object obj = ResourceManager.GetObject("disc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap disc1 {
+            get {
+                object obj = ResourceManager.GetObject("disc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DiscIcon {
             get {
                 object obj = ResourceManager.GetObject("DiscIcon", resourceCulture);
@@ -106,6 +126,16 @@ namespace SistemaEscola.Properties {
         internal static System.Drawing.Bitmap MatriculaIcon {
             get {
                 object obj = ResourceManager.GetObject("MatriculaIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MatriculaIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("MatriculaIcon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
