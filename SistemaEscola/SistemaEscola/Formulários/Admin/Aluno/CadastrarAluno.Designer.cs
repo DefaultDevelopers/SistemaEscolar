@@ -36,10 +36,10 @@
             this.lblDataNasc = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.grpbEnd = new System.Windows.Forms.GroupBox();
+            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.cmbCidade = new System.Windows.Forms.ComboBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.cmbPais = new System.Windows.Forms.ComboBox();
-            this.txtCEP = new System.Windows.Forms.TextBox();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtRua = new System.Windows.Forms.TextBox();
@@ -51,7 +51,6 @@
             this.lblBairro = new System.Windows.Forms.Label();
             this.lblRua = new System.Windows.Forms.Label();
             this.txtLoginAno = new System.Windows.Forms.TextBox();
-            this.txtLoginNumId = new System.Windows.Forms.TextBox();
             this.cmbLoginCodCurso = new System.Windows.Forms.ComboBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -59,6 +58,7 @@
             this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtLoginNumId = new System.Windows.Forms.MaskedTextBox();
             this.grpbEnd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,10 +124,10 @@
             // 
             // grpbEnd
             // 
+            this.grpbEnd.Controls.Add(this.txtCEP);
             this.grpbEnd.Controls.Add(this.cmbCidade);
             this.grpbEnd.Controls.Add(this.cmbEstado);
             this.grpbEnd.Controls.Add(this.cmbPais);
-            this.grpbEnd.Controls.Add(this.txtCEP);
             this.grpbEnd.Controls.Add(this.txtNum);
             this.grpbEnd.Controls.Add(this.txtBairro);
             this.grpbEnd.Controls.Add(this.txtRua);
@@ -146,12 +146,20 @@
             this.grpbEnd.TabStop = false;
             this.grpbEnd.Text = "Endereço";
             // 
+            // txtCEP
+            // 
+            this.txtCEP.Location = new System.Drawing.Point(231, 81);
+            this.txtCEP.Mask = "00000-000";
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(153, 22);
+            this.txtCEP.TabIndex = 36;
+            // 
             // cmbCidade
             // 
             this.cmbCidade.FormattingEnabled = true;
             this.cmbCidade.Location = new System.Drawing.Point(248, 49);
             this.cmbCidade.Name = "cmbCidade";
-            this.cmbCidade.Size = new System.Drawing.Size(105, 24);
+            this.cmbCidade.Size = new System.Drawing.Size(136, 24);
             this.cmbCidade.TabIndex = 35;
             // 
             // cmbEstado
@@ -159,7 +167,7 @@
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(248, 19);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(105, 24);
+            this.cmbEstado.Size = new System.Drawing.Size(136, 24);
             this.cmbEstado.TabIndex = 34;
             // 
             // cmbPais
@@ -169,13 +177,6 @@
             this.cmbPais.Name = "cmbPais";
             this.cmbPais.Size = new System.Drawing.Size(121, 24);
             this.cmbPais.TabIndex = 33;
-            // 
-            // txtCEP
-            // 
-            this.txtCEP.Location = new System.Drawing.Point(232, 81);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(121, 22);
-            this.txtCEP.TabIndex = 32;
             // 
             // txtNum
             // 
@@ -275,13 +276,6 @@
             this.txtLoginAno.Size = new System.Drawing.Size(33, 20);
             this.txtLoginAno.TabIndex = 7;
             // 
-            // txtLoginNumId
-            // 
-            this.txtLoginNumId.Location = new System.Drawing.Point(149, 41);
-            this.txtLoginNumId.Name = "txtLoginNumId";
-            this.txtLoginNumId.Size = new System.Drawing.Size(33, 20);
-            this.txtLoginNumId.TabIndex = 9;
-            // 
             // cmbLoginCodCurso
             // 
             this.cmbLoginCodCurso.FormattingEnabled = true;
@@ -338,11 +332,20 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
+            // txtLoginNumId
+            // 
+            this.txtLoginNumId.Location = new System.Drawing.Point(149, 41);
+            this.txtLoginNumId.Mask = "000";
+            this.txtLoginNumId.Name = "txtLoginNumId";
+            this.txtLoginNumId.Size = new System.Drawing.Size(33, 20);
+            this.txtLoginNumId.TabIndex = 38;
+            // 
             // CadastrarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 402);
+            this.Controls.Add(this.txtLoginNumId);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dtpDataNasc);
@@ -350,7 +353,6 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.cmbLoginCodCurso);
-            this.Controls.Add(this.txtLoginNumId);
             this.Controls.Add(this.txtLoginAno);
             this.Controls.Add(this.grpbEnd);
             this.Controls.Add(this.lblLogin);
@@ -382,7 +384,6 @@
         private System.Windows.Forms.ComboBox cmbCidade;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.ComboBox cmbPais;
-        private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtRua;
@@ -394,7 +395,6 @@
         private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.Label lblRua;
         private System.Windows.Forms.TextBox txtLoginAno;
-        private System.Windows.Forms.TextBox txtLoginNumId;
         private System.Windows.Forms.ComboBox cmbLoginCodCurso;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
@@ -402,5 +402,7 @@
         private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.MaskedTextBox txtCEP;
+        private System.Windows.Forms.MaskedTextBox txtLoginNumId;
     }
 }

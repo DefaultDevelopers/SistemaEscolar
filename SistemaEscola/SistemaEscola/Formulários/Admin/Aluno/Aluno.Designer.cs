@@ -29,21 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aluno));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAlteraAluno = new System.Windows.Forms.Button();
             this.btnCadAluno = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picBoxAluno = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAluno)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemaEscola.Properties.Resources.aluno;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 147);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnAlteraAluno
             // 
@@ -65,25 +55,35 @@
             this.btnCadAluno.UseVisualStyleBackColor = true;
             this.btnCadAluno.Click += new System.EventHandler(this.btnCadAluno_Click);
             // 
+            // picBoxAluno
+            // 
+            this.picBoxAluno.Image = global::SistemaEscola.Properties.Resources.aluno;
+            this.picBoxAluno.Location = new System.Drawing.Point(70, 12);
+            this.picBoxAluno.Name = "picBoxAluno";
+            this.picBoxAluno.Size = new System.Drawing.Size(145, 147);
+            this.picBoxAluno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxAluno.TabIndex = 0;
+            this.picBoxAluno.TabStop = false;
+            // 
             // Aluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 229);
+            this.ClientSize = new System.Drawing.Size(285, 226);
             this.Controls.Add(this.btnAlteraAluno);
             this.Controls.Add(this.btnCadAluno);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picBoxAluno);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Aluno";
             this.Text = "Aluno";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAluno)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBoxAluno;
         private System.Windows.Forms.Button btnAlteraAluno;
         private System.Windows.Forms.Button btnCadAluno;
     }
