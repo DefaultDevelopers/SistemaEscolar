@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Administrador.cs" />
+    <Compile Include="Entidades\Aluno.cs" />
     <Compile Include="Formulários\Admin\DeletarUsuário.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,7 +254,6 @@
   <ItemGroup>
     <Folder Include="Classes\" />
     <Folder Include="DAO\" />
-    <Folder Include="Entidades\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Projeto Banner - Photoshop1.jpg" />

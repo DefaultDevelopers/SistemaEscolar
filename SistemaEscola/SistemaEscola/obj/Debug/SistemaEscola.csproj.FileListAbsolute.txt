@@ -20,3 +20,4 @@ C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csproj.GenerateResource.Cache
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.pdb
+D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe.config
