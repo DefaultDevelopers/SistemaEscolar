@@ -202,11 +202,35 @@
     <Compile Include="Formulários\Admin\Professor\Professor.Designer.cs">
       <DependentUpon>Professor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\AlterarTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\AlterarTarefas.Designer.cs">
+      <DependentUpon>AlterarTarefas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\CriarTarefa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\CriarTarefa.Designer.cs">
+      <DependentUpon>CriarTarefa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\DeletarTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\DeletarTarefas.Designer.cs">
+      <DependentUpon>DeletarTarefas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\Admin\Tarefas\Tarefas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulários\Admin\Tarefas\Tarefas.Designer.cs">
       <DependentUpon>Tarefas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\VerTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Tarefas\VerTarefas.Designer.cs">
+      <DependentUpon>VerTarefas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Admin\Turma\AlterarTurma.cs">
       <SubType>Form</SubType>
@@ -336,8 +360,20 @@
     <EmbeddedResource Include="Formulários\Admin\Professor\Professor.resx">
       <DependentUpon>Professor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Tarefas\AlterarTarefas.resx">
+      <DependentUpon>AlterarTarefas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Tarefas\CriarTarefa.resx">
+      <DependentUpon>CriarTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Tarefas\DeletarTarefas.resx">
+      <DependentUpon>DeletarTarefas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Tarefas\Tarefas.resx">
       <DependentUpon>Tarefas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Tarefas\VerTarefas.resx">
+      <DependentUpon>VerTarefas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Turma\AlterarTurma.resx">
       <DependentUpon>AlterarTurma.cs</DependentUpon>

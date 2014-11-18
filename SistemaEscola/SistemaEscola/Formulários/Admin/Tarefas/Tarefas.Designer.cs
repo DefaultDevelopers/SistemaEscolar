@@ -1,4 +1,4 @@
-﻿namespace SistemaEscola.Formulários.Admin
+﻿namespace SistemaEscola.Formulários.Admin.Tarefas
 {
     partial class Tarefas
     {
@@ -28,64 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tarefas));
+            this.btnDeletarTarefas = new System.Windows.Forms.Button();
+            this.btnAlterarTarefas = new System.Windows.Forms.Button();
+            this.btnVerTarefas = new System.Windows.Forms.Button();
+            this.btnCriarTarefa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnDeletarTarefas
+            // 
+            this.btnDeletarTarefas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletarTarefas.Location = new System.Drawing.Point(220, 231);
+            this.btnDeletarTarefas.Name = "btnDeletarTarefas";
+            this.btnDeletarTarefas.Size = new System.Drawing.Size(150, 49);
+            this.btnDeletarTarefas.TabIndex = 9;
+            this.btnDeletarTarefas.Text = "Deletar Tarefas";
+            this.btnDeletarTarefas.UseVisualStyleBackColor = true;
+            this.btnDeletarTarefas.Click += new System.EventHandler(this.btnDeletarTarefas_Click);
+            // 
+            // btnAlterarTarefas
+            // 
+            this.btnAlterarTarefas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterarTarefas.Location = new System.Drawing.Point(38, 231);
+            this.btnAlterarTarefas.Name = "btnAlterarTarefas";
+            this.btnAlterarTarefas.Size = new System.Drawing.Size(150, 49);
+            this.btnAlterarTarefas.TabIndex = 8;
+            this.btnAlterarTarefas.Text = "Alterar Tarefas";
+            this.btnAlterarTarefas.UseVisualStyleBackColor = true;
+            this.btnAlterarTarefas.Click += new System.EventHandler(this.btnAlterarTarefas_Click);
+            // 
+            // btnVerTarefas
+            // 
+            this.btnVerTarefas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerTarefas.Location = new System.Drawing.Point(220, 176);
+            this.btnVerTarefas.Name = "btnVerTarefas";
+            this.btnVerTarefas.Size = new System.Drawing.Size(150, 49);
+            this.btnVerTarefas.TabIndex = 7;
+            this.btnVerTarefas.Text = "Ver Minhas Tarefas";
+            this.btnVerTarefas.UseVisualStyleBackColor = true;
+            this.btnVerTarefas.Click += new System.EventHandler(this.btnVerTarefas_Click);
+            // 
+            // btnCriarTarefa
+            // 
+            this.btnCriarTarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCriarTarefa.Location = new System.Drawing.Point(38, 176);
+            this.btnCriarTarefa.Name = "btnCriarTarefa";
+            this.btnCriarTarefa.Size = new System.Drawing.Size(150, 49);
+            this.btnCriarTarefa.TabIndex = 6;
+            this.btnCriarTarefa.Text = "Criar Tarefa";
+            this.btnCriarTarefa.UseVisualStyleBackColor = true;
+            this.btnCriarTarefa.Click += new System.EventHandler(this.btnCriarTarefa_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SistemaEscola.Properties.Resources.tarefas;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(132, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(47, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 49);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Criar Tarefa";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(229, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 49);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Ver Minhas Tarefas";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(47, 231);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(332, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Deletar Tarefas";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // Tarefas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 295);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(407, 291);
+            this.Controls.Add(this.btnDeletarTarefas);
+            this.Controls.Add(this.btnAlterarTarefas);
+            this.Controls.Add(this.btnVerTarefas);
+            this.Controls.Add(this.btnCriarTarefa);
             this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tarefas";
             this.Text = "Tarefas";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -95,9 +109,10 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btnDeletarTarefas;
+        private System.Windows.Forms.Button btnAlterarTarefas;
+        private System.Windows.Forms.Button btnVerTarefas;
+        private System.Windows.Forms.Button btnCriarTarefa;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }

@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.txtLogin = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.txtAutLogin = new System.Windows.Forms.MaskedTextBox();
+            this.txtAutSenha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,20 +67,6 @@
             this.lblSenha.TabIndex = 2;
             this.lblSenha.Text = "Senha:";
             // 
-            // txtLogin
-            // 
-            this.txtLogin.Location = new System.Drawing.Point(74, 57);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(267, 20);
-            this.txtLogin.TabIndex = 3;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(74, 105);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(267, 20);
-            this.txtSenha.TabIndex = 4;
-            // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(121, 149);
@@ -90,14 +76,29 @@
             this.btnLogin.Text = "Ok";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
+            // txtAutLogin
+            // 
+            this.txtAutLogin.Location = new System.Drawing.Point(74, 60);
+            this.txtAutLogin.Mask = "0000000000";
+            this.txtAutLogin.Name = "txtAutLogin";
+            this.txtAutLogin.Size = new System.Drawing.Size(267, 20);
+            this.txtAutLogin.TabIndex = 6;
+            // 
+            // txtAutSenha
+            // 
+            this.txtAutSenha.Location = new System.Drawing.Point(74, 107);
+            this.txtAutSenha.Name = "txtAutSenha";
+            this.txtAutSenha.Size = new System.Drawing.Size(267, 20);
+            this.txtAutSenha.TabIndex = 7;
+            // 
             // AutenticaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 225);
+            this.Controls.Add(this.txtAutSenha);
+            this.Controls.Add(this.txtAutLogin);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.label1);
@@ -105,6 +106,7 @@
             this.Name = "AutenticaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticação";
+            this.Load += new System.EventHandler(this.AutenticaForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,8 +117,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox txtLogin;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.MaskedTextBox txtAutLogin;
+        private System.Windows.Forms.TextBox txtAutSenha;
     }
 }

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaEscola.Formulários
+namespace SistemaEscola.Formulários.Admin.Tarefas
 {
-    public partial class AutenticaForm : Form
+    public partial class VerTarefas : Form
     {
-        public AutenticaForm()
+        public VerTarefas()
         {
             InitializeComponent();
-        }
-
-        private void AutenticaForm_Load(object sender, EventArgs e)
-        {
-            txtAutSenha.MaxLength = 15;
         }
     }
 }
