@@ -46,6 +46,24 @@
   <ItemGroup>
     <Compile Include="Entidades\Administrador.cs" />
     <Compile Include="Entidades\Aluno.cs" />
+    <Compile Include="Formulários\Admin\Aluno\AlteraAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Aluno\AlteraAluno.Designer.cs">
+      <DependentUpon>AlteraAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Aluno\Aluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Aluno\Aluno.Designer.cs">
+      <DependentUpon>Aluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Aluno\CadastrarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Aluno\CadastrarAluno.Designer.cs">
+      <DependentUpon>CadastrarAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\Admin\DeletarUsuário.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +186,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulários\Admin\Aluno\AlteraAluno.resx">
+      <DependentUpon>AlteraAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Aluno\Aluno.resx">
+      <DependentUpon>Aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Aluno\CadastrarAluno.resx">
+      <DependentUpon>CadastrarAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\DeletarUsuário.resx">
       <DependentUpon>DeletarUsuário.cs</DependentUpon>
     </EmbeddedResource>
@@ -302,6 +329,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\question.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aluno.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
