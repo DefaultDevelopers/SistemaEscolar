@@ -33,6 +33,7 @@
             this.btnCadDisc = new System.Windows.Forms.Button();
             this.btnAlteraDisc = new System.Windows.Forms.Button();
             this.btnDelDisc = new System.Windows.Forms.Button();
+            this.btnPesquisarDisc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxDisc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@
             this.btnCadDisc.TabIndex = 1;
             this.btnCadDisc.Text = "Cadastrar Disciplina";
             this.btnCadDisc.UseVisualStyleBackColor = true;
+            this.btnCadDisc.Click += new System.EventHandler(this.btnCadDisc_Click);
             // 
             // btnAlteraDisc
             // 
@@ -63,21 +65,34 @@
             this.btnAlteraDisc.TabIndex = 2;
             this.btnAlteraDisc.Text = "Alterar Disciplina";
             this.btnAlteraDisc.UseVisualStyleBackColor = true;
+            this.btnAlteraDisc.Click += new System.EventHandler(this.btnAlteraDisc_Click);
             // 
             // btnDelDisc
             // 
             this.btnDelDisc.Location = new System.Drawing.Point(12, 212);
             this.btnDelDisc.Name = "btnDelDisc";
-            this.btnDelDisc.Size = new System.Drawing.Size(260, 42);
+            this.btnDelDisc.Size = new System.Drawing.Size(128, 42);
             this.btnDelDisc.TabIndex = 3;
             this.btnDelDisc.Text = "Deletar Disciplina";
             this.btnDelDisc.UseVisualStyleBackColor = true;
+            this.btnDelDisc.Click += new System.EventHandler(this.btnDelDisc_Click);
+            // 
+            // btnPesquisarDisc
+            // 
+            this.btnPesquisarDisc.Location = new System.Drawing.Point(146, 212);
+            this.btnPesquisarDisc.Name = "btnPesquisarDisc";
+            this.btnPesquisarDisc.Size = new System.Drawing.Size(128, 42);
+            this.btnPesquisarDisc.TabIndex = 4;
+            this.btnPesquisarDisc.Text = "Pesquisar Disciplina";
+            this.btnPesquisarDisc.UseVisualStyleBackColor = true;
+            this.btnPesquisarDisc.Click += new System.EventHandler(this.btnPesquisarDisc_Click);
             // 
             // Disciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 264);
+            this.Controls.Add(this.btnPesquisarDisc);
             this.Controls.Add(this.btnDelDisc);
             this.Controls.Add(this.btnAlteraDisc);
             this.Controls.Add(this.btnCadDisc);
@@ -97,5 +112,6 @@
         private System.Windows.Forms.Button btnCadDisc;
         private System.Windows.Forms.Button btnAlteraDisc;
         private System.Windows.Forms.Button btnDelDisc;
+        private System.Windows.Forms.Button btnPesquisarDisc;
     }
 }

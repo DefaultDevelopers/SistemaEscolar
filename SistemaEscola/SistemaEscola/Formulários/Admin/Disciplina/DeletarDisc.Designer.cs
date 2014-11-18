@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeletarDisc));
             this.lblDeletEscolha = new System.Windows.Forms.Label();
             this.rbCod = new System.Windows.Forms.RadioButton();
             this.rdNome = new System.Windows.Forms.RadioButton();
@@ -137,6 +138,7 @@
             this.Controls.Add(this.rdNome);
             this.Controls.Add(this.rbCod);
             this.Controls.Add(this.lblDeletEscolha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletarDisc";
             this.Text = "DeletarDisc";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

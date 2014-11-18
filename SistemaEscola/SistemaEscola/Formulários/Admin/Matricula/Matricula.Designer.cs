@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Matricula));
             this.picBoxMatricula = new System.Windows.Forms.PictureBox();
             this.btnCadMatr = new System.Windows.Forms.Button();
             this.btnAlteraMatr = new System.Windows.Forms.Button();
             this.btnDelMatr = new System.Windows.Forms.Button();
+            this.btnPesquisarMatr = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMatricula)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +55,7 @@
             this.btnCadMatr.TabIndex = 4;
             this.btnCadMatr.Text = "Realizar Matrícula";
             this.btnCadMatr.UseVisualStyleBackColor = true;
+            this.btnCadMatr.Click += new System.EventHandler(this.btnCadMatr_Click);
             // 
             // btnAlteraMatr
             // 
@@ -62,27 +65,41 @@
             this.btnAlteraMatr.TabIndex = 5;
             this.btnAlteraMatr.Text = "Alterar Matrícula";
             this.btnAlteraMatr.UseVisualStyleBackColor = true;
+            this.btnAlteraMatr.Click += new System.EventHandler(this.btnAlteraMatr_Click);
             // 
             // btnDelMatr
             // 
             this.btnDelMatr.Location = new System.Drawing.Point(12, 206);
             this.btnDelMatr.Name = "btnDelMatr";
-            this.btnDelMatr.Size = new System.Drawing.Size(260, 42);
+            this.btnDelMatr.Size = new System.Drawing.Size(128, 42);
             this.btnDelMatr.TabIndex = 6;
             this.btnDelMatr.Text = "Deletar Matrícula";
             this.btnDelMatr.UseVisualStyleBackColor = true;
+            this.btnDelMatr.Click += new System.EventHandler(this.btnDelMatr_Click);
+            // 
+            // btnPesquisarMatr
+            // 
+            this.btnPesquisarMatr.Location = new System.Drawing.Point(146, 206);
+            this.btnPesquisarMatr.Name = "btnPesquisarMatr";
+            this.btnPesquisarMatr.Size = new System.Drawing.Size(128, 42);
+            this.btnPesquisarMatr.TabIndex = 7;
+            this.btnPesquisarMatr.Text = "Pesquisar Matrícula";
+            this.btnPesquisarMatr.UseVisualStyleBackColor = true;
+            this.btnPesquisarMatr.Click += new System.EventHandler(this.btnPesquisarMatr_Click);
             // 
             // Matricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnPesquisarMatr);
             this.Controls.Add(this.btnDelMatr);
             this.Controls.Add(this.btnAlteraMatr);
             this.Controls.Add(this.btnCadMatr);
             this.Controls.Add(this.picBoxMatricula);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Matricula";
-            this.Text = "Matricula";
+            this.Text = "Matrícula";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMatricula)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,5 +112,6 @@
         private System.Windows.Forms.Button btnCadMatr;
         private System.Windows.Forms.Button btnAlteraMatr;
         private System.Windows.Forms.Button btnDelMatr;
+        private System.Windows.Forms.Button btnPesquisarMatr;
     }
 }

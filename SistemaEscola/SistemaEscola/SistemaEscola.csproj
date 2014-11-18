@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formulários\Admin\DeletarUsuário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\DeletarUsuário.Designer.cs">
+      <DependentUpon>DeletarUsuário.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\Admin\Disciplina\AlterarDisc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,17 +74,77 @@
     <Compile Include="Formulários\Admin\Disciplina\Disciplina.Designer.cs">
       <DependentUpon>Disciplina.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\PesquisarDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Disciplina\PesquisarDisc.Designer.cs">
+      <DependentUpon>PesquisarDisc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\Admin\Matricula\AlterarMatricula.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulários\Admin\Matricula\AlterarMatricula.Designer.cs">
       <DependentUpon>AlterarMatricula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulários\Admin\Matricula\DeletarMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\DeletarMatricula.Designer.cs">
+      <DependentUpon>DeletarMatricula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\Admin\Matricula\Matricula.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulários\Admin\Matricula\Matricula.Designer.cs">
       <DependentUpon>Matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\MatricularAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\MatricularAluno.Designer.cs">
+      <DependentUpon>MatricularAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\PesquisarMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Matricula\PesquisarMatricula.Designer.cs">
+      <DependentUpon>PesquisarMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\PesquisaUsuário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\PesquisaUsuário.Designer.cs">
+      <DependentUpon>PesquisaUsuário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\AlterarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\AlterarTurma.Designer.cs">
+      <DependentUpon>AlterarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\CadastroTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\CadastroTurma.Designer.cs">
+      <DependentUpon>CadastroTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\DeletarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\DeletarTurma.Designer.cs">
+      <DependentUpon>DeletarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\PesquisarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\PesquisarTurma.Designer.cs">
+      <DependentUpon>PesquisarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\Turma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Turma\Turma.Designer.cs">
+      <DependentUpon>Turma.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\AutenticaForm.cs">
       <SubType>Form</SubType>
@@ -100,6 +166,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulários\Admin\DeletarUsuário.resx">
+      <DependentUpon>DeletarUsuário.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Disciplina\AlterarDisc.resx">
       <DependentUpon>AlterarDisc.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,11 +181,41 @@
     <EmbeddedResource Include="Formulários\Admin\Disciplina\Disciplina.resx">
       <DependentUpon>Disciplina.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Disciplina\PesquisarDisc.resx">
+      <DependentUpon>PesquisarDisc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Matricula\AlterarMatricula.resx">
       <DependentUpon>AlterarMatricula.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Matricula\DeletarMatricula.resx">
+      <DependentUpon>DeletarMatricula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Matricula\Matricula.resx">
       <DependentUpon>Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Matricula\MatricularAluno.resx">
+      <DependentUpon>MatricularAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Matricula\PesquisarMatricula.resx">
+      <DependentUpon>PesquisarMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\PesquisaUsuário.resx">
+      <DependentUpon>PesquisaUsuário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Turma\AlterarTurma.resx">
+      <DependentUpon>AlterarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Turma\CadastroTurma.resx">
+      <DependentUpon>CadastroTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Turma\DeletarTurma.resx">
+      <DependentUpon>DeletarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Turma\PesquisarTurma.resx">
+      <DependentUpon>PesquisarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Turma\Turma.resx">
+      <DependentUpon>Turma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\AutenticaForm.resx">
       <DependentUpon>AutenticaForm.cs</DependentUpon>
@@ -193,6 +292,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MatriculaIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TumaIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

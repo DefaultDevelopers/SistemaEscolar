@@ -16,5 +16,29 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             InitializeComponent();
         }
+
+        private void btnCadMatr_Click(object sender, EventArgs e)
+        {
+            MatricularAluno matrAluno = new MatricularAluno();
+            matrAluno.Show();
+        }
+
+        private void btnAlteraMatr_Click(object sender, EventArgs e)
+        {
+            AlterarMatricula altMatr = new AlterarMatricula();
+            altMatr.Show();
+        }
+
+        private void btnDelMatr_Click(object sender, EventArgs e)
+        {
+            DeletarMatricula delMatr = new DeletarMatricula();
+            delMatr.Show();
+        }
+
+        private void btnPesquisarMatr_Click(object sender, EventArgs e)
+        {
+            PesquisarMatricula pesqMatr = new PesquisarMatricula();
+            pesqMatr.Show();
+        }
     }
 }
