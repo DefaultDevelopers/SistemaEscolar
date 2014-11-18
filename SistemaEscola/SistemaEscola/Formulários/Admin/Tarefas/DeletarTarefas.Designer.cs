@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeletarTarefas));
             this.btnDeletar = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtIDTarefa = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,13 +44,6 @@
             this.btnDeletar.TabIndex = 21;
             this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(136, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 20);
-            this.textBox3.TabIndex = 20;
             // 
             // label1
             // 
@@ -70,14 +63,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(325, 166);
             this.dataGridView1.TabIndex = 22;
             // 
+            // txtIDTarefa
+            // 
+            this.txtIDTarefa.Location = new System.Drawing.Point(134, 12);
+            this.txtIDTarefa.Mask = "00000";
+            this.txtIDTarefa.Name = "txtIDTarefa";
+            this.txtIDTarefa.Size = new System.Drawing.Size(122, 20);
+            this.txtIDTarefa.TabIndex = 23;
+            // 
             // DeletarTarefas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 219);
+            this.Controls.Add(this.txtIDTarefa);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDeletar);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletarTarefas";
@@ -91,8 +92,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnDeletar;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MaskedTextBox txtIDTarefa;
     }
 }

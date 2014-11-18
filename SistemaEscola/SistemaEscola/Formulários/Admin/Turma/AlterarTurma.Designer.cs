@@ -171,6 +171,7 @@
             // txtSala
             // 
             this.txtSala.Location = new System.Drawing.Point(80, 83);
+            this.txtSala.MaxLength = 15;
             this.txtSala.Name = "txtSala";
             this.txtSala.Size = new System.Drawing.Size(185, 22);
             this.txtSala.TabIndex = 7;
@@ -259,6 +260,7 @@
             this.btnDuvida.Size = new System.Drawing.Size(42, 28);
             this.btnDuvida.TabIndex = 6;
             this.btnDuvida.UseVisualStyleBackColor = true;
+            this.btnDuvida.Click += new System.EventHandler(this.btnDuvida_Click);
             // 
             // btnAlterar
             // 

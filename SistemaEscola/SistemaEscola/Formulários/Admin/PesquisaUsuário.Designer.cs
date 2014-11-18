@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisaUsuário));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdNome = new System.Windows.Forms.RadioButton();
             this.rdCod = new System.Windows.Forms.RadioButton();
+            this.rdNome = new System.Windows.Forms.RadioButton();
             this.lblDado = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtDado = new System.Windows.Forms.TextBox();
@@ -56,17 +56,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisar por";
             // 
-            // rdNome
-            // 
-            this.rdNome.AutoSize = true;
-            this.rdNome.Location = new System.Drawing.Point(129, 21);
-            this.rdNome.Name = "rdNome";
-            this.rdNome.Size = new System.Drawing.Size(63, 20);
-            this.rdNome.TabIndex = 0;
-            this.rdNome.TabStop = true;
-            this.rdNome.Text = "Nome";
-            this.rdNome.UseVisualStyleBackColor = true;
-            // 
             // rdCod
             // 
             this.rdCod.AutoSize = true;
@@ -77,6 +66,17 @@
             this.rdCod.TabStop = true;
             this.rdCod.Text = "Código";
             this.rdCod.UseVisualStyleBackColor = true;
+            // 
+            // rdNome
+            // 
+            this.rdNome.AutoSize = true;
+            this.rdNome.Location = new System.Drawing.Point(129, 21);
+            this.rdNome.Name = "rdNome";
+            this.rdNome.Size = new System.Drawing.Size(63, 20);
+            this.rdNome.TabIndex = 0;
+            this.rdNome.TabStop = true;
+            this.rdNome.Text = "Nome";
+            this.rdNome.UseVisualStyleBackColor = true;
             // 
             // lblDado
             // 
@@ -100,6 +100,7 @@
             // txtDado
             // 
             this.txtDado.Location = new System.Drawing.Point(318, 125);
+            this.txtDado.MaxLength = 45;
             this.txtDado.Name = "txtDado";
             this.txtDado.Size = new System.Drawing.Size(154, 20);
             this.txtDado.TabIndex = 4;
@@ -160,6 +161,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PesquisaUsuário";
             this.Text = "Pesquisa de Usuário";
+            this.Load += new System.EventHandler(this.PesquisaUsuário_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

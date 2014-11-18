@@ -16,10 +16,5 @@ namespace SistemaEscola.Formulários
         {
             InitializeComponent();
         }
-
-        private void AutenticaForm_Load(object sender, EventArgs e)
-        {
-            txtAutSenha.MaxLength = 15;
-        }
     }
 }

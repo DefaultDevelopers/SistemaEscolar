@@ -16,5 +16,10 @@ namespace SistemaEscola.Formulários.Admin
         {
             InitializeComponent();
         }
+
+        private void PesquisaUsuário_Load(object sender, EventArgs e)
+        {
+            txtDado.MaxLength = 10;
+        }
     }
 }

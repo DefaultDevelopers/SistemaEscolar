@@ -16,5 +16,10 @@ namespace SistemaEscola.Formulários.Admin.Disciplina
         {
             InitializeComponent();
         }
+
+        private void DeletarDisc_Load(object sender, EventArgs e)
+        {
+            txtDado.MaxLength = 45;
+        }
     }
 }

@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisarDisc));
             this.label1 = new System.Windows.Forms.Label();
             this.grpbPesquisaPor = new System.Windows.Forms.GroupBox();
-            this.rdNome = new System.Windows.Forms.RadioButton();
             this.rdCod = new System.Windows.Forms.RadioButton();
+            this.rdNome = new System.Windows.Forms.RadioButton();
             this.txtDado = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvDados = new System.Windows.Forms.DataGridView();
@@ -62,17 +62,6 @@
             this.grpbPesquisaPor.TabStop = false;
             this.grpbPesquisaPor.Text = "Pesquisar por";
             // 
-            // rdNome
-            // 
-            this.rdNome.AutoSize = true;
-            this.rdNome.Location = new System.Drawing.Point(83, 21);
-            this.rdNome.Name = "rdNome";
-            this.rdNome.Size = new System.Drawing.Size(63, 20);
-            this.rdNome.TabIndex = 0;
-            this.rdNome.TabStop = true;
-            this.rdNome.Text = "Nome";
-            this.rdNome.UseVisualStyleBackColor = true;
-            // 
             // rdCod
             // 
             this.rdCod.AutoSize = true;
@@ -83,6 +72,17 @@
             this.rdCod.TabStop = true;
             this.rdCod.Text = "Código";
             this.rdCod.UseVisualStyleBackColor = true;
+            // 
+            // rdNome
+            // 
+            this.rdNome.AutoSize = true;
+            this.rdNome.Location = new System.Drawing.Point(83, 21);
+            this.rdNome.Name = "rdNome";
+            this.rdNome.Size = new System.Drawing.Size(63, 20);
+            this.rdNome.TabIndex = 0;
+            this.rdNome.TabStop = true;
+            this.rdNome.Text = "Nome";
+            this.rdNome.UseVisualStyleBackColor = true;
             // 
             // txtDado
             // 
@@ -121,6 +121,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PesquisarDisc";
             this.Text = "Pesquisar Disciplina";
+            this.Load += new System.EventHandler(this.PesquisarDisc_Load);
             this.grpbPesquisaPor.ResumeLayout(false);
             this.grpbPesquisaPor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

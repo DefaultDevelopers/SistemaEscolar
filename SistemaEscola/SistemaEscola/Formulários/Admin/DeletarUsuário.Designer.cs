@@ -92,6 +92,7 @@
             // txtDado
             // 
             this.txtDado.Location = new System.Drawing.Point(321, 126);
+            this.txtDado.MaxLength = 45;
             this.txtDado.Name = "txtDado";
             this.txtDado.Size = new System.Drawing.Size(154, 20);
             this.txtDado.TabIndex = 10;
@@ -194,6 +195,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletarUsuário";
             this.Text = "Deletar Usuário";
+            this.Load += new System.EventHandler(this.DeletarUsuário_Load);
             this.grpbUser.ResumeLayout(false);
             this.grpbUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

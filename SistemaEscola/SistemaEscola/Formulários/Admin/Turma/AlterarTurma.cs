@@ -16,5 +16,11 @@ namespace SistemaEscola.Formulários.Admin.Turma
         {
             InitializeComponent();
         }
+
+        private void btnDuvida_Click(object sender, EventArgs e)
+        {
+            PesquisarTurma pesqTurma = new PesquisarTurma();
+            pesqTurma.ShowDialog();
+        }
     }
 }

@@ -39,11 +39,9 @@
             this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
             this.txtPerfil = new System.Windows.Forms.TextBox();
             this.txtFormacao = new System.Windows.Forms.TextBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtLoginAno = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.cmbCidade = new System.Windows.Forms.ComboBox();
@@ -69,6 +67,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -102,10 +101,10 @@
             // 
             // txtLoginNumId
             // 
-            this.txtLoginNumId.Location = new System.Drawing.Point(150, 64);
-            this.txtLoginNumId.Mask = "0000";
+            this.txtLoginNumId.Location = new System.Drawing.Point(77, 64);
+            this.txtLoginNumId.Mask = "00000000";
             this.txtLoginNumId.Name = "txtLoginNumId";
-            this.txtLoginNumId.Size = new System.Drawing.Size(74, 20);
+            this.txtLoginNumId.Size = new System.Drawing.Size(147, 20);
             this.txtLoginNumId.TabIndex = 47;
             // 
             // btnLimpar
@@ -143,6 +142,7 @@
             // 
             // dtpDataNasc
             // 
+            this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDataNasc.Location = new System.Drawing.Point(31, 185);
             this.dtpDataNasc.Name = "dtpDataNasc";
             this.dtpDataNasc.Size = new System.Drawing.Size(193, 20);
@@ -151,6 +151,7 @@
             // txtPerfil
             // 
             this.txtPerfil.Location = new System.Drawing.Point(274, 140);
+            this.txtPerfil.MaxLength = 200;
             this.txtPerfil.Multiline = true;
             this.txtPerfil.Name = "txtPerfil";
             this.txtPerfil.Size = new System.Drawing.Size(161, 62);
@@ -159,20 +160,15 @@
             // txtFormacao
             // 
             this.txtFormacao.Location = new System.Drawing.Point(297, 114);
+            this.txtFormacao.MaxLength = 25;
             this.txtFormacao.Name = "txtFormacao";
             this.txtFormacao.Size = new System.Drawing.Size(138, 20);
             this.txtFormacao.TabIndex = 41;
             // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(274, 64);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(161, 20);
-            this.txtCPF.TabIndex = 40;
-            // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(63, 140);
+            this.txtEmail.MaxLength = 25;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(161, 20);
             this.txtEmail.TabIndex = 39;
@@ -188,16 +184,10 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(77, 89);
+            this.txtNome.MaxLength = 45;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(147, 20);
             this.txtNome.TabIndex = 37;
-            // 
-            // txtLoginAno
-            // 
-            this.txtLoginAno.Location = new System.Drawing.Point(77, 64);
-            this.txtLoginAno.Name = "txtLoginAno";
-            this.txtLoginAno.Size = new System.Drawing.Size(67, 20);
-            this.txtLoginAno.TabIndex = 36;
             // 
             // groupBox1
             // 
@@ -265,6 +255,7 @@
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(62, 57);
+            this.txtBairro.MaxLength = 25;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(138, 22);
             this.txtBairro.TabIndex = 23;
@@ -272,6 +263,7 @@
             // txtRua
             // 
             this.txtRua.Location = new System.Drawing.Point(53, 27);
+            this.txtRua.MaxLength = 25;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(147, 22);
             this.txtRua.TabIndex = 22;
@@ -422,6 +414,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtCPF);
             this.groupBox2.Controls.Add(this.groupBox1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(15, 39);
@@ -430,6 +423,14 @@
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados a alterar";
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(259, 25);
+            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(158, 22);
+            this.txtCPF.TabIndex = 49;
             // 
             // AlterarProf
             // 
@@ -443,11 +444,9 @@
             this.Controls.Add(this.dtpDataNasc);
             this.Controls.Add(this.txtPerfil);
             this.Controls.Add(this.txtFormacao);
-            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtLoginAno);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -467,6 +466,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,11 +484,9 @@
         private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.TextBox txtPerfil;
         private System.Windows.Forms.TextBox txtFormacao;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtLoginAno;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.ComboBox cmbCidade;
@@ -514,5 +512,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
     }
 }

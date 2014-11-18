@@ -87,6 +87,7 @@
             // txtAutSenha
             // 
             this.txtAutSenha.Location = new System.Drawing.Point(74, 107);
+            this.txtAutSenha.MaxLength = 15;
             this.txtAutSenha.Name = "txtAutSenha";
             this.txtAutSenha.Size = new System.Drawing.Size(267, 20);
             this.txtAutSenha.TabIndex = 7;
@@ -106,7 +107,6 @@
             this.Name = "AutenticaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticação";
-            this.Load += new System.EventHandler(this.AutenticaForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

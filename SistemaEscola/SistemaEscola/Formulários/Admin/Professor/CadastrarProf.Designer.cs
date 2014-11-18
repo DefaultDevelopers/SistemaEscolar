@@ -58,7 +58,6 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.txtFormacao = new System.Windows.Forms.TextBox();
             this.txtPerfil = new System.Windows.Forms.TextBox();
             this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
@@ -66,6 +65,7 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtLoginNumId = new System.Windows.Forms.MaskedTextBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -226,6 +226,7 @@
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(62, 57);
+            this.txtBairro.MaxLength = 25;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(138, 22);
             this.txtBairro.TabIndex = 23;
@@ -233,6 +234,7 @@
             // txtRua
             // 
             this.txtRua.Location = new System.Drawing.Point(53, 27);
+            this.txtRua.MaxLength = 45;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(147, 22);
             this.txtRua.TabIndex = 22;
@@ -302,6 +304,7 @@
             // 
             // txtLoginAno
             // 
+            this.txtLoginAno.Enabled = false;
             this.txtLoginAno.Location = new System.Drawing.Point(77, 38);
             this.txtLoginAno.Name = "txtLoginAno";
             this.txtLoginAno.Size = new System.Drawing.Size(67, 20);
@@ -325,20 +328,15 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(63, 114);
+            this.txtEmail.MaxLength = 45;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(161, 20);
             this.txtEmail.TabIndex = 15;
             // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(274, 38);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(161, 20);
-            this.txtCPF.TabIndex = 16;
-            // 
             // txtFormacao
             // 
             this.txtFormacao.Location = new System.Drawing.Point(297, 88);
+            this.txtFormacao.MaxLength = 25;
             this.txtFormacao.Name = "txtFormacao";
             this.txtFormacao.Size = new System.Drawing.Size(138, 20);
             this.txtFormacao.TabIndex = 18;
@@ -346,6 +344,7 @@
             // txtPerfil
             // 
             this.txtPerfil.Location = new System.Drawing.Point(274, 114);
+            this.txtPerfil.MaxLength = 200;
             this.txtPerfil.Multiline = true;
             this.txtPerfil.Name = "txtPerfil";
             this.txtPerfil.Size = new System.Drawing.Size(161, 62);
@@ -399,11 +398,20 @@
             this.txtLoginNumId.Size = new System.Drawing.Size(74, 20);
             this.txtLoginNumId.TabIndex = 24;
             // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(274, 38);
+            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(161, 20);
+            this.txtCPF.TabIndex = 25;
+            // 
             // CadastrarProf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 452);
+            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtLoginNumId);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
@@ -411,7 +419,6 @@
             this.Controls.Add(this.dtpDataNasc);
             this.Controls.Add(this.txtPerfil);
             this.Controls.Add(this.txtFormacao);
-            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
@@ -462,7 +469,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.TextBox txtFormacao;
         private System.Windows.Forms.TextBox txtPerfil;
         private System.Windows.Forms.DateTimePicker dtpDataNasc;
@@ -477,5 +483,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.MaskedTextBox txtLoginNumId;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
     }
 }

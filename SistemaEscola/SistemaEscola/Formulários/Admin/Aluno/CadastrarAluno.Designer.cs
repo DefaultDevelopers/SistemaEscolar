@@ -59,6 +59,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtLoginNumId = new System.Windows.Forms.MaskedTextBox();
+            this.lblCPF = new System.Windows.Forms.Label();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.grpbEnd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +190,7 @@
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(80, 49);
+            this.txtBairro.MaxLength = 25;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(111, 22);
             this.txtBairro.TabIndex = 30;
@@ -195,6 +198,7 @@
             // txtRua
             // 
             this.txtRua.Location = new System.Drawing.Point(70, 21);
+            this.txtRua.MaxLength = 45;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(121, 22);
             this.txtRua.TabIndex = 27;
@@ -287,6 +291,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(71, 69);
+            this.txtNome.MaxLength = 45;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(151, 20);
             this.txtNome.TabIndex = 11;
@@ -302,6 +307,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(71, 129);
+            this.txtEmail.MaxLength = 45;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(151, 20);
             this.txtEmail.TabIndex = 13;
@@ -340,11 +346,31 @@
             this.txtLoginNumId.Size = new System.Drawing.Size(33, 20);
             this.txtLoginNumId.TabIndex = 38;
             // 
+            // lblCPF
+            // 
+            this.lblCPF.AutoSize = true;
+            this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF.Location = new System.Drawing.Point(228, 129);
+            this.lblCPF.Name = "lblCPF";
+            this.lblCPF.Size = new System.Drawing.Size(37, 16);
+            this.lblCPF.TabIndex = 39;
+            this.lblCPF.Text = "CPF:";
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(264, 128);
+            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(144, 20);
+            this.txtCPF.TabIndex = 41;
+            // 
             // CadastrarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 402);
+            this.Controls.Add(this.txtCPF);
+            this.Controls.Add(this.lblCPF);
             this.Controls.Add(this.txtLoginNumId);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
@@ -404,5 +430,7 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.MaskedTextBox txtLoginNumId;
+        private System.Windows.Forms.Label lblCPF;
+        private System.Windows.Forms.MaskedTextBox txtCPF;
     }
 }

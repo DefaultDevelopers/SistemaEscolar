@@ -32,7 +32,6 @@
             this.lblCodDisc = new System.Windows.Forms.Label();
             this.grboxDados = new System.Windows.Forms.GroupBox();
             this.txtAltDiscDescricao = new System.Windows.Forms.TextBox();
-            this.txtAltDiscCargHor = new System.Windows.Forms.TextBox();
             this.txtAltDiscNome = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.lblCargaHor = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.btnAltDiscSalvar = new System.Windows.Forms.Button();
             this.btnAltDiscLimpar = new System.Windows.Forms.Button();
             this.btnPesqDisc = new System.Windows.Forms.Button();
+            this.txtAltDiscCargHor = new System.Windows.Forms.MaskedTextBox();
             this.grboxDados.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,8 +55,8 @@
             // 
             // grboxDados
             // 
-            this.grboxDados.Controls.Add(this.txtAltDiscDescricao);
             this.grboxDados.Controls.Add(this.txtAltDiscCargHor);
+            this.grboxDados.Controls.Add(this.txtAltDiscDescricao);
             this.grboxDados.Controls.Add(this.txtAltDiscNome);
             this.grboxDados.Controls.Add(this.lblDescricao);
             this.grboxDados.Controls.Add(this.lblCargaHor);
@@ -71,21 +71,16 @@
             // txtAltDiscDescricao
             // 
             this.txtAltDiscDescricao.Location = new System.Drawing.Point(92, 99);
+            this.txtAltDiscDescricao.MaxLength = 75;
             this.txtAltDiscDescricao.Multiline = true;
             this.txtAltDiscDescricao.Name = "txtAltDiscDescricao";
             this.txtAltDiscDescricao.Size = new System.Drawing.Size(199, 97);
             this.txtAltDiscDescricao.TabIndex = 7;
             // 
-            // txtAltDiscCargHor
-            // 
-            this.txtAltDiscCargHor.Location = new System.Drawing.Point(109, 66);
-            this.txtAltDiscCargHor.Name = "txtAltDiscCargHor";
-            this.txtAltDiscCargHor.Size = new System.Drawing.Size(182, 20);
-            this.txtAltDiscCargHor.TabIndex = 6;
-            // 
             // txtAltDiscNome
             // 
             this.txtAltDiscNome.Location = new System.Drawing.Point(72, 33);
+            this.txtAltDiscNome.MaxLength = 45;
             this.txtAltDiscNome.Name = "txtAltDiscNome";
             this.txtAltDiscNome.Size = new System.Drawing.Size(219, 20);
             this.txtAltDiscNome.TabIndex = 5;
@@ -151,6 +146,14 @@
             this.btnPesqDisc.Text = "Pesquisar";
             this.btnPesqDisc.UseVisualStyleBackColor = true;
             // 
+            // txtAltDiscCargHor
+            // 
+            this.txtAltDiscCargHor.Location = new System.Drawing.Point(109, 66);
+            this.txtAltDiscCargHor.Mask = "000";
+            this.txtAltDiscCargHor.Name = "txtAltDiscCargHor";
+            this.txtAltDiscCargHor.Size = new System.Drawing.Size(182, 20);
+            this.txtAltDiscCargHor.TabIndex = 8;
+            // 
             // AlterarDisc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,7 +180,6 @@
         private System.Windows.Forms.Label lblCodDisc;
         private System.Windows.Forms.GroupBox grboxDados;
         private System.Windows.Forms.TextBox txtAltDiscDescricao;
-        private System.Windows.Forms.TextBox txtAltDiscCargHor;
         private System.Windows.Forms.TextBox txtAltDiscNome;
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Label lblCargaHor;
@@ -186,5 +188,6 @@
         private System.Windows.Forms.Button btnAltDiscSalvar;
         private System.Windows.Forms.Button btnAltDiscLimpar;
         private System.Windows.Forms.Button btnPesqDisc;
+        private System.Windows.Forms.MaskedTextBox txtAltDiscCargHor;
     }
 }
