@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JanelaDoAdm));
-            this.btnAdmAluno = new System.Windows.Forms.Button();
             this.btnAdmProf = new System.Windows.Forms.Button();
             this.btnAdmTurma = new System.Windows.Forms.Button();
             this.btnAdmDisc = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@
             this.picBoxDisc = new System.Windows.Forms.PictureBox();
             this.picBoxTurma = new System.Windows.Forms.PictureBox();
             this.picBoxProf = new System.Windows.Forms.PictureBox();
-            this.picBoxAluno = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProfTurma)).BeginInit();
@@ -52,17 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxDisc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTurma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProf)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAluno)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAdmAluno
-            // 
-            this.btnAdmAluno.Location = new System.Drawing.Point(40, 116);
-            this.btnAdmAluno.Name = "btnAdmAluno";
-            this.btnAdmAluno.Size = new System.Drawing.Size(130, 51);
-            this.btnAdmAluno.TabIndex = 1;
-            this.btnAdmAluno.Text = "Aluno";
-            this.btnAdmAluno.UseVisualStyleBackColor = true;
             // 
             // btnAdmProf
             // 
@@ -93,7 +81,7 @@
             // 
             // btnAdmMatr
             // 
-            this.btnAdmMatr.Location = new System.Drawing.Point(40, 433);
+            this.btnAdmMatr.Location = new System.Drawing.Point(40, 116);
             this.btnAdmMatr.Name = "btnAdmMatr";
             this.btnAdmMatr.Size = new System.Drawing.Size(130, 51);
             this.btnAdmMatr.TabIndex = 8;
@@ -111,7 +99,7 @@
             // 
             // btnAdmDel
             // 
-            this.btnAdmDel.Location = new System.Drawing.Point(40, 587);
+            this.btnAdmDel.Location = new System.Drawing.Point(40, 433);
             this.btnAdmDel.Name = "btnAdmDel";
             this.btnAdmDel.Size = new System.Drawing.Size(130, 51);
             this.btnAdmDel.TabIndex = 12;
@@ -120,7 +108,7 @@
             // 
             // btnAdmPesq
             // 
-            this.btnAdmPesq.Location = new System.Drawing.Point(242, 587);
+            this.btnAdmPesq.Location = new System.Drawing.Point(40, 571);
             this.btnAdmPesq.Name = "btnAdmPesq";
             this.btnAdmPesq.Size = new System.Drawing.Size(130, 51);
             this.btnAdmPesq.TabIndex = 14;
@@ -130,7 +118,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SistemaEscola.Properties.Resources.PesquisaIcon;
-            this.pictureBox4.Location = new System.Drawing.Point(276, 522);
+            this.pictureBox4.Location = new System.Drawing.Point(74, 506);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(64, 59);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,9 +128,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SistemaEscola.Properties.Resources.DeleteIcon;
-            this.pictureBox3.Location = new System.Drawing.Point(74, 522);
+            this.pictureBox3.Location = new System.Drawing.Point(68, 356);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox3.Size = new System.Drawing.Size(74, 71);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -160,7 +148,7 @@
             // picBoxMatr
             // 
             this.picBoxMatr.Image = global::SistemaEscola.Properties.Resources.MatriculaIcon;
-            this.picBoxMatr.Location = new System.Drawing.Point(74, 356);
+            this.picBoxMatr.Location = new System.Drawing.Point(74, 39);
             this.picBoxMatr.Name = "picBoxMatr";
             this.picBoxMatr.Size = new System.Drawing.Size(64, 71);
             this.picBoxMatr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,21 +185,11 @@
             this.picBoxProf.TabIndex = 3;
             this.picBoxProf.TabStop = false;
             // 
-            // picBoxAluno
-            // 
-            this.picBoxAluno.Image = global::SistemaEscola.Properties.Resources.AlunoButton1;
-            this.picBoxAluno.Location = new System.Drawing.Point(74, 46);
-            this.picBoxAluno.Name = "picBoxAluno";
-            this.picBoxAluno.Size = new System.Drawing.Size(64, 64);
-            this.picBoxAluno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picBoxAluno.TabIndex = 0;
-            this.picBoxAluno.TabStop = false;
-            // 
             // JanelaDoAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 650);
+            this.ClientSize = new System.Drawing.Size(414, 633);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnAdmPesq);
             this.Controls.Add(this.pictureBox3);
@@ -226,8 +204,6 @@
             this.Controls.Add(this.btnAdmTurma);
             this.Controls.Add(this.picBoxProf);
             this.Controls.Add(this.btnAdmProf);
-            this.Controls.Add(this.btnAdmAluno);
-            this.Controls.Add(this.picBoxAluno);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JanelaDoAdm";
             this.Text = "Administrador";
@@ -238,7 +214,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxDisc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTurma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProf)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAluno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,8 +221,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picBoxAluno;
-        private System.Windows.Forms.Button btnAdmAluno;
         private System.Windows.Forms.Button btnAdmProf;
         private System.Windows.Forms.PictureBox picBoxProf;
         private System.Windows.Forms.PictureBox picBoxTurma;

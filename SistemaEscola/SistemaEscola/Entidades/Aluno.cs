@@ -8,32 +8,8 @@ namespace SistemaEscola.Entidades
 {
     class Aluno
     {
-        String  login, nome, senha, telefone, email, cpf;
-        DateTime nascimento;
-
-        public string Login
-        {
-            get
-            {
-                return login;
-            }
-            set
-            {
-                login = value;
-            }
-        }
-
-        public string Senha
-        {
-            get
-            {
-                return senha;
-            }
-            set
-            {
-                senha = value;
-            }
-        }
+        String  nome, telefone, email, cpf;
+        DateTime DataNasc;
 
         public string Nome
         {
@@ -87,11 +63,11 @@ namespace SistemaEscola.Entidades
         {
             get
             {
-                return nascimento;
+                return DataNasc;
             }
             set
             {
-                nascimento = value;
+                DataNasc = value;
             }
         }
     }

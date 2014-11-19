@@ -16,5 +16,10 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             InitializeComponent();
         }
+
+        private void MatricularAluno_Load(object sender, EventArgs e)
+        {
+            txtLoginAno.Text = Convert.ToString(DateTime.Now.Year);
+        }
     }
 }

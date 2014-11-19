@@ -35,21 +35,23 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDeletarMatr = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.lblConfirme = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCod
             // 
             this.lblCod.AutoSize = true;
+            this.lblCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCod.Location = new System.Drawing.Point(12, 25);
             this.lblCod.Name = "lblCod";
-            this.lblCod.Size = new System.Drawing.Size(125, 13);
+            this.lblCod.Size = new System.Drawing.Size(169, 16);
             this.lblCod.TabIndex = 0;
-            this.lblCod.Text = "Digite o código do aluno:";
+            this.lblCod.Text = "Digite a matrícula do aluno:";
             // 
             // btnPesquisarMatr
             // 
-            this.btnPesquisarMatr.Location = new System.Drawing.Point(313, 20);
+            this.btnPesquisarMatr.Location = new System.Drawing.Point(362, 22);
             this.btnPesquisarMatr.Name = "btnPesquisarMatr";
             this.btnPesquisarMatr.Size = new System.Drawing.Size(99, 23);
             this.btnPesquisarMatr.TabIndex = 2;
@@ -58,7 +60,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(134, 22);
+            this.maskedTextBox1.Location = new System.Drawing.Point(183, 24);
             this.maskedTextBox1.Mask = "0000000000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(173, 20);
@@ -67,14 +69,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 67);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 89);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(397, 202);
+            this.dataGridView1.Size = new System.Drawing.Size(532, 155);
             this.dataGridView1.TabIndex = 4;
             // 
             // btnDeletarMatr
             // 
-            this.btnDeletarMatr.Location = new System.Drawing.Point(61, 285);
+            this.btnDeletarMatr.Location = new System.Drawing.Point(124, 260);
             this.btnDeletarMatr.Name = "btnDeletarMatr";
             this.btnDeletarMatr.Size = new System.Drawing.Size(98, 37);
             this.btnDeletarMatr.TabIndex = 5;
@@ -83,18 +85,29 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(271, 285);
+            this.btnLimpar.Location = new System.Drawing.Point(334, 260);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(98, 37);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
+            // lblConfirme
+            // 
+            this.lblConfirme.AutoSize = true;
+            this.lblConfirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirme.Location = new System.Drawing.Point(12, 70);
+            this.lblConfirme.Name = "lblConfirme";
+            this.lblConfirme.Size = new System.Drawing.Size(121, 16);
+            this.lblConfirme.TabIndex = 7;
+            this.lblConfirme.Text = "Confirme os dados";
+            // 
             // DeletarMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 334);
+            this.ClientSize = new System.Drawing.Size(559, 310);
+            this.Controls.Add(this.lblConfirme);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnDeletarMatr);
             this.Controls.Add(this.dataGridView1);
@@ -118,5 +131,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnDeletarMatr;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Label lblConfirme;
     }
 }
