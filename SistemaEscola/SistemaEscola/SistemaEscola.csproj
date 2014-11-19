@@ -46,8 +46,13 @@
   <ItemGroup>
     <Compile Include="Entidades\Aluno.cs" />
     <Compile Include="Entidades\Curso.cs" />
+    <Compile Include="Entidades\Disciplina.cs" />
     <Compile Include="Entidades\Endereco.cs" />
+    <Compile Include="Entidades\Frequencia.cs" />
+    <Compile Include="Entidades\Mensagem.cs" />
     <Compile Include="Entidades\Professor.cs" />
+    <Compile Include="Entidades\Tarefa.cs" />
+    <Compile Include="Entidades\Turma.cs" />
     <Compile Include="Formulários\Admin\DeletarUsuário.cs">
       <SubType>Form</SubType>
     </Compile>
