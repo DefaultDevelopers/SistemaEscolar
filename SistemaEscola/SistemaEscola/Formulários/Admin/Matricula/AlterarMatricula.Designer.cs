@@ -36,6 +36,8 @@
             this.lblCod = new System.Windows.Forms.Label();
             this.grpbDadosAluno = new System.Windows.Forms.GroupBox();
             this.grpbEnd = new System.Windows.Forms.GroupBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -65,8 +67,8 @@
             this.lblCurso = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.cmbCurso = new System.Windows.Forms.ComboBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.lblTurma = new System.Windows.Forms.Label();
+            this.cmbTurma = new System.Windows.Forms.ComboBox();
             this.grpbDadosAluno.SuspendLayout();
             this.grpbEnd.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -75,7 +77,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(103, 454);
+            this.btnAlterar.Location = new System.Drawing.Point(103, 488);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(88, 39);
             this.btnAlterar.TabIndex = 2;
@@ -84,7 +86,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(263, 454);
+            this.btnLimpar.Location = new System.Drawing.Point(263, 488);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(88, 39);
             this.btnLimpar.TabIndex = 3;
@@ -160,6 +162,20 @@
             this.grpbEnd.TabIndex = 47;
             this.grpbEnd.TabStop = false;
             this.grpbEnd.Text = "Endereço";
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(258, 49);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(127, 22);
+            this.txtCidade.TabIndex = 40;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(257, 21);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(127, 22);
+            this.txtEstado.TabIndex = 39;
             // 
             // txtCEP
             // 
@@ -345,6 +361,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblTurma);
+            this.groupBox1.Controls.Add(this.cmbTurma);
             this.groupBox1.Controls.Add(this.grpbTurno);
             this.groupBox1.Controls.Add(this.cmbTipo);
             this.groupBox1.Controls.Add(this.lblCurso);
@@ -353,7 +371,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(18, 293);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(420, 155);
+            this.groupBox1.Size = new System.Drawing.Size(420, 179);
             this.groupBox1.TabIndex = 67;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do curso";
@@ -418,7 +436,7 @@
             // lblCurso
             // 
             this.lblCurso.AutoSize = true;
-            this.lblCurso.Location = new System.Drawing.Point(12, 117);
+            this.lblCurso.Location = new System.Drawing.Point(12, 114);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(46, 16);
             this.lblCurso.TabIndex = 8;
@@ -436,30 +454,33 @@
             // cmbCurso
             // 
             this.cmbCurso.FormattingEnabled = true;
-            this.cmbCurso.Location = new System.Drawing.Point(64, 114);
+            this.cmbCurso.Location = new System.Drawing.Point(64, 111);
             this.cmbCurso.Name = "cmbCurso";
             this.cmbCurso.Size = new System.Drawing.Size(342, 24);
             this.cmbCurso.TabIndex = 10;
             // 
-            // txtCidade
+            // lblTurma
             // 
-            this.txtCidade.Location = new System.Drawing.Point(258, 49);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(127, 22);
-            this.txtCidade.TabIndex = 40;
+            this.lblTurma.AutoSize = true;
+            this.lblTurma.Location = new System.Drawing.Point(13, 144);
+            this.lblTurma.Name = "lblTurma";
+            this.lblTurma.Size = new System.Drawing.Size(50, 16);
+            this.lblTurma.TabIndex = 13;
+            this.lblTurma.Text = "Turma:";
             // 
-            // txtEstado
+            // cmbTurma
             // 
-            this.txtEstado.Location = new System.Drawing.Point(257, 21);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(127, 22);
-            this.txtEstado.TabIndex = 39;
+            this.cmbTurma.FormattingEnabled = true;
+            this.cmbTurma.Location = new System.Drawing.Point(64, 141);
+            this.cmbTurma.Name = "cmbTurma";
+            this.cmbTurma.Size = new System.Drawing.Size(342, 24);
+            this.cmbTurma.TabIndex = 14;
             // 
             // AlterarMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 499);
+            this.ClientSize = new System.Drawing.Size(454, 533);
             this.Controls.Add(this.grpbDadosAluno);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -469,6 +490,7 @@
             this.Controls.Add(this.lblCod);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlterarMatricula";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar Matrícula";
             this.grpbDadosAluno.ResumeLayout(false);
             this.grpbDadosAluno.PerformLayout();
@@ -523,5 +545,7 @@
         private System.Windows.Forms.ComboBox cmbCurso;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label lblTurma;
+        private System.Windows.Forms.ComboBox cmbTurma;
     }
 }

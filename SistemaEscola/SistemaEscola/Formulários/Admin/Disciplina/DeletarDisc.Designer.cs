@@ -38,6 +38,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtCodDel = new System.Windows.Forms.TextBox();
+            this.lblCodDel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,9 +49,9 @@
             this.lblDeletEscolha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeletEscolha.Location = new System.Drawing.Point(68, 19);
             this.lblDeletEscolha.Name = "lblDeletEscolha";
-            this.lblDeletEscolha.Size = new System.Drawing.Size(247, 20);
+            this.lblDeletEscolha.Size = new System.Drawing.Size(267, 20);
             this.lblDeletEscolha.TabIndex = 0;
-            this.lblDeletEscolha.Text = "Escolha como deletar a disciplina:";
+            this.lblDeletEscolha.Text = "Escolha como pesquisar a disciplina:";
             // 
             // rbCod
             // 
@@ -108,7 +110,7 @@
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(72, 261);
+            this.btnDeletar.Location = new System.Drawing.Point(67, 314);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(97, 43);
             this.btnDeletar.TabIndex = 7;
@@ -117,18 +119,37 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(228, 261);
+            this.btnLimpar.Location = new System.Drawing.Point(223, 314);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(97, 43);
             this.btnLimpar.TabIndex = 8;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
+            // txtCodDel
+            // 
+            this.txtCodDel.Location = new System.Drawing.Point(274, 277);
+            this.txtCodDel.Name = "txtCodDel";
+            this.txtCodDel.Size = new System.Drawing.Size(80, 20);
+            this.txtCodDel.TabIndex = 10;
+            // 
+            // lblCodDel
+            // 
+            this.lblCodDel.AutoSize = true;
+            this.lblCodDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodDel.Location = new System.Drawing.Point(34, 281);
+            this.lblCodDel.Name = "lblCodDel";
+            this.lblCodDel.Size = new System.Drawing.Size(234, 16);
+            this.lblCodDel.TabIndex = 9;
+            this.lblCodDel.Text = "Digite o código da discplina a deletar:";
+            // 
             // DeletarDisc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 316);
+            this.ClientSize = new System.Drawing.Size(389, 369);
+            this.Controls.Add(this.txtCodDel);
+            this.Controls.Add(this.lblCodDel);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.dataGridView1);
@@ -159,5 +180,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.TextBox txtCodDel;
+        private System.Windows.Forms.Label lblCodDel;
     }
 }

@@ -46,6 +46,8 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.grpbEnd = new System.Windows.Forms.GroupBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -66,8 +68,10 @@
             this.txtLoginAno = new System.Windows.Forms.TextBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.txtLoginCurso = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblTurma = new System.Windows.Forms.Label();
+            this.cmbTurma = new System.Windows.Forms.ComboBox();
             this.grpbTurno.SuspendLayout();
             this.grpbEnd.SuspendLayout();
             this.grpbDadosAluno.SuspendLayout();
@@ -122,7 +126,7 @@
             // cmbCurso
             // 
             this.cmbCurso.FormattingEnabled = true;
-            this.cmbCurso.Location = new System.Drawing.Point(64, 114);
+            this.cmbCurso.Location = new System.Drawing.Point(64, 111);
             this.cmbCurso.Name = "cmbCurso";
             this.cmbCurso.Size = new System.Drawing.Size(342, 24);
             this.cmbCurso.TabIndex = 10;
@@ -139,7 +143,7 @@
             // lblCurso
             // 
             this.lblCurso.AutoSize = true;
-            this.lblCurso.Location = new System.Drawing.Point(12, 117);
+            this.lblCurso.Location = new System.Drawing.Point(12, 114);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(46, 16);
             this.lblCurso.TabIndex = 8;
@@ -159,7 +163,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(90, 459);
+            this.btnSalvar.Location = new System.Drawing.Point(90, 529);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(96, 40);
             this.btnSalvar.TabIndex = 11;
@@ -168,7 +172,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(284, 459);
+            this.btnLimpar.Location = new System.Drawing.Point(284, 529);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(96, 40);
             this.btnLimpar.TabIndex = 12;
@@ -247,6 +251,20 @@
             this.grpbEnd.TabIndex = 47;
             this.grpbEnd.TabStop = false;
             this.grpbEnd.Text = "Endereço";
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(258, 49);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(127, 22);
+            this.txtCidade.TabIndex = 38;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(257, 21);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(127, 22);
+            this.txtEstado.TabIndex = 37;
             // 
             // txtCEP
             // 
@@ -402,6 +420,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblTurma);
+            this.groupBox1.Controls.Add(this.cmbTurma);
             this.groupBox1.Controls.Add(this.grpbTurno);
             this.groupBox1.Controls.Add(this.cmbTipo);
             this.groupBox1.Controls.Add(this.lblCurso);
@@ -410,14 +430,14 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(25, 258);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(420, 155);
+            this.groupBox1.Size = new System.Drawing.Size(420, 181);
             this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do curso";
             // 
             // txtLoginNumId
             // 
-            this.txtLoginNumId.Location = new System.Drawing.Point(343, 425);
+            this.txtLoginNumId.Location = new System.Drawing.Point(339, 460);
             this.txtLoginNumId.Mask = "000";
             this.txtLoginNumId.Name = "txtLoginNumId";
             this.txtLoginNumId.Size = new System.Drawing.Size(33, 20);
@@ -426,7 +446,8 @@
             // txtLoginAno
             // 
             this.txtLoginAno.Enabled = false;
-            this.txtLoginAno.Location = new System.Drawing.Point(265, 425);
+            this.txtLoginAno.Location = new System.Drawing.Point(261, 460);
+            this.txtLoginAno.MaxLength = 4;
             this.txtLoginAno.Name = "txtLoginAno";
             this.txtLoginAno.Size = new System.Drawing.Size(33, 20);
             this.txtLoginAno.TabIndex = 60;
@@ -435,7 +456,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(100, 425);
+            this.lblLogin.Location = new System.Drawing.Point(96, 460);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(162, 16);
             this.lblLogin.TabIndex = 59;
@@ -444,30 +465,55 @@
             // txtLoginCurso
             // 
             this.txtLoginCurso.Enabled = false;
-            this.txtLoginCurso.Location = new System.Drawing.Point(304, 425);
+            this.txtLoginCurso.Location = new System.Drawing.Point(300, 460);
+            this.txtLoginCurso.MaxLength = 3;
             this.txtLoginCurso.Name = "txtLoginCurso";
             this.txtLoginCurso.Size = new System.Drawing.Size(33, 20);
             this.txtLoginCurso.TabIndex = 63;
             // 
-            // txtEstado
+            // lblSenha
             // 
-            this.txtEstado.Location = new System.Drawing.Point(257, 21);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(127, 22);
-            this.txtEstado.TabIndex = 37;
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(96, 492);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(152, 16);
+            this.lblSenha.TabIndex = 64;
+            this.lblSenha.Text = "Senha padrão do aluno:";
             // 
-            // txtCidade
+            // txtSenha
             // 
-            this.txtCidade.Location = new System.Drawing.Point(258, 49);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(127, 22);
-            this.txtCidade.TabIndex = 38;
+            this.txtSenha.Location = new System.Drawing.Point(261, 491);
+            this.txtSenha.MaxLength = 10;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(111, 20);
+            this.txtSenha.TabIndex = 65;
+            this.txtSenha.Text = "1235abcde";
+            // 
+            // lblTurma
+            // 
+            this.lblTurma.AutoSize = true;
+            this.lblTurma.Location = new System.Drawing.Point(12, 144);
+            this.lblTurma.Name = "lblTurma";
+            this.lblTurma.Size = new System.Drawing.Size(50, 16);
+            this.lblTurma.TabIndex = 11;
+            this.lblTurma.Text = "Turma:";
+            // 
+            // cmbTurma
+            // 
+            this.cmbTurma.FormattingEnabled = true;
+            this.cmbTurma.Location = new System.Drawing.Point(63, 141);
+            this.cmbTurma.Name = "cmbTurma";
+            this.cmbTurma.Size = new System.Drawing.Size(342, 24);
+            this.cmbTurma.TabIndex = 12;
             // 
             // MatricularAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 509);
+            this.ClientSize = new System.Drawing.Size(470, 581);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtLoginCurso);
             this.Controls.Add(this.txtLoginNumId);
             this.Controls.Add(this.txtLoginAno);
@@ -534,5 +580,9 @@
         private System.Windows.Forms.TextBox txtLoginCurso;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label lblTurma;
+        private System.Windows.Forms.ComboBox cmbTurma;
     }
 }
