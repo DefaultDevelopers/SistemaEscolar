@@ -73,6 +73,16 @@ namespace SistemaEscola.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aluno1 {
+            get {
+                object obj = ResourceManager.GetObject("aluno1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AlunoButton {
             get {
                 object obj = ResourceManager.GetObject("AlunoButton", resourceCulture);
@@ -86,6 +96,16 @@ namespace SistemaEscola.Properties {
         internal static System.Drawing.Bitmap AlunoButton1 {
             get {
                 object obj = ResourceManager.GetObject("AlunoButton1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boletim {
+            get {
+                object obj = ResourceManager.GetObject("boletim", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,16 @@ namespace SistemaEscola.Properties {
         internal static System.Drawing.Bitmap email {
             get {
                 object obj = ResourceManager.GetObject("email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frequencia {
+            get {
+                object obj = ResourceManager.GetObject("frequencia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +236,16 @@ namespace SistemaEscola.Properties {
         internal static System.Drawing.Bitmap ProfButton1 {
             get {
                 object obj = ResourceManager.GetObject("ProfButton1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ProfButton2 {
+            get {
+                object obj = ResourceManager.GetObject("ProfButton2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

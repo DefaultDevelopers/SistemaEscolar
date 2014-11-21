@@ -269,6 +269,42 @@
     <Compile Include="Formulários\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulários\Usuarios\Aluno\Aluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Aluno\Aluno.Designer.cs">
+      <DependentUpon>Aluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Aluno\Boletim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Aluno\Boletim.Designer.cs">
+      <DependentUpon>Boletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Aluno\Frequencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Aluno\Frequencia.Designer.cs">
+      <DependentUpon>Frequencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Professor\Boletim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Professor\Boletim.Designer.cs">
+      <DependentUpon>Boletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Professor\Frequencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Professor\Frequencia.Designer.cs">
+      <DependentUpon>Frequencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Professor\Professor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\Professor\Professor.Designer.cs">
+      <DependentUpon>Professor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formulários\Admin\DeletarUsuário.resx">
@@ -379,6 +415,24 @@
     <EmbeddedResource Include="Formulários\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\Aluno\Aluno.resx">
+      <DependentUpon>Aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\Aluno\Boletim.resx">
+      <DependentUpon>Boletim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\Aluno\Frequencia.resx">
+      <DependentUpon>Frequencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\Professor\Boletim.resx">
+      <DependentUpon>Boletim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\Professor\Frequencia.resx">
+      <DependentUpon>Frequencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\Professor\Professor.resx">
+      <DependentUpon>Professor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -470,6 +524,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tarefas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aluno1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boletim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frequencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfButton2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
