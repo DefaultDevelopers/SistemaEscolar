@@ -1,0 +1,6 @@
+
+#21/11
+Sugestão:
+	Analisar o banco e identificar erros ou melhorias.
+Feito:
+	Início do Script do banco.

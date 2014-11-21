@@ -264,7 +264,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(299, 303);
+            this.btnAlterar.Location = new System.Drawing.Point(299, 308);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(105, 42);
             this.btnAlterar.TabIndex = 8;
@@ -273,7 +273,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(438, 303);
+            this.btnLimpar.Location = new System.Drawing.Point(438, 307);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(105, 42);
             this.btnLimpar.TabIndex = 9;
