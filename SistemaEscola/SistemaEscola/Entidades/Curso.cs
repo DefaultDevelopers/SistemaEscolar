@@ -22,7 +22,7 @@ namespace SistemaEscola.Entidades
             set { turno = value; }
         }        
 
-        public String Curso
+        public String Cursos
         {
             get { return curso; }
             set { curso = value; }

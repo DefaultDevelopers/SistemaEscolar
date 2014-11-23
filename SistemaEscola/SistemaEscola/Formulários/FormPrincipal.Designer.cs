@@ -28,69 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.arrozToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.feijãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.contasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entrarComoAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaAcadêmicoAlphaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnProfessor = new System.Windows.Forms.Button();
-            this.btnAluno = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arrozToolStripMenuItem,
-            this.feijãoToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(106, 48);
-            // 
-            // arrozToolStripMenuItem
-            // 
-            this.arrozToolStripMenuItem.Name = "arrozToolStripMenuItem";
-            this.arrozToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.arrozToolStripMenuItem.Text = "Arroz";
-            // 
-            // feijãoToolStripMenuItem
-            // 
-            this.feijãoToolStripMenuItem.Name = "feijãoToolStripMenuItem";
-            this.feijãoToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.feijãoToolStripMenuItem.Text = "Feijão";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contasToolStripMenuItem,
             this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(541, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // contasToolStripMenuItem
-            // 
-            this.contasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.entrarComoAdminToolStripMenuItem});
-            this.contasToolStripMenuItem.Name = "contasToolStripMenuItem";
-            this.contasToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.contasToolStripMenuItem.Text = "Opções";
-            // 
-            // entrarComoAdminToolStripMenuItem
-            // 
-            this.entrarComoAdminToolStripMenuItem.Name = "entrarComoAdminToolStripMenuItem";
-            this.entrarComoAdminToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.entrarComoAdminToolStripMenuItem.Text = "Entrar como Admin";
-            this.entrarComoAdminToolStripMenuItem.Click += new System.EventHandler(this.entrarComoAdminToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -103,29 +59,21 @@
             // sistemaAcadêmicoAlphaToolStripMenuItem
             // 
             this.sistemaAcadêmicoAlphaToolStripMenuItem.Name = "sistemaAcadêmicoAlphaToolStripMenuItem";
-            this.sistemaAcadêmicoAlphaToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.sistemaAcadêmicoAlphaToolStripMenuItem.Text = "Sistema Acadêmico Alpha";
+            this.sistemaAcadêmicoAlphaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.sistemaAcadêmicoAlphaToolStripMenuItem.Text = "Sistema Acadêmico";
+            this.sistemaAcadêmicoAlphaToolStripMenuItem.Click += new System.EventHandler(this.sistemaAcadêmicoAlphaToolStripMenuItem_Click);
             // 
-            // btnProfessor
+            // btnLogin
             // 
-            this.btnProfessor.Location = new System.Drawing.Point(328, 238);
-            this.btnProfessor.Name = "btnProfessor";
-            this.btnProfessor.Size = new System.Drawing.Size(141, 53);
-            this.btnProfessor.TabIndex = 3;
-            this.btnProfessor.Text = "Professor";
-            this.btnProfessor.UseVisualStyleBackColor = true;
-            this.btnProfessor.Click += new System.EventHandler(this.btnProfessor_Click);
-            // 
-            // btnAluno
-            // 
-            this.btnAluno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAluno.Location = new System.Drawing.Point(81, 238);
-            this.btnAluno.Name = "btnAluno";
-            this.btnAluno.Size = new System.Drawing.Size(141, 53);
-            this.btnAluno.TabIndex = 2;
-            this.btnAluno.Text = "Aluno";
-            this.btnAluno.UseVisualStyleBackColor = true;
-            this.btnAluno.Click += new System.EventHandler(this.btnAluno_Click);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.Location = new System.Drawing.Point(81, 213);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(388, 53);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Faça Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox1
             // 
@@ -140,17 +88,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 313);
+            this.ClientSize = new System.Drawing.Size(541, 282);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnProfessor);
-            this.Controls.Add(this.btnAluno);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Escolar";
-            this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -161,15 +107,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem arrozToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem feijãoToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem contasToolStripMenuItem;
-        private System.Windows.Forms.Button btnAluno;
-        private System.Windows.Forms.Button btnProfessor;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem entrarComoAdminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sistemaAcadêmicoAlphaToolStripMenuItem;
     }

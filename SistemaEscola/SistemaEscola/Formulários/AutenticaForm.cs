@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEscola.Classe;
 
 namespace SistemaEscola.Formulários
 {
@@ -16,5 +17,17 @@ namespace SistemaEscola.Formulários
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Autenticacao aut = new Autenticacao();
+
+            String login = txtAutLogin.Text;
+            int senha = Convert.ToInt32(txtAutSenha.Text);
+
+            aut.verificaLogin(login, senha);
+
+            this.Close();
+        }        
     }
 }

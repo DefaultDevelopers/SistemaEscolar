@@ -32,8 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,11 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classe\Autenticacao.cs" />
+    <Compile Include="Classe\Banco.cs" />
+    <Compile Include="DAO\DisciplinaDAO.cs" />
+    <Compile Include="DAO\AlunoDAO.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="DAO\MatriculaDAO.cs" />
+    <Compile Include="DAO\ProfessorDAO.cs" />
     <Compile Include="Entidades\Aluno.cs" />
     <Compile Include="Entidades\Curso.cs" />
     <Compile Include="Entidades\Disciplina.cs" />
-    <Compile Include="Entidades\Endereco.cs" />
     <Compile Include="Entidades\Frequencia.cs" />
+    <Compile Include="Entidades\Login.cs" />
+    <Compile Include="Entidades\Matricula.cs" />
     <Compile Include="Entidades\Mensagem.cs" />
     <Compile Include="Entidades\Professor.cs" />
     <Compile Include="Entidades\Tarefa.cs" />
@@ -269,23 +281,29 @@
     <Compile Include="Formulários\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Aluno\Aluno.cs">
+    <Compile Include="Formulários\Sobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Aluno\Aluno.Designer.cs">
-      <DependentUpon>Aluno.cs</DependentUpon>
+    <Compile Include="Formulários\Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Aluno\Boletim.cs">
+    <Compile Include="Formulários\Usuarios\AlunoForms\AlunoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Aluno\Boletim.Designer.cs">
-      <DependentUpon>Boletim.cs</DependentUpon>
+    <Compile Include="Formulários\Usuarios\AlunoForms\AlunoForm.Designer.cs">
+      <DependentUpon>AlunoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Aluno\Frequencia.cs">
+    <Compile Include="Formulários\Usuarios\AlunoForms\BoletimForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Aluno\Frequencia.Designer.cs">
-      <DependentUpon>Frequencia.cs</DependentUpon>
+    <Compile Include="Formulários\Usuarios\AlunoForms\BoletimForm.Designer.cs">
+      <DependentUpon>BoletimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\AlunoForms\FrequenciaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Usuarios\AlunoForms\FrequenciaForm.Designer.cs">
+      <DependentUpon>FrequenciaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Usuarios\Professor\Boletim.cs">
       <SubType>Form</SubType>
@@ -415,14 +433,17 @@
     <EmbeddedResource Include="Formulários\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Usuarios\Aluno\Aluno.resx">
-      <DependentUpon>Aluno.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Usuarios\Aluno\Boletim.resx">
-      <DependentUpon>Boletim.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\Usuarios\AlunoForms\AlunoForm.resx">
+      <DependentUpon>AlunoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Usuarios\Aluno\Frequencia.resx">
-      <DependentUpon>Frequencia.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\Usuarios\AlunoForms\BoletimForm.resx">
+      <DependentUpon>BoletimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Usuarios\AlunoForms\FrequenciaForm.resx">
+      <DependentUpon>FrequenciaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Usuarios\Professor\Boletim.resx">
       <DependentUpon>Boletim.cs</DependentUpon>
@@ -445,6 +466,8 @@
     </Compile>
     <None Include="Properties\DataSources\SistemaEscola.Entidades.Administrador.datasource" />
     <None Include="Properties\DataSources\SistemaEscola.Entidades.Aluno.datasource" />
+    <None Include="Properties\DataSources\SistemaEscola.Entidades.Curso.datasource" />
+    <None Include="Properties\DataSources\SistemaEscola.Entidades.Curso1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -459,8 +482,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
-    <Folder Include="DAO\" />
+    <None Include="Resources\IFMA.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Projeto Banner - Photoshop1.jpg" />

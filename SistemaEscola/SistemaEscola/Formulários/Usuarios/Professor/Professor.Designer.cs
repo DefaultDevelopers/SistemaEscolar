@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Professor));
             this.btnMensagem = new System.Windows.Forms.Button();
             this.btnFrequencia = new System.Windows.Forms.Button();
             this.btnTarefas = new System.Windows.Forms.Button();
@@ -96,7 +97,9 @@
             this.Controls.Add(this.btnTarefas);
             this.Controls.Add(this.btnBoletim);
             this.Controls.Add(this.picBoxProf);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Professor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professor";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProf)).EndInit();
             this.ResumeLayout(false);

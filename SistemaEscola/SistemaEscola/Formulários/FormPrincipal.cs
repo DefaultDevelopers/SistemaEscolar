@@ -24,16 +24,16 @@ namespace SistemaEscola
             autForm.ShowDialog();
         }
 
-        private void btnAluno_Click(object sender, EventArgs e)
+        private void sistemaAcadêmicoAlphaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AutenticaForm autFormAluno = new AutenticaForm();
-            autFormAluno.ShowDialog();
+            Sobre sobre = new Sobre();
+            sobre.Show();
         }
 
-        private void btnProfessor_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            AutenticaForm autFormProf = new AutenticaForm();
-            autFormProf.ShowDialog();
+            AutenticaForm autentica = new AutenticaForm();
+            autentica.Show();            
         }
     }
 }

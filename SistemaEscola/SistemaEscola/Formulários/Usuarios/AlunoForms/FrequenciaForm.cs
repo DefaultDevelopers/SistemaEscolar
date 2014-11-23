@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaEscola.Formulários.Usuarios
+namespace SistemaEscola.Formulários.Usuarios.AlunoForms
 {
-    public partial class Boletim : Form
+    public partial class FrequenciaForm : Form
     {
-        public Boletim()
+        public FrequenciaForm()
         {
             InitializeComponent();
         }

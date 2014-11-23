@@ -60,6 +60,7 @@
             this.btnAdmProf.TabIndex = 2;
             this.btnAdmProf.Text = "Professor";
             this.btnAdmProf.UseVisualStyleBackColor = true;
+            this.btnAdmProf.Click += new System.EventHandler(this.btnAdmProf_Click);
             // 
             // btnAdmTurma
             // 
@@ -69,6 +70,7 @@
             this.btnAdmTurma.TabIndex = 4;
             this.btnAdmTurma.Text = "Turma";
             this.btnAdmTurma.UseVisualStyleBackColor = true;
+            this.btnAdmTurma.Click += new System.EventHandler(this.btnAdmTurma_Click);
             // 
             // btnAdmDisc
             // 
@@ -78,6 +80,7 @@
             this.btnAdmDisc.TabIndex = 6;
             this.btnAdmDisc.Text = "Disciplina";
             this.btnAdmDisc.UseVisualStyleBackColor = true;
+            this.btnAdmDisc.Click += new System.EventHandler(this.btnAdmDisc_Click);
             // 
             // btnAdmMatr
             // 
@@ -87,6 +90,7 @@
             this.btnAdmMatr.TabIndex = 8;
             this.btnAdmMatr.Text = "Matrícula";
             this.btnAdmMatr.UseVisualStyleBackColor = true;
+            this.btnAdmMatr.Click += new System.EventHandler(this.btnAdmMatr_Click);
             // 
             // btnAdmProfTurma
             // 
@@ -96,6 +100,7 @@
             this.btnAdmProfTurma.TabIndex = 10;
             this.btnAdmProfTurma.Text = "Professor/Turma";
             this.btnAdmProfTurma.UseVisualStyleBackColor = true;
+            this.btnAdmProfTurma.Click += new System.EventHandler(this.btnAdmProfTurma_Click);
             // 
             // btnAdmDel
             // 
@@ -105,6 +110,7 @@
             this.btnAdmDel.TabIndex = 12;
             this.btnAdmDel.Text = "Deletar Usuário";
             this.btnAdmDel.UseVisualStyleBackColor = true;
+            this.btnAdmDel.Click += new System.EventHandler(this.btnAdmDel_Click);
             // 
             // btnAdmPesq
             // 
@@ -114,6 +120,7 @@
             this.btnAdmPesq.TabIndex = 14;
             this.btnAdmPesq.Text = "Pesquisar Usuário";
             this.btnAdmPesq.UseVisualStyleBackColor = true;
+            this.btnAdmPesq.Click += new System.EventHandler(this.btnAdmPesq_Click);
             // 
             // pictureBox4
             // 

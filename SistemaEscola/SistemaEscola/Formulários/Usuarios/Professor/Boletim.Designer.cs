@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boletim));
             this.dgvBoletim = new System.Windows.Forms.DataGridView();
             this.picBoxBoletim = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -125,6 +126,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvBoletim);
             this.Controls.Add(this.picBoxBoletim);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Boletim";
             this.Text = "Boletim";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBoletim)).EndInit();

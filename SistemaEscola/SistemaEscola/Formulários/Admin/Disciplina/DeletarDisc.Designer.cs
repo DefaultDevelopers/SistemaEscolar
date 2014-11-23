@@ -161,7 +161,7 @@
             this.Controls.Add(this.lblDeletEscolha);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletarDisc";
-            this.Text = "DeletarDisc";
+            this.Text = "Deletar Discicplina";
             this.Load += new System.EventHandler(this.DeletarDisc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

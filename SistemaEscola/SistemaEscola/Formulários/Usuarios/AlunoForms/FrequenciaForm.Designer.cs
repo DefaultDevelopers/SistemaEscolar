@@ -1,6 +1,6 @@
-﻿namespace SistemaEscola.Formulários.Usuarios
+﻿namespace SistemaEscola.Formulários.Usuarios.AlunoForms
 {
-    partial class Frequencia
+    partial class FrequenciaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frequencia));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrequenciaForm));
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.dgvFrequencia = new System.Windows.Forms.DataGridView();
             this.lblAno = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.btnPesquisar.Location = new System.Drawing.Point(342, 36);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(129, 23);
-            this.btnPesquisar.TabIndex = 9;
+            this.btnPesquisar.TabIndex = 14;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
@@ -53,7 +53,7 @@
             this.dgvFrequencia.Location = new System.Drawing.Point(12, 86);
             this.dgvFrequencia.Name = "dgvFrequencia";
             this.dgvFrequencia.Size = new System.Drawing.Size(459, 219);
-            this.dgvFrequencia.TabIndex = 8;
+            this.dgvFrequencia.TabIndex = 13;
             // 
             // lblAno
             // 
@@ -62,7 +62,7 @@
             this.lblAno.Location = new System.Drawing.Point(89, 39);
             this.lblAno.Name = "lblAno";
             this.lblAno.Size = new System.Drawing.Size(109, 16);
-            this.lblAno.TabIndex = 7;
+            this.lblAno.TabIndex = 12;
             this.lblAno.Text = "Selecione o ano:";
             // 
             // txtAno
@@ -71,7 +71,7 @@
             this.txtAno.MaxLength = 4;
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(132, 20);
-            this.txtAno.TabIndex = 6;
+            this.txtAno.TabIndex = 11;
             // 
             // picBoxFrequencia
             // 
@@ -80,21 +80,22 @@
             this.picBoxFrequencia.Name = "picBoxFrequencia";
             this.picBoxFrequencia.Size = new System.Drawing.Size(71, 68);
             this.picBoxFrequencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxFrequencia.TabIndex = 5;
+            this.picBoxFrequencia.TabIndex = 10;
             this.picBoxFrequencia.TabStop = false;
             // 
-            // Frequencia
+            // FrequenciaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 322);
+            this.ClientSize = new System.Drawing.Size(492, 320);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvFrequencia);
             this.Controls.Add(this.lblAno);
             this.Controls.Add(this.txtAno);
             this.Controls.Add(this.picBoxFrequencia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Frequencia";
+            this.Name = "FrequenciaForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frequência";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFrequencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxFrequencia)).EndInit();

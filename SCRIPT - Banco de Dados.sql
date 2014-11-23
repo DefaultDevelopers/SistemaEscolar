@@ -1,3 +1,10 @@
+#User
+INSERT INTO User (idUser, user) VALUES (001, "Adm");
+INSERT INTO User (idUser, user) VALUES (002, "Professor");
+INSERT INTO User (idUser, user) VALUES (003, "Aluno");
+
+SELECT * FROM User;
+
 #Tipos
 INSERT INTO Tipo (idTipo, tipo) VALUES (001, "Integrado");
 INSERT INTO Tipo (idTipo, tipo) VALUES (002, "Concomitante");
@@ -11,6 +18,9 @@ INSERT INTO Turno (idTurno, turno) VALUES (002, "Vespertino");
 INSERT INTO Turno (idTurno, turno) VALUES (003, "Noturno");
 #TesteTurno
 SELECT * FROM Turno;
+
+#Turma
+INSERT INTO Turma (idTurma, idCurso) VALUES (610, 205);
 
 #Cursos
 INSERT INTO Curso (idCurso, idTipo, idTurno, nome, descricao) VALUES (205, 001, 002, "Informática", "Curso direcionado ao ensino básico de programação de computadores.");
@@ -28,3 +38,16 @@ INSERT INTO Disciplina (idDisciplina, idCurso, carga_horaria, nome, descricao) V
 #TestesDisciplina
 SELECT * FROM Disciplina;
 SELECT idDisciplina as 'ID da Disciplina', d.nome as 'Nome', c.nome as 'Curso a que pertence', carga_horaria as 'Carga Horária', d.descricao as 'Descrição' FROM Disciplina=d, Curso=c WHERE d.idCurso=c.idCurso;
+
+#Login
+INSERT INTO Login (Login, Senha, idUser) VALUES (2012145234, 123456, 003);
+INSERT INTO Login (Login, Senha, idUser) VALUES (20145768, 123456, 002);
+INSERT INTO Login (Login, Senha, idUser) VALUES ("admin", 12345, 001);
+
+SELECT * FROM Login;
+SELECT Login , Senha, u.user as 'Tipo de usuário' FROM Login=l, User=u WHERE l.idUser=u.idUser;
+
+SELECT idUser FROM Login WHERE Login = 'admin';
+
+SELECT nome, idCurso FROM Curso WHERE idTurno = 002 AND idTipo = 1;
+

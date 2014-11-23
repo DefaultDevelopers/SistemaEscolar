@@ -10,30 +10,30 @@ using System.Windows.Forms;
 using SistemaEscola.Formulários.Admin.Tarefas;
 using SistemaEscola.Formulários.Admin;
 
-namespace SistemaEscola.Formulários.Usuarios
+namespace SistemaEscola.Formulários.Usuarios.AlunoForms
 {
-    public partial class Aluno : Form
+    public partial class AlunoForm : Form
     {
-        public Aluno()
+        public AlunoForm()
         {
             InitializeComponent();
         }
 
-        private void btnTarefas_Click(object sender, EventArgs e)
-        {
-            Tarefas tarefas = new Tarefas();
-            tarefas.Show();
-        }
-
         private void btnBoletim_Click(object sender, EventArgs e)
         {
-            Boletim boletim = new Boletim();
-            boletim.Show();
+            BoletimForm bol = new BoletimForm();
+            bol.Show();
+        }
+
+        private void btnTarefas_Click(object sender, EventArgs e)
+        {
+            Tarefas tar = new Tarefas();
+            tar.Show();
         }
 
         private void btnFrequencia_Click(object sender, EventArgs e)
         {
-            Frequencia freq = new Frequencia();
+            FrequenciaForm freq = new FrequenciaForm();
             freq.Show();
         }
 

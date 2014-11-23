@@ -8,7 +8,7 @@ namespace SistemaEscola.Entidades
 {
     class Mensagem
     {
-        String assunto, mensagem;
+        String assunto, mens;
         DateTime dataCriada;       
 
         public String Assunto
@@ -17,10 +17,10 @@ namespace SistemaEscola.Entidades
             set { assunto = value; }
         }        
 
-        public String Mensagem
+        public String Mens
         {
-            get { return mensagem; }
-            set { mensagem = value; }
+            get { return mens; }
+            set { mens = value; }
         }        
 
         public DateTime DataCriada
