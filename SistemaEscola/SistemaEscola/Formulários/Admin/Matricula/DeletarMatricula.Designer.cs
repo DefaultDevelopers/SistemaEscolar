@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeletarMatricula));
             this.lblCod = new System.Windows.Forms.Label();
             this.btnPesquisarMatr = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtCodPesq = new System.Windows.Forms.MaskedTextBox();
+            this.dgvDados = new System.Windows.Forms.DataGridView();
             this.btnDeletarMatr = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.lblConfirme = new System.Windows.Forms.Label();
             this.txtCodDel = new System.Windows.Forms.MaskedTextBox();
             this.lblCodDel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCod
@@ -59,22 +59,23 @@
             this.btnPesquisarMatr.TabIndex = 2;
             this.btnPesquisarMatr.Text = "Pesquisar";
             this.btnPesquisarMatr.UseVisualStyleBackColor = true;
+            this.btnPesquisarMatr.Click += new System.EventHandler(this.btnPesquisarMatr_Click);
             // 
-            // maskedTextBox1
+            // txtCodPesq
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(226, 24);
-            this.maskedTextBox1.Mask = "0000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(173, 20);
-            this.maskedTextBox1.TabIndex = 3;
+            this.txtCodPesq.Location = new System.Drawing.Point(226, 24);
+            this.txtCodPesq.Mask = "00000000000";
+            this.txtCodPesq.Name = "txtCodPesq";
+            this.txtCodPesq.Size = new System.Drawing.Size(173, 20);
+            this.txtCodPesq.TabIndex = 3;
             // 
-            // dataGridView1
+            // dgvDados
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 89);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(532, 155);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDados.Location = new System.Drawing.Point(15, 89);
+            this.dgvDados.Name = "dgvDados";
+            this.dgvDados.Size = new System.Drawing.Size(532, 155);
+            this.dgvDados.TabIndex = 4;
             // 
             // btnDeletarMatr
             // 
@@ -84,6 +85,7 @@
             this.btnDeletarMatr.TabIndex = 5;
             this.btnDeletarMatr.Text = "Deletar";
             this.btnDeletarMatr.UseVisualStyleBackColor = true;
+            this.btnDeletarMatr.Click += new System.EventHandler(this.btnDeletarMatr_Click);
             // 
             // btnLimpar
             // 
@@ -107,7 +109,7 @@
             // txtCodDel
             // 
             this.txtCodDel.Location = new System.Drawing.Point(310, 267);
-            this.txtCodDel.Mask = "0000000000";
+            this.txtCodDel.Mask = "00000000000";
             this.txtCodDel.Name = "txtCodDel";
             this.txtCodDel.Size = new System.Drawing.Size(173, 20);
             this.txtCodDel.TabIndex = 9;
@@ -132,14 +134,14 @@
             this.Controls.Add(this.lblConfirme);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnDeletarMatr);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.dgvDados);
+            this.Controls.Add(this.txtCodPesq);
             this.Controls.Add(this.btnPesquisarMatr);
             this.Controls.Add(this.lblCod);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletarMatricula";
             this.Text = "Deletar Matricula";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,8 +151,8 @@
 
         private System.Windows.Forms.Label lblCod;
         private System.Windows.Forms.Button btnPesquisarMatr;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MaskedTextBox txtCodPesq;
+        private System.Windows.Forms.DataGridView dgvDados;
         private System.Windows.Forms.Button btnDeletarMatr;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label lblConfirme;

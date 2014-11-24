@@ -8,7 +8,8 @@ namespace SistemaEscola.Entidades
 {
     class Login
     {
-        private String login, senha;        
+        private String login;
+        private int senha, user;
 
         public String Log
         {
@@ -16,10 +17,16 @@ namespace SistemaEscola.Entidades
             set { login = value; }
         }
 
-        public String Senha
+        public int Senha
         {
             get { return senha; }
             set { senha = value; }
-        }        
+        }
+
+        public int User
+        {
+            get { return user; }
+            set { user = value; }
+        }  
     }
 }

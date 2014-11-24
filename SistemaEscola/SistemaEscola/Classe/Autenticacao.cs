@@ -84,7 +84,7 @@ namespace SistemaEscola.Classe
         {
             int tipoUser = 0;
 
-            String UserCmd = "SELECT idUser FROM Login WHERE Login = '" + login + "'";
+            String UserCmd = "SELECT User_idUser FROM Login WHERE Login = '" + login + "'";
 
             MySqlCommand cmd2 = new MySqlCommand(UserCmd, con);
             con.Open();

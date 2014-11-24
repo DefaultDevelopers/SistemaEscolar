@@ -67,15 +67,15 @@
             // 
             // txtCodTurma
             // 
-            this.txtCodTurma.Location = new System.Drawing.Point(140, 23);
+            this.txtCodTurma.Location = new System.Drawing.Point(172, 25);
             this.txtCodTurma.Mask = "0000";
             this.txtCodTurma.Name = "txtCodTurma";
-            this.txtCodTurma.Size = new System.Drawing.Size(164, 20);
+            this.txtCodTurma.Size = new System.Drawing.Size(132, 20);
             this.txtCodTurma.TabIndex = 9;
             // 
             // btnPesquisarTurma
             // 
-            this.btnPesquisarTurma.Location = new System.Drawing.Point(310, 21);
+            this.btnPesquisarTurma.Location = new System.Drawing.Point(309, 23);
             this.btnPesquisarTurma.Name = "btnPesquisarTurma";
             this.btnPesquisarTurma.Size = new System.Drawing.Size(99, 23);
             this.btnPesquisarTurma.TabIndex = 8;
@@ -92,9 +92,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 13);
+            this.label1.Size = new System.Drawing.Size(157, 16);
             this.label1.TabIndex = 14;
             this.label1.Text = "Digite o código da turma:";
             // 

@@ -11,15 +11,11 @@ namespace SistemaEscola.Entidades
         int idTurma, idCurso;
         String nome;
 
-        
-
         public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
-        }
-
-        
+        }        
 
         public int IdCurso
         {
@@ -31,9 +27,6 @@ namespace SistemaEscola.Entidades
         {
             get { return nome; }
             set { nome = value; }
-        }
-        
-        
-        
+        }        
     }
 }

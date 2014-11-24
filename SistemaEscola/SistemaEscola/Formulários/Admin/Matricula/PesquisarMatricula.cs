@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using SistemaEscola.Classe;
+using SistemaEscola.DAO;
 
 namespace SistemaEscola.Formulários.Admin.Matricula
 {
@@ -15,6 +18,13 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         public PesquisarMatricula()
         {
             InitializeComponent();
+        }
+
+        MatriculaDAO matrDAO = new MatriculaDAO();
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            matrDAO.pesquisaMatricula(txtCodPesq, dgvDados);
         }
     }
 }

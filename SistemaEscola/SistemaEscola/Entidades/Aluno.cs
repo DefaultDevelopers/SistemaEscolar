@@ -10,7 +10,6 @@ namespace SistemaEscola.Entidades
     {
         String  login, nome, telefone, email, cpf, endereco;
         DateTime dataNasc;
-        int senha;    
 
         public String Login
         {
@@ -52,13 +51,6 @@ namespace SistemaEscola.Entidades
         {
             get { return dataNasc; }
             set { dataNasc = value; }
-        }       
-
-        public int Senha
-        {
-            get { return senha; }
-            set { senha = value; }
-        }
-        
+        }        
     }
 }

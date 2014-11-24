@@ -10,20 +10,15 @@ using SistemaEscola.Classe;
 namespace SistemaEscola.DAO
 {
     class ProfessorDAO
-    {
-        Banco b = new Banco();
-        private MySqlConnection con;
-        private MySqlCommand cmd;     
-   
-        public ProfessorDAO() {
-        con = new MySqlConnection(b.Conex());
-        }
-
+    {   
         public void salvarProf(Professor professor)
         {
+            Banco b = new Banco();
+            MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "insert into Professor (LoginProf, nome, email, cpf, telefone, data_nascimento, grau_formacao, formacao, endereco) values (@login, @nome, @email, @cpf, @tel, @data, @grau, @formacao, @endereco)";
+
+            cmd.CommandText = "insert into Professor (Login_Login, nome, email, cpf, telefone, data_nascimento, grau_formacao, formacao, endereco) values (@login, @nome, @email, @cpf, @tel, @data, @grau, @formacao, @endereco)";
             cmd.Parameters.AddWithValue("@login", professor.Login);
             cmd.Parameters.AddWithValue("@nm", professor.Nome);
             cmd.Parameters.AddWithValue("@email", professor.Email);
