@@ -72,7 +72,7 @@
             this.btnLogin.Location = new System.Drawing.Point(121, 149);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 51);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Ok";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -83,7 +83,7 @@
             this.txtAutSenha.MaxLength = 15;
             this.txtAutSenha.Name = "txtAutSenha";
             this.txtAutSenha.Size = new System.Drawing.Size(267, 20);
-            this.txtAutSenha.TabIndex = 7;
+            this.txtAutSenha.TabIndex = 2;
             // 
             // txtAutLogin
             // 
@@ -91,7 +91,7 @@
             this.txtAutLogin.MaxLength = 10;
             this.txtAutLogin.Name = "txtAutLogin";
             this.txtAutLogin.Size = new System.Drawing.Size(267, 20);
-            this.txtAutLogin.TabIndex = 8;
+            this.txtAutLogin.TabIndex = 1;
             // 
             // AutenticaForm
             // 

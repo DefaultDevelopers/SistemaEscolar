@@ -30,14 +30,13 @@ namespace SistemaEscola.DAO
             cmbTipo.DisplayMember = "tipo";
             cmbTipo.ValueMember = "idTipo";
             
-            con.Close(); 
-            
-            cmbTipo.Text = "Escolha o tipo";
+            con.Close();
+
+            cmbTipo.Text = "";
         }
 
         public void comboCurso(ComboBox cmbCurso, int idTipo, int idTurno)
         {
-            //Banco b = new Banco();
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
@@ -60,7 +59,6 @@ namespace SistemaEscola.DAO
 
         public void comboTurma(ComboBox cmbTurma, int idCurso)
         {
-           // Banco b = new Banco();
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
@@ -100,18 +98,14 @@ namespace SistemaEscola.DAO
             MessageBox.Show("Matrícula finalizada com sucesso!");
         }
 
-        public void pesquisaMatricula(MaskedTextBox txtCodDel, DataGridView dgvDados)
+        public void pesquisaMatricula(DataGridView dgvDados)
         {
-            Banco b = new Banco();
-
-            String cod = txtCodDel.Text;
-
             MySqlConnection con = new MySqlConnection(b.Conex());
 
             con.Open();
 
             MySqlDataAdapter mySqlDataAdapter;
-            mySqlDataAdapter = new MySqlDataAdapter("SELECT idAluno as 'ID do Aluno', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento', endereco as 'Endereço' FROM Aluno, Matricula WHERE Login_Login = '" + cod + "' AND Aluno_Login_Login = '" + cod + "'", con);
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT idAluno as 'ID do Aluno', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento', endereco as 'Endereço' FROM Login, Aluno, Matricula WHERE Login = Login_Login ORDER BY nome", con);
             DataSet DS = new DataSet();
             mySqlDataAdapter.Fill(DS);
             dgvDados.DataSource = DS.Tables[0];

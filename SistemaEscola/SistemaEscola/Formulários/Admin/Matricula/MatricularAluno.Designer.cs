@@ -86,7 +86,7 @@
             this.cmbCurso.Location = new System.Drawing.Point(64, 111);
             this.cmbCurso.Name = "cmbCurso";
             this.cmbCurso.Size = new System.Drawing.Size(342, 24);
-            this.cmbCurso.TabIndex = 10;
+            this.cmbCurso.TabIndex = 82;
             this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.cmbCurso_SelectedIndexChanged);
             // 
             // lblTipo
@@ -113,7 +113,7 @@
             this.cmbTipo.Location = new System.Drawing.Point(55, 81);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(351, 24);
-            this.cmbTipo.TabIndex = 7;
+            this.cmbTipo.TabIndex = 81;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectionChangeCommitted);
             // 
             // btnSalvar
@@ -121,7 +121,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(90, 558);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(96, 40);
-            this.btnSalvar.TabIndex = 11;
+            this.btnSalvar.TabIndex = 84;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -131,7 +131,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(284, 558);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(96, 40);
-            this.btnLimpar.TabIndex = 12;
+            this.btnLimpar.TabIndex = 85;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
@@ -141,7 +141,7 @@
             this.txtCPF.Mask = "000.000.000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(144, 22);
-            this.txtCPF.TabIndex = 56;
+            this.txtCPF.TabIndex = 70;
             // 
             // lblCPF
             // 
@@ -160,7 +160,7 @@
             this.dtpDataNasc.Location = new System.Drawing.Point(220, 48);
             this.dtpDataNasc.Name = "dtpDataNasc";
             this.dtpDataNasc.Size = new System.Drawing.Size(180, 22);
-            this.dtpDataNasc.TabIndex = 53;
+            this.dtpDataNasc.TabIndex = 69;
             // 
             // txtEmail
             // 
@@ -168,7 +168,7 @@
             this.txtEmail.MaxLength = 45;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(151, 22);
-            this.txtEmail.TabIndex = 52;
+            this.txtEmail.TabIndex = 68;
             // 
             // txtTelefone
             // 
@@ -176,7 +176,7 @@
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(133, 22);
-            this.txtTelefone.TabIndex = 51;
+            this.txtTelefone.TabIndex = 67;
             // 
             // txtNome
             // 
@@ -184,7 +184,7 @@
             this.txtNome.MaxLength = 45;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(151, 22);
-            this.txtNome.TabIndex = 50;
+            this.txtNome.TabIndex = 66;
             // 
             // grpbEnd
             // 
@@ -204,7 +204,7 @@
             this.grpbEnd.Location = new System.Drawing.Point(15, 117);
             this.grpbEnd.Name = "grpbEnd";
             this.grpbEnd.Size = new System.Drawing.Size(390, 114);
-            this.grpbEnd.TabIndex = 47;
+            this.grpbEnd.TabIndex = 71;
             this.grpbEnd.TabStop = false;
             this.grpbEnd.Text = "Endereço";
             // 
@@ -213,14 +213,14 @@
             this.txtCidade.Location = new System.Drawing.Point(258, 49);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(127, 22);
-            this.txtCidade.TabIndex = 38;
+            this.txtCidade.TabIndex = 76;
             // 
             // txtEstado
             // 
             this.txtEstado.Location = new System.Drawing.Point(257, 21);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(127, 22);
-            this.txtEstado.TabIndex = 37;
+            this.txtEstado.TabIndex = 75;
             // 
             // txtCEP
             // 
@@ -228,14 +228,14 @@
             this.txtCEP.Mask = "00000-000";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(153, 22);
-            this.txtCEP.TabIndex = 36;
+            this.txtCEP.TabIndex = 77;
             // 
             // txtNum
             // 
             this.txtNum.Location = new System.Drawing.Point(91, 81);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(100, 22);
-            this.txtNum.TabIndex = 31;
+            this.txtNum.TabIndex = 74;
             // 
             // txtBairro
             // 
@@ -243,7 +243,7 @@
             this.txtBairro.MaxLength = 25;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(111, 22);
-            this.txtBairro.TabIndex = 30;
+            this.txtBairro.TabIndex = 73;
             // 
             // txtRua
             // 
@@ -251,7 +251,7 @@
             this.txtRua.MaxLength = 45;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(121, 22);
-            this.txtRua.TabIndex = 27;
+            this.txtRua.TabIndex = 72;
             // 
             // lblCEP
             // 
@@ -371,7 +371,7 @@
             this.grpbDadosAluno.Location = new System.Drawing.Point(12, 87);
             this.grpbDadosAluno.Name = "grpbDadosAluno";
             this.grpbDadosAluno.Size = new System.Drawing.Size(420, 240);
-            this.grpbDadosAluno.TabIndex = 57;
+            this.grpbDadosAluno.TabIndex = 65;
             this.grpbDadosAluno.TabStop = false;
             this.grpbDadosAluno.Text = "Dados do aluno";
             // 
@@ -389,7 +389,7 @@
             this.grpbDadosCurso.Location = new System.Drawing.Point(12, 375);
             this.grpbDadosCurso.Name = "grpbDadosCurso";
             this.grpbDadosCurso.Size = new System.Drawing.Size(420, 176);
-            this.grpbDadosCurso.TabIndex = 58;
+            this.grpbDadosCurso.TabIndex = 79;
             this.grpbDadosCurso.TabStop = false;
             this.grpbDadosCurso.Text = "Dados do curso";
             // 
@@ -410,9 +410,10 @@
             this.grpbTurno.Location = new System.Drawing.Point(16, 19);
             this.grpbTurno.Name = "grpbTurno";
             this.grpbTurno.Size = new System.Drawing.Size(390, 56);
-            this.grpbTurno.TabIndex = 1;
+            this.grpbTurno.TabIndex = 80;
             this.grpbTurno.TabStop = false;
             this.grpbTurno.Text = "Turno";
+            this.grpbTurno.Enter += new System.EventHandler(this.grpbTurno_SelectionChangedCommitted);
             // 
             // rbNoturno
             // 
@@ -423,7 +424,6 @@
             this.rbNoturno.TabIndex = 2;
             this.rbNoturno.Text = "Noturno";
             this.rbNoturno.UseVisualStyleBackColor = true;
-            this.rbNoturno.CheckedChanged += new System.EventHandler(this.rbNoturno_CheckedChanged);
             // 
             // rbVespertino
             // 
@@ -434,7 +434,6 @@
             this.rbVespertino.TabIndex = 1;
             this.rbVespertino.Text = "Vespertino";
             this.rbVespertino.UseVisualStyleBackColor = true;
-            this.rbVespertino.CheckedChanged += new System.EventHandler(this.rbVespertino_CheckedChanged);
             // 
             // rbMatutino
             // 
@@ -445,7 +444,6 @@
             this.rbMatutino.TabIndex = 0;
             this.rbMatutino.Text = "Matutino";
             this.rbMatutino.UseVisualStyleBackColor = true;
-            this.rbMatutino.CheckedChanged += new System.EventHandler(this.rbMatutino_CheckedChanged);
             // 
             // cmbTurma
             // 
@@ -453,7 +451,7 @@
             this.cmbTurma.Location = new System.Drawing.Point(64, 141);
             this.cmbTurma.Name = "cmbTurma";
             this.cmbTurma.Size = new System.Drawing.Size(342, 24);
-            this.cmbTurma.TabIndex = 12;
+            this.cmbTurma.TabIndex = 83;
             // 
             // txtLoginNumId
             // 
@@ -507,7 +505,7 @@
             this.txtSenha.Mask = "0000000000";
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(111, 20);
-            this.txtSenha.TabIndex = 65;
+            this.txtSenha.TabIndex = 63;
             // 
             // btnAvançarLogin
             // 
@@ -515,7 +513,7 @@
             this.btnAvançarLogin.Location = new System.Drawing.Point(298, 39);
             this.btnAvançarLogin.Name = "btnAvançarLogin";
             this.btnAvançarLogin.Size = new System.Drawing.Size(134, 36);
-            this.btnAvançarLogin.TabIndex = 66;
+            this.btnAvançarLogin.TabIndex = 64;
             this.btnAvançarLogin.Text = "Avançar";
             this.btnAvançarLogin.UseVisualStyleBackColor = true;
             this.btnAvançarLogin.Click += new System.EventHandler(this.btnAvancarLogin_Click);
@@ -526,7 +524,7 @@
             this.btnAvancarDados.Location = new System.Drawing.Point(299, 333);
             this.btnAvancarDados.Name = "btnAvancarDados";
             this.btnAvancarDados.Size = new System.Drawing.Size(134, 36);
-            this.btnAvancarDados.TabIndex = 67;
+            this.btnAvancarDados.TabIndex = 78;
             this.btnAvancarDados.Text = "Avançar";
             this.btnAvancarDados.UseVisualStyleBackColor = true;
             this.btnAvancarDados.Click += new System.EventHandler(this.btnAvancarDados_Click);

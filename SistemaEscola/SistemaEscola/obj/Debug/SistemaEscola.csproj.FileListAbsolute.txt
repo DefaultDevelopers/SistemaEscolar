@@ -20,9 +20,6 @@ C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.pdb
 D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.exe.config
-C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Aluno.AlteraAluno.resources
-C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Aluno.Aluno.resources
-C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Aluno.CadastrarAluno.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.DeletarUsuário.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Disciplina.AlterarDisc.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Disciplina.CadastrarDisc.resources
@@ -97,3 +94,10 @@ D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\Sistema
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.AlunoForms.FrequenciaForm.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Sobre.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Sobre.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.AlunoForms.AlunoForm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.AlunoForms.BoletimForm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.AlunoForms.FrequenciaForm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Boletim.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Frequencia.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Professor.resources

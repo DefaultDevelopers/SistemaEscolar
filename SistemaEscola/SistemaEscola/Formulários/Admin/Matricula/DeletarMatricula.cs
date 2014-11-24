@@ -22,11 +22,6 @@ namespace SistemaEscola.Formulários.Admin.Matricula
 
         MatriculaDAO matrDAO = new MatriculaDAO();
 
-        private void btnPesquisarMatr_Click(object sender, EventArgs e)
-        {
-            matrDAO.pesquisaMatricula(txtCodPesq, dgvDados);
-        }
-
         private void btnDeletarMatr_Click(object sender, EventArgs e)
         {
             Banco b = new Banco();
@@ -54,6 +49,16 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             {
                 con.Close();
             }
+        }
+
+        private void DeletarMatricula_Load(object sender, EventArgs e)
+        {
+            matrDAO.pesquisaMatricula(dgvDados);
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            matrDAO.pesquisaMatricula(dgvDados);
         }
     }
 }

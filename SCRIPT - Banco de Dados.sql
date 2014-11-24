@@ -65,3 +65,7 @@ SELECT * FROM Aluno;
 
 #Matricula
 SELECT Turma_idTurma FROM Matricula WHERE Aluno_Login_Login = '20143447123';
+
+SELECT idAluno as 'ID do Aluno', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento', endereco as 'Endereço' FROM Login, Aluno, Matricula WHERE Login = Login_Login;
+
+DELETE FROM Login WHERE Login = '20149440123';

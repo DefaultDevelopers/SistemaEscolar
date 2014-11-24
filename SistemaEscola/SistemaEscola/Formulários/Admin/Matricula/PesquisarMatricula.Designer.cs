@@ -29,47 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisarMatricula));
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCodPesq = new System.Windows.Forms.MaskedTextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.dgvDados = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Digite a matrícula do aluno:";
-            // 
-            // txtCodPesq
-            // 
-            this.txtCodPesq.Location = new System.Drawing.Point(341, 21);
-            this.txtCodPesq.Mask = "00000000000";
-            this.txtCodPesq.Name = "txtCodPesq";
-            this.txtCodPesq.Size = new System.Drawing.Size(107, 20);
-            this.txtCodPesq.TabIndex = 1;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Location = new System.Drawing.Point(454, 19);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(128, 23);
-            this.btnPesquisar.TabIndex = 2;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
-            // 
             // dgvDados
             // 
             this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDados.Location = new System.Drawing.Point(12, 62);
+            this.dgvDados.Location = new System.Drawing.Point(12, 12);
             this.dgvDados.Name = "dgvDados";
-            this.dgvDados.Size = new System.Drawing.Size(692, 243);
+            this.dgvDados.Size = new System.Drawing.Size(692, 293);
             this.dgvDados.TabIndex = 3;
             // 
             // PesquisarMatricula
@@ -78,23 +47,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 318);
             this.Controls.Add(this.dgvDados);
-            this.Controls.Add(this.btnPesquisar);
-            this.Controls.Add(this.txtCodPesq);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PesquisarMatricula";
             this.Text = "Pesquisar Matrícula";
+            this.Load += new System.EventHandler(this.PesquisarMatricula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox txtCodPesq;
-        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.DataGridView dgvDados;
     }
 }

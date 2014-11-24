@@ -76,30 +76,6 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             return turno;
         }
 
-        private void rbVespertino_CheckedChanged(object sender, EventArgs e)
-        {
-            cmbTipo.Text = "";
-            cmbCurso.Text = "";
-            cmbTurma.Text = "";
-            cmbTipo.Text = "Escolha o tipo";
-        }
-
-        private void rbMatutino_CheckedChanged(object sender, EventArgs e)
-        {
-            cmbTipo.Text = "";
-            cmbCurso.Text = "";
-            cmbTurma.Text = "";
-            cmbTipo.Text = "Escolha o tipo";
-        }
-
-        private void rbNoturno_CheckedChanged(object sender, EventArgs e)
-        {
-            cmbTipo.Text = "";
-            cmbCurso.Text = "";
-            cmbTurma.Text = "";
-            cmbTipo.Text = "Escolha o tipo";
-        }
-
         private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
             int curso = Convert.ToInt32(cmbCurso.SelectedValue);
@@ -162,6 +138,13 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             matrEnt.IdTurma = turma;
 
             matrDAO.salvarMatricula(matrEnt);
+        }
+
+        private void grpbTurno_SelectionChangedCommitted(object sender, EventArgs e)
+        {
+            cmbTipo.Text = "Escolha o tipo";
+            cmbCurso.Text = "Escolha o curso";
+            cmbTurma.Text = "Escolha a turma";
         }
     }
 }

@@ -22,9 +22,9 @@ namespace SistemaEscola.Formulários.Admin.Matricula
 
         MatriculaDAO matrDAO = new MatriculaDAO();
 
-        private void btnPesquisar_Click(object sender, EventArgs e)
+        private void PesquisarMatricula_Load(object sender, EventArgs e)
         {
-            matrDAO.pesquisaMatricula(txtCodPesq, dgvDados);
+            matrDAO.pesquisaMatricula(dgvDados);
         }
     }
 }
