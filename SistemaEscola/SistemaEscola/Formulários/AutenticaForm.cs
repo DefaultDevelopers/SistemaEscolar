@@ -25,9 +25,22 @@ namespace SistemaEscola.Formulários
             String login = txtAutLogin.Text;
             int senha = Convert.ToInt32(txtAutSenha.Text);
 
-            aut.verificaLogin(login, senha);
+            aut.verificaLogin(login, senha, this);
 
-            this.Close();
-        }        
+            //this.Close();
+        }
+
+        public MaskedTextBox txtSenha
+        {
+            get
+            {
+                return txtAutSenha;
+            }
+
+            set
+            {
+                txtAutSenha = value;
+            }
+        }
     }
 }

@@ -54,7 +54,7 @@ namespace SistemaEscola.DAO
             
             con.Close();
            
-            cmbCurso.Text = "Escolha o curso";
+            //cmbCurso.Text = "Escolha o curso";
         }
 
         public void comboTurma(ComboBox cmbTurma, int idCurso)
@@ -79,7 +79,7 @@ namespace SistemaEscola.DAO
             cmbTurma.Text = "Escolha a turma";
         }
 
-        public void salvarMatricula(SistemaEscola.Entidades.Matricula matr)
+        public void salvarMatricula(SistemaEscola.Entidades.Matricula matr, String login, int senha)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
@@ -90,12 +90,20 @@ namespace SistemaEscola.DAO
             cmd.CommandText = "INSERT INTO Matricula (Aluno_Login_Login, Turma_idTurma) VALUES (@login, @idT)";
             cmd.Parameters.AddWithValue("@login", matr.Login);
             cmd.Parameters.AddWithValue("@idT", matr.IdTurma);
-            cmd.Prepare();
-            cmd.ExecuteNonQuery();
-            
-            con.Close();
-
-            MessageBox.Show("Matrícula finalizada com sucesso!");
+            try
+            {
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Matrícula finalizada com sucesso! Guarde os dados do usuário com cuidado." + "\n" + "Login: " + login + "Senha: " + senha);
+            }
+            catch (Exception el)
+            {
+                MessageBox.Show("Erro ao matricular." + el.Message);
+            }
+            finally
+            {
+                con.Close();
+            }                
         }
 
         public void pesquisaMatricula(DataGridView dgvDados)

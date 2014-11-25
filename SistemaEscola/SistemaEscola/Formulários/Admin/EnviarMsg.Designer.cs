@@ -34,13 +34,16 @@
             this.lblAnexo = new System.Windows.Forms.Label();
             this.lblAssunto = new System.Windows.Forms.Label();
             this.labelMensagem = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPara = new System.Windows.Forms.TextBox();
+            this.txtAnexo = new System.Windows.Forms.TextBox();
+            this.txtAssunto = new System.Windows.Forms.TextBox();
+            this.txtMensagem = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnProcurarAnexo = new System.Windows.Forms.Button();
+            this.txtCC = new System.Windows.Forms.TextBox();
+            this.lblCC = new System.Windows.Forms.Label();
+            this.openFileAnexo = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +71,7 @@
             // 
             this.lblAnexo.AutoSize = true;
             this.lblAnexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnexo.Location = new System.Drawing.Point(106, 41);
+            this.lblAnexo.Location = new System.Drawing.Point(106, 57);
             this.lblAnexo.Name = "lblAnexo";
             this.lblAnexo.Size = new System.Drawing.Size(49, 16);
             this.lblAnexo.TabIndex = 2;
@@ -78,7 +81,7 @@
             // 
             this.lblAssunto.AutoSize = true;
             this.lblAssunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto.Location = new System.Drawing.Point(106, 100);
+            this.lblAssunto.Location = new System.Drawing.Point(106, 109);
             this.lblAssunto.Name = "lblAssunto";
             this.lblAssunto.Size = new System.Drawing.Size(59, 16);
             this.lblAssunto.TabIndex = 3;
@@ -94,38 +97,38 @@
             this.labelMensagem.TabIndex = 4;
             this.labelMensagem.Text = "Mensagem:";
             // 
-            // textBox1
+            // txtPara
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 12);
-            this.textBox1.MaxLength = 45;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtPara.Location = new System.Drawing.Point(143, 12);
+            this.txtPara.MaxLength = 45;
+            this.txtPara.Name = "txtPara";
+            this.txtPara.Size = new System.Drawing.Size(267, 20);
+            this.txtPara.TabIndex = 5;
             // 
-            // textBox2
+            // txtAnexo
             // 
-            this.textBox2.Location = new System.Drawing.Point(152, 40);
-            this.textBox2.MaxLength = 150;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtAnexo.Location = new System.Drawing.Point(152, 56);
+            this.txtAnexo.MaxLength = 150;
+            this.txtAnexo.Name = "txtAnexo";
+            this.txtAnexo.Size = new System.Drawing.Size(258, 20);
+            this.txtAnexo.TabIndex = 6;
             // 
-            // textBox3
+            // txtAssunto
             // 
-            this.textBox3.Location = new System.Drawing.Point(161, 99);
-            this.textBox3.MaxLength = 45;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(249, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtAssunto.Location = new System.Drawing.Point(161, 108);
+            this.txtAssunto.MaxLength = 45;
+            this.txtAssunto.Name = "txtAssunto";
+            this.txtAssunto.Size = new System.Drawing.Size(249, 20);
+            this.txtAssunto.TabIndex = 7;
             // 
-            // textBox4
+            // txtMensagem
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 148);
-            this.textBox4.MaxLength = 1000;
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(398, 245);
-            this.textBox4.TabIndex = 8;
+            this.txtMensagem.Location = new System.Drawing.Point(12, 148);
+            this.txtMensagem.MaxLength = 1000;
+            this.txtMensagem.Multiline = true;
+            this.txtMensagem.Name = "txtMensagem";
+            this.txtMensagem.Size = new System.Drawing.Size(398, 245);
+            this.txtMensagem.TabIndex = 8;
             // 
             // btnEnviar
             // 
@@ -135,6 +138,7 @@
             this.btnEnviar.TabIndex = 9;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // btnLimpar
             // 
@@ -147,25 +151,50 @@
             // 
             // btnProcurarAnexo
             // 
-            this.btnProcurarAnexo.Location = new System.Drawing.Point(315, 66);
+            this.btnProcurarAnexo.Location = new System.Drawing.Point(315, 82);
             this.btnProcurarAnexo.Name = "btnProcurarAnexo";
             this.btnProcurarAnexo.Size = new System.Drawing.Size(95, 23);
             this.btnProcurarAnexo.TabIndex = 11;
             this.btnProcurarAnexo.Text = "Procurar anexo";
             this.btnProcurarAnexo.UseVisualStyleBackColor = true;
+            this.btnProcurarAnexo.Click += new System.EventHandler(this.btnProcurarAnexo_Click);
+            // 
+            // txtCC
+            // 
+            this.txtCC.Location = new System.Drawing.Point(143, 34);
+            this.txtCC.MaxLength = 45;
+            this.txtCC.Name = "txtCC";
+            this.txtCC.Size = new System.Drawing.Size(267, 20);
+            this.txtCC.TabIndex = 13;
+            // 
+            // lblCC
+            // 
+            this.lblCC.AutoSize = true;
+            this.lblCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCC.Location = new System.Drawing.Point(106, 35);
+            this.lblCC.Name = "lblCC";
+            this.lblCC.Size = new System.Drawing.Size(29, 16);
+            this.lblCC.TabIndex = 12;
+            this.lblCC.Text = "CC:";
+            // 
+            // openFileAnexo
+            // 
+            this.openFileAnexo.FileName = "openFileAnexo";
             // 
             // EnviarMsg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 466);
+            this.Controls.Add(this.txtCC);
+            this.Controls.Add(this.lblCC);
             this.Controls.Add(this.btnProcurarAnexo);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMensagem);
+            this.Controls.Add(this.txtAssunto);
+            this.Controls.Add(this.txtAnexo);
+            this.Controls.Add(this.txtPara);
             this.Controls.Add(this.labelMensagem);
             this.Controls.Add(this.lblAssunto);
             this.Controls.Add(this.lblAnexo);
@@ -173,7 +202,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EnviarMsg";
-            this.Text = "EnviarMsg";
+            this.Text = "Enviar Mensagem";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,12 +216,15 @@
         private System.Windows.Forms.Label lblAnexo;
         private System.Windows.Forms.Label lblAssunto;
         private System.Windows.Forms.Label labelMensagem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPara;
+        private System.Windows.Forms.TextBox txtAnexo;
+        private System.Windows.Forms.TextBox txtAssunto;
+        private System.Windows.Forms.TextBox txtMensagem;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnProcurarAnexo;
+        private System.Windows.Forms.TextBox txtCC;
+        private System.Windows.Forms.Label lblCC;
+        private System.Windows.Forms.OpenFileDialog openFileAnexo;
     }
 }

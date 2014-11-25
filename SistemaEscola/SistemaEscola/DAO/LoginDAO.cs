@@ -47,7 +47,7 @@ namespace SistemaEscola.DAO
                 MessageBox.Show("Tudo certo com o Login. Siga para o próximo passo.");
             }
             catch (MySqlException op) {
-                MessageBox.Show("Erro ao salvar. Contate o provedor do seu sistema ou tente outro Login." + op.Message);
+                MessageBox.Show("Erro ao salvar. Contate o provedor do seu banco de dados ou tente outro Login." + op.Message);
             }
             finally
             {

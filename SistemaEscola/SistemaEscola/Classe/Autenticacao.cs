@@ -23,14 +23,12 @@ namespace SistemaEscola.Classe
             con = new MySqlConnection(b.Conex());
         }
 
-        public void verificaLogin(String login, int senha) {
+        public void verificaLogin(String login, int senha, AutenticaForm form) {
 
             int Senhabd = senhaBanco(login);
             int TipoUser = tipoUser(login);
-            int i = 0;
+            //int i = 0;
 
-            while (i == 0)
-            {
                 if (Senhabd.Equals(senha))
                 {
 
@@ -38,28 +36,28 @@ namespace SistemaEscola.Classe
                     {
                         JanelaDoAdm adm = new JanelaDoAdm();
                         adm.Show();
-                        i = 1;
+                       // form.Close();
                     }
                     else if (TipoUser == 2)
                     {
                         SistemaEscola.Formulários.Usuarios.Professor.Professor prof = new Formulários.Usuarios.Professor.Professor();
                         prof.Show();
-                        i = 1;
+                        //form.Close();
                     }
                     else if (TipoUser == 3)
                     {
                         AlunoForm aluno = new AlunoForm();
                         aluno.Show();
-                        i = 1;
+                        //form.Close();
                     }
+
+                    form.Close();
                 }
                 else
                 {
                     MessageBox.Show("Usuário e/ou senha estão incorretos!");
-                    i = 0;
+                    form.txtSenha.Text = "";
                 }
-                break;
-            }
         }
 
         private int senhaBanco(String login)

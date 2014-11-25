@@ -137,7 +137,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             matrEnt.Login = login;
             matrEnt.IdTurma = turma;
 
-            matrDAO.salvarMatricula(matrEnt);
+            matrDAO.salvarMatricula(matrEnt, login, senha);
         }
 
         private void grpbTurno_SelectionChangedCommitted(object sender, EventArgs e)

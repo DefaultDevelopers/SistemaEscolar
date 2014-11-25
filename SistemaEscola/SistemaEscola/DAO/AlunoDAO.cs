@@ -41,6 +41,7 @@ namespace SistemaEscola.DAO
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Tudo certo com os dados do aluno. Siga para o próximo passo.");
             }
             catch (Exception exc)
             {
@@ -50,10 +51,6 @@ namespace SistemaEscola.DAO
             {
                 con.Close();
             }
-
-            MessageBox.Show("Tudo certo com os dados do aluno. Siga para o próximo passo.");
         }
-
-
     }
 }
