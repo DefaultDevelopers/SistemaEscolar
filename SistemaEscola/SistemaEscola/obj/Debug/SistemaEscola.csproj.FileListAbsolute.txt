@@ -101,3 +101,6 @@ C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Boletim.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Frequencia.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Professor.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.CadastrarCurso.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.AlterarCurso.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.CursoForm.resources

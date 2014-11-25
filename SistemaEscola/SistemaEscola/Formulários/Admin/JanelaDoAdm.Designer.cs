@@ -36,6 +36,8 @@
             this.btnAdmProfTurma = new System.Windows.Forms.Button();
             this.btnAdmDel = new System.Windows.Forms.Button();
             this.btnAdmPesq = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.picBoxCurso = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picBoxProfTurma = new System.Windows.Forms.PictureBox();
@@ -43,6 +45,7 @@
             this.picBoxDisc = new System.Windows.Forms.PictureBox();
             this.picBoxTurma = new System.Windows.Forms.PictureBox();
             this.picBoxProf = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCurso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProfTurma)).BeginInit();
@@ -122,6 +125,26 @@
             this.btnAdmPesq.UseVisualStyleBackColor = true;
             this.btnAdmPesq.Click += new System.EventHandler(this.btnAdmPesq_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(243, 571);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 51);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Cursos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // picBoxCurso
+            // 
+            this.picBoxCurso.Image = global::SistemaEscola.Properties.Resources.Preciso_do_diploma;
+            this.picBoxCurso.Location = new System.Drawing.Point(277, 494);
+            this.picBoxCurso.Name = "picBoxCurso";
+            this.picBoxCurso.Size = new System.Drawing.Size(64, 71);
+            this.picBoxCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxCurso.TabIndex = 17;
+            this.picBoxCurso.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SistemaEscola.Properties.Resources.PesquisaIcon;
@@ -197,6 +220,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 633);
+            this.Controls.Add(this.picBoxCurso);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnAdmPesq);
             this.Controls.Add(this.pictureBox3);
@@ -214,6 +239,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JanelaDoAdm";
             this.Text = "Administrador";
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCurso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProfTurma)).EndInit();
@@ -242,5 +268,7 @@
         private System.Windows.Forms.Button btnAdmDel;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnAdmPesq;
+        private System.Windows.Forms.PictureBox picBoxCurso;
+        private System.Windows.Forms.Button button1;
     }
 }

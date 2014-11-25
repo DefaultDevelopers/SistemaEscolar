@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classe\Autenticacao.cs" />
     <Compile Include="Classe\Banco.cs" />
+    <Compile Include="DAO\ComboBoxDAO.cs" />
     <Compile Include="DAO\DisciplinaDAO.cs" />
     <Compile Include="DAO\AlunoDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
@@ -63,6 +64,24 @@
     <Compile Include="Entidades\Professor.cs" />
     <Compile Include="Entidades\Tarefa.cs" />
     <Compile Include="Entidades\Turma.cs" />
+    <Compile Include="Formulários\Admin\Curso\AlterarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\AlterarCurso.Designer.cs">
+      <DependentUpon>AlterarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\CadastrarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\CadastrarCurso.Designer.cs">
+      <DependentUpon>CadastrarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\CursoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\CursoForm.Designer.cs">
+      <DependentUpon>CursoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulários\Admin\DeletarUsuário.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -323,6 +342,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulários\Admin\Curso\AlterarCurso.resx">
+      <DependentUpon>AlterarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Curso\CadastrarCurso.resx">
+      <DependentUpon>CadastrarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Curso\CursoForm.resx">
+      <DependentUpon>CursoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\DeletarUsuário.resx">
       <DependentUpon>DeletarUsuário.cs</DependentUpon>
     </EmbeddedResource>
@@ -556,6 +584,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ProfButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preciso-do-diploma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preciso-do-diploma1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preciso-do-diploma.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

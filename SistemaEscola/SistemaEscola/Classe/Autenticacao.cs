@@ -27,11 +27,9 @@ namespace SistemaEscola.Classe
 
             int Senhabd = senhaBanco(login);
             int TipoUser = tipoUser(login);
-            //int i = 0;
 
                 if (Senhabd.Equals(senha))
                 {
-
                     if (TipoUser == 1)
                     {
                         JanelaDoAdm adm = new JanelaDoAdm();

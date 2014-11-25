@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlterarDisc));
             this.lblCodDisc = new System.Windows.Forms.Label();
             this.grboxDados = new System.Windows.Forms.GroupBox();
+            this.txtAltDiscCargHor = new System.Windows.Forms.MaskedTextBox();
             this.txtAltDiscDescricao = new System.Windows.Forms.TextBox();
             this.txtAltDiscNome = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.lblCargaHor = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.txtAltDiscCod = new System.Windows.Forms.TextBox();
             this.btnAltDiscSalvar = new System.Windows.Forms.Button();
             this.btnAltDiscLimpar = new System.Windows.Forms.Button();
             this.btnPesqDisc = new System.Windows.Forms.Button();
-            this.txtAltDiscCargHor = new System.Windows.Forms.MaskedTextBox();
+            this.txtAltDiscCod = new System.Windows.Forms.MaskedTextBox();
             this.grboxDados.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,14 @@
             this.grboxDados.TabIndex = 1;
             this.grboxDados.TabStop = false;
             this.grboxDados.Text = "Dados a alterar";
+            // 
+            // txtAltDiscCargHor
+            // 
+            this.txtAltDiscCargHor.Location = new System.Drawing.Point(109, 66);
+            this.txtAltDiscCargHor.Mask = "000";
+            this.txtAltDiscCargHor.Name = "txtAltDiscCargHor";
+            this.txtAltDiscCargHor.Size = new System.Drawing.Size(182, 20);
+            this.txtAltDiscCargHor.TabIndex = 8;
             // 
             // txtAltDiscDescricao
             // 
@@ -112,13 +120,6 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // txtAltDiscCod
-            // 
-            this.txtAltDiscCod.Location = new System.Drawing.Point(124, 25);
-            this.txtAltDiscCod.Name = "txtAltDiscCod";
-            this.txtAltDiscCod.Size = new System.Drawing.Size(107, 20);
-            this.txtAltDiscCod.TabIndex = 8;
-            // 
             // btnAltDiscSalvar
             // 
             this.btnAltDiscSalvar.Location = new System.Drawing.Point(46, 291);
@@ -146,23 +147,23 @@
             this.btnPesqDisc.Text = "Pesquisar";
             this.btnPesqDisc.UseVisualStyleBackColor = true;
             // 
-            // txtAltDiscCargHor
+            // txtAltDiscCod
             // 
-            this.txtAltDiscCargHor.Location = new System.Drawing.Point(109, 66);
-            this.txtAltDiscCargHor.Mask = "000";
-            this.txtAltDiscCargHor.Name = "txtAltDiscCargHor";
-            this.txtAltDiscCargHor.Size = new System.Drawing.Size(182, 20);
-            this.txtAltDiscCargHor.TabIndex = 8;
+            this.txtAltDiscCod.Location = new System.Drawing.Point(124, 25);
+            this.txtAltDiscCod.Mask = "000";
+            this.txtAltDiscCod.Name = "txtAltDiscCod";
+            this.txtAltDiscCod.Size = new System.Drawing.Size(100, 20);
+            this.txtAltDiscCod.TabIndex = 11;
             // 
             // AlterarDisc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 328);
+            this.Controls.Add(this.txtAltDiscCod);
             this.Controls.Add(this.btnPesqDisc);
             this.Controls.Add(this.btnAltDiscLimpar);
             this.Controls.Add(this.btnAltDiscSalvar);
-            this.Controls.Add(this.txtAltDiscCod);
             this.Controls.Add(this.grboxDados);
             this.Controls.Add(this.lblCodDisc);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -184,10 +185,10 @@
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Label lblCargaHor;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.TextBox txtAltDiscCod;
         private System.Windows.Forms.Button btnAltDiscSalvar;
         private System.Windows.Forms.Button btnAltDiscLimpar;
         private System.Windows.Forms.Button btnPesqDisc;
         private System.Windows.Forms.MaskedTextBox txtAltDiscCargHor;
+        private System.Windows.Forms.MaskedTextBox txtAltDiscCod;
     }
 }

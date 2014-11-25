@@ -44,7 +44,7 @@ INSERT INTO Disciplina (idDisciplina, Curso_idCurso, carga_horaria, nome, descri
 INSERT INTO Disciplina (idDisciplina, Curso_idCurso, carga_horaria, nome, descricao) VALUES (095, 255, 120, "Análise de Circuitos", "Disciplina que introduz conceitos importantes sobre a análise de circuitos.");
 #TestesDisciplina
 SELECT * FROM Disciplina;
-SELECT idDisciplina as 'ID da Disciplina', d.nome as 'Nome', c.nome as 'Curso a que pertence', carga_horaria as 'Carga Horária', d.descricao as 'Descrição' FROM Disciplina=d, Curso=c WHERE d.Curso_idCurso=c.idCurso;
+SELECT DISTINCT idDisciplina as 'ID da Disciplina', d.nome as 'Nome', carga_horaria as 'Carga Horária', d.descricao as 'Descrição' FROM Disciplina=d, Curso=c;
 
 #Login
 INSERT INTO Login (Login, Senha, User_idUser) VALUES (2012145234, 123456, 003);

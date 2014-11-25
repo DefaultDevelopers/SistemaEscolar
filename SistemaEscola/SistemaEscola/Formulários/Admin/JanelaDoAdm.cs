@@ -13,6 +13,7 @@ using SistemaEscola.Formulários.Admin.Professor;
 using SistemaEscola.Formulários.Admin.Turma;
 using SistemaEscola.Formulários.Admin.Disciplina;
 using SistemaEscola.Formulários.Admin.Prof_Turma;
+using SistemaEscola.Formulários.Admin.Curso;
 
 namespace SistemaEscola.Formulários
 {
@@ -63,6 +64,12 @@ namespace SistemaEscola.Formulários
         {
             PesquisaUsuário pesqUser = new PesquisaUsuário();
             pesqUser.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CursoForm cursoForm = new CursoForm();
+            cursoForm.ShowDialog();
         }
     }
 }

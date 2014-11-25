@@ -213,6 +213,36 @@ namespace SistemaEscola.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Preciso_do_diploma {
+            get {
+                object obj = ResourceManager.GetObject("Preciso-do-diploma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Preciso_do_diploma1 {
+            get {
+                object obj = ResourceManager.GetObject("Preciso-do-diploma1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Preciso_do_diploma2 {
+            get {
+                object obj = ResourceManager.GetObject("Preciso-do-diploma2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Prof_TurmaIcon {
             get {
                 object obj = ResourceManager.GetObject("Prof-TurmaIcon", resourceCulture);

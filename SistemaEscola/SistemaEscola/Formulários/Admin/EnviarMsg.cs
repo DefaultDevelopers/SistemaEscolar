@@ -17,7 +17,11 @@ namespace SistemaEscola.Formulários.Admin
         public EnviarMsg()
         {
             InitializeComponent();
-        }    
+        }
+
+        //Mensagem
+        MailMessage message = new MailMessage();
+        String anexo;
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
@@ -26,23 +30,21 @@ namespace SistemaEscola.Formulários.Admin
 
         private void SendEmail()
         {
-            //Mensagem
-            MailMessage message = new MailMessage();
+            
 
             String para = txtPara.Text;
             String assunto = txtAssunto.Text;
-            String mens = txtMensagem.Text;
-            String anexo = txtAnexo.Text;
-            
+            String mens = txtMensagem.Text;            
 
             //Estes 2 campos corresponde a quem está enviando o e-mail
             message.Sender = new MailAddress("noreplyacademico@gmail.com", "Sistema Acadêmico");
             message.From = new MailAddress("noreplyacademico@gmail.com", "Sistema Acadêmico");
 
-            Attachment anex = new Attachment(anexo);
+            anexo = txtAnexo.Text;
 
-            message.Attachments.Add(anex);
-
+            if (!string.IsNullOrEmpty(anexo)) {
+                message.Attachments.Add(new Attachment(anexo));
+            }
 
             //Aqui você coloca para quem você quer enviar o e-mail
             message.To.Add(new MailAddress(para));
@@ -86,7 +88,7 @@ namespace SistemaEscola.Formulários.Admin
         }
 
         private void btnProcurarAnexo_Click(object sender, EventArgs e)
-        {
+        {           
             openFileAnexo.ShowDialog();
             txtAnexo.Text = openFileAnexo.FileName;
         }

@@ -123,18 +123,19 @@
             // 
             // btnDiscSalvar
             // 
-            this.btnDiscSalvar.Location = new System.Drawing.Point(52, 263);
+            this.btnDiscSalvar.Location = new System.Drawing.Point(37, 259);
             this.btnDiscSalvar.Name = "btnDiscSalvar";
-            this.btnDiscSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnDiscSalvar.Size = new System.Drawing.Size(100, 31);
             this.btnDiscSalvar.TabIndex = 9;
             this.btnDiscSalvar.Text = "Salvar";
             this.btnDiscSalvar.UseVisualStyleBackColor = true;
+            this.btnDiscSalvar.Click += new System.EventHandler(this.btnDiscSalvar_Click);
             // 
             // btnDiscLimpar
             // 
-            this.btnDiscLimpar.Location = new System.Drawing.Point(178, 263);
+            this.btnDiscLimpar.Location = new System.Drawing.Point(160, 259);
             this.btnDiscLimpar.Name = "btnDiscLimpar";
-            this.btnDiscLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnDiscLimpar.Size = new System.Drawing.Size(100, 31);
             this.btnDiscLimpar.TabIndex = 10;
             this.btnDiscLimpar.Text = "Limpar";
             this.btnDiscLimpar.UseVisualStyleBackColor = true;

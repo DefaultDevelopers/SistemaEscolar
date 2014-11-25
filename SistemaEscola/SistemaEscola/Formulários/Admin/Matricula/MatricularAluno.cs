@@ -17,13 +17,13 @@ namespace SistemaEscola.Formulários.Admin.Matricula
     {
         public MatricularAluno()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
         }
 
         MatriculaDAO matrDAO = new MatriculaDAO();
         AlunoDAO alunoDAO = new AlunoDAO();
         LoginDAO loginDAO = new LoginDAO();
+        ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
         String nome, telefone, email, cpf, endereco, login;
         DateTime dataNasc;
         int turma, senha, turno, user = 3;
@@ -33,7 +33,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         private void MatricularAluno_Load(object sender, EventArgs e)
         {
             txtLoginAno.Text = Convert.ToString(DateTime.Now.Year);
-            matrDAO.comboTipo(cmbTipo);
+            cmbBoxDAO.comboTipo(cmbTipo);
             numRandomLogin();
         }
 
@@ -47,15 +47,15 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             if (cmbTipo.SelectedValue.Equals(1))
             {
-                matrDAO.comboCurso(cmbCurso, 1, Turno());
+                cmbBoxDAO.comboCurso(cmbCurso, 1, Turno());
             }
             else if (cmbTipo.SelectedValue.Equals(2))
             {
-                matrDAO.comboCurso(cmbCurso, 2, Turno());
+                cmbBoxDAO.comboCurso(cmbCurso, 2, Turno());
             }
             else
             {
-                matrDAO.comboCurso(cmbCurso, 3, Turno());
+                cmbBoxDAO.comboCurso(cmbCurso, 3, Turno());
             }
         }
 
@@ -79,7 +79,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
             int curso = Convert.ToInt32(cmbCurso.SelectedValue);
-            matrDAO.comboTurma(cmbTurma, curso);
+            cmbBoxDAO.comboTurma(cmbTurma, curso);
         }
 
         //Classe para salvar no banco
