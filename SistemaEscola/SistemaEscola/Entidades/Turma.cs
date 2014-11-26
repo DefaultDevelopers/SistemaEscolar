@@ -8,9 +8,22 @@ namespace SistemaEscola.Entidades
 {
     class Turma
     {
-        int idTurma, idCurso;
-        String nome;
+        int idTurma, idCurso, turno, tipo;
+        String sala;
 
+
+        public int Turno
+        {
+            get { return turno; }
+            set { turno = value; }
+        }
+
+        public int Tipo
+        {
+            get { return tipo; }
+            set { tipo = value; }
+        }
+        
         public int IdTurma
         {
             get { return idTurma; }
@@ -23,10 +36,10 @@ namespace SistemaEscola.Entidades
             set { idCurso = value; }
         }
 
-        public String Nome
+        public String Sala
         {
-            get { return nome; }
-            set { nome = value; }
+            get { return sala; }
+            set { sala = value; }
         }        
     }
 }

@@ -18,11 +18,23 @@ namespace SistemaEscola.Formulários.Admin.Curso
         }
 
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
+        CursoDAO cursoDAO = new CursoDAO();
+        SistemaEscola.Entidades.Curso cursoEnt = new Entidades.Curso();
 
-        private void CadastrarCurso_Load(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-            cmbBoxDAO.comboTurno(cmbTurno);
-            cmbBoxDAO.comboTipo(cmbTipo);
+            String nome, descricao;
+            int idCurso;
+
+            nome = txtNome.Text;
+            descricao = txtDescricao.Text;
+            idCurso = Convert.ToInt32(txtCodCurso.Text);
+
+            cursoEnt.Nome = nome;
+            cursoEnt.Descricao = descricao;
+            cursoEnt.IdCurso = idCurso;
+            
+            cursoDAO.salvarCurso(cursoEnt);
         }
     }
 }

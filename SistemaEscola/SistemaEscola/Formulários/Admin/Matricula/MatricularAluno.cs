@@ -24,16 +24,16 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         AlunoDAO alunoDAO = new AlunoDAO();
         LoginDAO loginDAO = new LoginDAO();
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
-        String nome, telefone, email, cpf, endereco, login;
+        String nome, telefone, email, cpf, endereco, login, curso, tipo;
         DateTime dataNasc;
         int turma, senha, turno, user = 3;
-
 
         //Pesquisa no Formulário (Comboboxes)
         private void MatricularAluno_Load(object sender, EventArgs e)
         {
             txtLoginAno.Text = Convert.ToString(DateTime.Now.Year);
             cmbBoxDAO.comboTipo(cmbTipo);
+            //cmbBoxDAO.comboCurso(cmbCurso);
             numRandomLogin();
         }
 
@@ -41,45 +41,6 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             Random txtLoginNum = new Random();
             txtLoginNumAleat.Text = Convert.ToString(txtLoginNum.Next(1000, 9999));
-        }
-
-        private void cmbTipo_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            if (cmbTipo.SelectedValue.Equals(1))
-            {
-                cmbBoxDAO.comboCurso(cmbCurso, 1, Turno());
-            }
-            else if (cmbTipo.SelectedValue.Equals(2))
-            {
-                cmbBoxDAO.comboCurso(cmbCurso, 2, Turno());
-            }
-            else
-            {
-                cmbBoxDAO.comboCurso(cmbCurso, 3, Turno());
-            }
-        }
-
-        private int Turno()
-        {
-            if (rbMatutino.Checked)
-            {
-                turno = 1;
-            }
-            else if (rbVespertino.Checked)
-            {
-                turno = 2;
-            }
-            else
-            {
-                turno = 3;
-            }
-            return turno;
-        }
-
-        private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int curso = Convert.ToInt32(cmbCurso.SelectedValue);
-            cmbBoxDAO.comboTurma(cmbTurma, curso);
         }
 
         //Classe para salvar no banco
@@ -140,11 +101,24 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             matrDAO.salvarMatricula(matrEnt, login, senha);
         }
 
-        private void grpbTurno_SelectionChangedCommitted(object sender, EventArgs e)
+        private void cmbTipo_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            cmbTipo.Text = "Escolha o tipo";
-            cmbCurso.Text = "Escolha o curso";
-            cmbTurma.Text = "Escolha a turma";
+            tipo = Convert.ToString(cmbTipo.SelectedValue);
+            cmbBoxDAO.comboTurno(cmbTurno, tipo);
+            cmbTurno.Enabled = true;
+        }
+
+        private void cmbTurno_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            turno = Convert.ToInt32(cmbTurno.SelectedValue);
+            cmbBoxDAO.comboCurso(cmbCurso, turno);
+            cmbCurso.Enabled = true;
+        }
+
+        private void cmbCurso_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            curso = Convert.ToString(cmbCurso.SelectedValue);
+            cmbBoxDAO.comboTurma(cmbTurma, curso);
         }
     }
 }

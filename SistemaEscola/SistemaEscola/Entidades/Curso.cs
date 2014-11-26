@@ -8,24 +8,19 @@ namespace SistemaEscola.Entidades
 {
     class Curso
     {
-        String tipo, turno, curso, descricao;        
+        String nome, descricao;
+        int idCurso;
 
-        public String Tipo
+        public int IdCurso
         {
-            get { return tipo; }
-            set { tipo = value; }
-        }
-
-        public String Turno
-        {
-            get { return turno; }
-            set { turno = value; }
+            get { return idCurso; }
+            set { idCurso = value; }
         }        
 
-        public String Cursos
+        public String Nome
         {
-            get { return curso; }
-            set { curso = value; }
+            get { return nome; }
+            set { nome = value; }
         }
 
         public String Descricao

@@ -32,13 +32,9 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.cmbTurno = new System.Windows.Forms.ComboBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.lblTurno = new System.Windows.Forms.Label();
             this.txtCodCurso = new System.Windows.Forms.MaskedTextBox();
             this.lblCodCurso = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,7 +44,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(161, 423);
+            this.btnLimpar.Location = new System.Drawing.Point(161, 337);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(111, 40);
             this.btnLimpar.TabIndex = 23;
@@ -57,7 +53,7 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(30, 423);
+            this.btnAlterar.Location = new System.Drawing.Point(30, 337);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(107, 40);
             this.btnAlterar.TabIndex = 22;
@@ -66,27 +62,11 @@
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(15, 159);
+            this.txtDescricao.Location = new System.Drawing.Point(15, 82);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(242, 191);
             this.txtDescricao.TabIndex = 21;
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(57, 103);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(200, 24);
-            this.cmbTipo.TabIndex = 20;
-            // 
-            // cmbTurno
-            // 
-            this.cmbTurno.FormattingEnabled = true;
-            this.cmbTurno.Location = new System.Drawing.Point(64, 65);
-            this.cmbTurno.Name = "cmbTurno";
-            this.cmbTurno.Size = new System.Drawing.Size(193, 24);
-            this.cmbTurno.TabIndex = 19;
             // 
             // txtNome
             // 
@@ -99,7 +79,7 @@
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(12, 140);
+            this.lblDescricao.Location = new System.Drawing.Point(12, 63);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(73, 16);
             this.lblDescricao.TabIndex = 17;
@@ -114,26 +94,6 @@
             this.lblNome.Size = new System.Drawing.Size(48, 16);
             this.lblNome.TabIndex = 16;
             this.lblNome.Text = "Nome:";
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(12, 104);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(39, 16);
-            this.lblTipo.TabIndex = 15;
-            this.lblTipo.Text = "Tipo:";
-            // 
-            // lblTurno
-            // 
-            this.lblTurno.AutoSize = true;
-            this.lblTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTurno.Location = new System.Drawing.Point(12, 66);
-            this.lblTurno.Name = "lblTurno";
-            this.lblTurno.Size = new System.Drawing.Size(46, 16);
-            this.lblTurno.TabIndex = 14;
-            this.lblTurno.Text = "Turno:";
             // 
             // txtCodCurso
             // 
@@ -156,17 +116,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtNome);
-            this.groupBox1.Controls.Add(this.lblTurno);
             this.groupBox1.Controls.Add(this.txtDescricao);
             this.groupBox1.Controls.Add(this.lblDescricao);
-            this.groupBox1.Controls.Add(this.lblTipo);
-            this.groupBox1.Controls.Add(this.cmbTipo);
             this.groupBox1.Controls.Add(this.lblNome);
-            this.groupBox1.Controls.Add(this.cmbTurno);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(15, 45);
+            this.groupBox1.Location = new System.Drawing.Point(15, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(269, 370);
+            this.groupBox1.Size = new System.Drawing.Size(269, 287);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados a alterar";
@@ -184,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 475);
+            this.ClientSize = new System.Drawing.Size(299, 394);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAlterar);
@@ -206,13 +162,9 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.TextBox txtDescricao;
-        private System.Windows.Forms.ComboBox cmbTipo;
-        private System.Windows.Forms.ComboBox cmbTurno;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.Label lblTurno;
         private System.Windows.Forms.MaskedTextBox txtCodCurso;
         private System.Windows.Forms.Label lblCodCurso;
         private System.Windows.Forms.GroupBox groupBox1;

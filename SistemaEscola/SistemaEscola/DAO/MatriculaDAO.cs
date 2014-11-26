@@ -11,9 +11,7 @@ namespace SistemaEscola.DAO
     class MatriculaDAO
     {
 
-        Banco b = new Banco();
-
-        
+        Banco b = new Banco();       
 
         public void salvarMatricula(SistemaEscola.Entidades.Matricula matr, String login, int senha)
         {
@@ -30,7 +28,7 @@ namespace SistemaEscola.DAO
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Matrícula finalizada com sucesso! Guarde os dados do usuário com cuidado." + "\n" + "Login: " + login + "Senha: " + senha);
+                MessageBox.Show("Matrícula finalizada com sucesso! Guarde os dados do usuário com cuidado." + "\n\n" + "Login: " + login + "\n" +"Senha: " + senha);
             }
             catch (Exception el)
             {
@@ -49,13 +47,41 @@ namespace SistemaEscola.DAO
             con.Open();
 
             MySqlDataAdapter mySqlDataAdapter;
-            mySqlDataAdapter = new MySqlDataAdapter("SELECT idAluno as 'ID do Aluno', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento', endereco as 'Endereço' FROM Login, Aluno, Matricula WHERE Login = Login_Login ORDER BY nome", con);
+            mySqlDataAdapter = new MySqlDataAdapter("Select * from matricula", con);
             DataSet DS = new DataSet();
             mySqlDataAdapter.Fill(DS);
             dgvDados.DataSource = DS.Tables[0];
 
 
             con.Close();
+        }
+
+        public void deletaMatricula(MaskedTextBox txtIDMatr)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            String ID = txtIDMatr.Text;
+
+            con.Open();
+
+            cmd.CommandText = "DELETE FROM Matricula WHERE idMatricula = '" + ID + "'";
+
+            try
+            {
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deletado com sucesso.");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Houve algum erro ao deletar." + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

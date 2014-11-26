@@ -33,7 +33,7 @@
             this.btnDeletarMatr = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.lblConfirme = new System.Windows.Forms.Label();
-            this.txtCodDel = new System.Windows.Forms.MaskedTextBox();
+            this.txtIDMatr = new System.Windows.Forms.MaskedTextBox();
             this.lblCodDel = new System.Windows.Forms.Label();
             this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
@@ -76,13 +76,13 @@
             this.lblConfirme.TabIndex = 7;
             this.lblConfirme.Text = "Confirme os dados";
             // 
-            // txtCodDel
+            // txtIDMatr
             // 
-            this.txtCodDel.Location = new System.Drawing.Point(350, 267);
-            this.txtCodDel.Mask = "00000000000";
-            this.txtCodDel.Name = "txtCodDel";
-            this.txtCodDel.Size = new System.Drawing.Size(173, 20);
-            this.txtCodDel.TabIndex = 9;
+            this.txtIDMatr.Location = new System.Drawing.Point(350, 267);
+            this.txtIDMatr.Mask = "00000000000";
+            this.txtIDMatr.Name = "txtIDMatr";
+            this.txtIDMatr.Size = new System.Drawing.Size(173, 20);
+            this.txtIDMatr.TabIndex = 9;
             // 
             // lblCodDel
             // 
@@ -90,9 +90,9 @@
             this.lblCodDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodDel.Location = new System.Drawing.Point(116, 268);
             this.lblCodDel.Name = "lblCodDel";
-            this.lblCodDel.Size = new System.Drawing.Size(228, 16);
+            this.lblCodDel.Size = new System.Drawing.Size(205, 16);
             this.lblCodDel.TabIndex = 8;
-            this.lblCodDel.Text = "Digite a matrícula do aluno  a deletar:";
+            this.lblCodDel.Text = "Digite a ID da matrícula a deletar:";
             // 
             // btnAtualizar
             // 
@@ -110,7 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 338);
             this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.txtCodDel);
+            this.Controls.Add(this.txtIDMatr);
             this.Controls.Add(this.lblCodDel);
             this.Controls.Add(this.lblConfirme);
             this.Controls.Add(this.btnLimpar);
@@ -132,7 +132,7 @@
         private System.Windows.Forms.Button btnDeletarMatr;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label lblConfirme;
-        private System.Windows.Forms.MaskedTextBox txtCodDel;
+        private System.Windows.Forms.MaskedTextBox txtIDMatr;
         private System.Windows.Forms.Label lblCodDel;
         private System.Windows.Forms.Button btnAtualizar;
     }

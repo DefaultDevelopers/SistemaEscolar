@@ -7,11 +7,14 @@ using MySql.Data.MySqlClient;
 using SistemaEscola.Classe;
 using System.Windows.Forms;
 using SistemaEscola.Entidades;
+using System.Data;
 
 namespace SistemaEscola.DAO
 {
     class DisciplinaDAO
     {
+        Banco b = new Banco();
+
         public void salvarDisc(Disciplina disc)
         {
             Banco b = new Banco();
@@ -50,6 +53,50 @@ namespace SistemaEscola.DAO
             catch (MySqlException op)
             {
                 MessageBox.Show("Erro ao salvar. Contate o provedor do seu banco de dados." + "\n" + op.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void pesqDisc(DataGridView dgvDados)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            con.Open();
+
+            MySqlDataAdapter mySqlDataAdapter;
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT idDisciplina as 'ID da Disciplina', nome as 'Nome', carga_horaria as 'Carga Horária (em horas aula)', descricao as 'Descrição' FROM Disciplina ORDER BY nome", con);
+            DataSet DS = new DataSet();
+            mySqlDataAdapter.Fill(DS);
+            dgvDados.DataSource = DS.Tables[0];
+
+
+            con.Close();
+        }
+
+        public void deletaDisc(MaskedTextBox txtCodDel)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            String cod = txtCodDel.Text;
+
+            con.Open();
+
+            cmd.CommandText = "DELETE FROM Disciplina WHERE idDisciplina = '" + cod + "'";
+
+            try
+            {
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deletado com sucesso.");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Houve algum erro ao deletar." + ex.Message);
             }
             finally
             {

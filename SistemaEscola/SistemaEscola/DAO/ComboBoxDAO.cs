@@ -37,13 +37,13 @@ namespace SistemaEscola.DAO
             cmbTipo.Text = "";
         }
 
-        public void comboCurso(ComboBox cmbCurso, int idTipo, int idTurno)
+        public void comboCurso(ComboBox cmbCurso, int turno)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
 
-            string command = "SELECT nome, idCurso FROM Curso WHERE Tipo_idTipo = " + idTipo + " AND Turno_idTurno = " + idTurno;
+            string command = "SELECT t.Curso_idCurso, c.nome FROM Turma=t, Curso=c WHERE t.Turno_idTurno = '" + turno + "' AND Curso_idCurso = idCurso";
             MySqlDataAdapter da = new MySqlDataAdapter(command, con);
 
             con.Open();
@@ -52,11 +52,11 @@ namespace SistemaEscola.DAO
             da.Fill(dt);
             cmbCurso.DataSource = dt;
             cmbCurso.DisplayMember = "nome";
-            cmbCurso.ValueMember = "idCurso";
+            cmbCurso.ValueMember = "Curso_idCurso";
 
             con.Close();
 
-            //cmbCurso.Text = "Escolha o curso";
+            cmbCurso.Text = "";
         }
 
         public void comboCurso(ComboBox cmbCurso)
@@ -65,7 +65,7 @@ namespace SistemaEscola.DAO
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
 
-            string command = "SELECT nome, idCurso FROM Curso";
+            string command = "SELECT idCurso, nome FROM Curso";
             MySqlDataAdapter da = new MySqlDataAdapter(command, con);
 
             con.Open();
@@ -78,29 +78,52 @@ namespace SistemaEscola.DAO
 
             con.Close();
 
-            //cmbCurso.Text = "Escolha o curso";
+            cmbCurso.Text = "";
         }
 
-        public void comboTurma(ComboBox cmbTurma, int idCurso)
+        public void comboTurma(ComboBox cmbTurma, String idCurso)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
 
-            string command = "SELECT DISTINCT idTurma FROM Turma, Curso WHERE Curso_idCurso = " + idCurso;
+            string command = "SELECT DISTINCT idTurma FROM Turma, Curso WHERE Curso_idCurso = '" + idCurso + "'";
             MySqlDataAdapter da = new MySqlDataAdapter(command, con);
 
             con.Open();
 
             DataTable dt = new DataTable();
             da.Fill(dt);
-            cmbTurma.DataSource = dt;
+            
             cmbTurma.DisplayMember = "idTurma";
             cmbTurma.ValueMember = "idTurma";
+            cmbTurma.DataSource = dt;
 
             con.Close();
 
-            cmbTurma.Text = "Escolha a turma";
+            cmbTurma.Text = "";
+        }
+
+        public void comboTurno(ComboBox cmbTurno, String tipo)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            string command = "SELECT DISTINCT Turno_idTurno, turno FROM Turma, Turno WHERE Tipo_idTipo = '" + tipo + "' AND Turno_idTurno = idTurno";
+            MySqlDataAdapter da = new MySqlDataAdapter(command, con);
+
+            con.Open();
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cmbTurno.DataSource = dt;
+            cmbTurno.DisplayMember = "turno";
+            cmbTurno.ValueMember = "Turno_idTurno";
+
+            con.Close();
+
+            cmbTurno.Text = "";
         }
 
         public void comboTurno(ComboBox cmbTurno)
@@ -109,7 +132,7 @@ namespace SistemaEscola.DAO
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
 
-            string command = "SELECT idTurno, turno FROM Turno";
+            string command = "SELECT turno, idTurno FROM Turno";
             MySqlDataAdapter da = new MySqlDataAdapter(command, con);
 
             con.Open();

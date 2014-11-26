@@ -60,11 +60,9 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.grpbDadosAluno = new System.Windows.Forms.GroupBox();
             this.grpbDadosCurso = new System.Windows.Forms.GroupBox();
+            this.lblTurno = new System.Windows.Forms.Label();
+            this.cmbTurno = new System.Windows.Forms.ComboBox();
             this.lblTurma = new System.Windows.Forms.Label();
-            this.grpbTurno = new System.Windows.Forms.GroupBox();
-            this.rbNoturno = new System.Windows.Forms.RadioButton();
-            this.rbVespertino = new System.Windows.Forms.RadioButton();
-            this.rbMatutino = new System.Windows.Forms.RadioButton();
             this.cmbTurma = new System.Windows.Forms.ComboBox();
             this.txtLoginNumId = new System.Windows.Forms.MaskedTextBox();
             this.txtLoginAno = new System.Windows.Forms.TextBox();
@@ -77,22 +75,22 @@
             this.grpbEnd.SuspendLayout();
             this.grpbDadosAluno.SuspendLayout();
             this.grpbDadosCurso.SuspendLayout();
-            this.grpbTurno.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbCurso
             // 
+            this.cmbCurso.Enabled = false;
             this.cmbCurso.FormattingEnabled = true;
-            this.cmbCurso.Location = new System.Drawing.Point(64, 111);
+            this.cmbCurso.Location = new System.Drawing.Point(63, 87);
             this.cmbCurso.Name = "cmbCurso";
             this.cmbCurso.Size = new System.Drawing.Size(342, 24);
             this.cmbCurso.TabIndex = 82;
-            this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.cmbCurso_SelectedIndexChanged);
+            this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.cmbCurso_SelectionChangeCommitted);
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(12, 84);
+            this.lblTipo.Location = new System.Drawing.Point(11, 30);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(39, 16);
             this.lblTipo.TabIndex = 9;
@@ -101,7 +99,7 @@
             // lblCurso
             // 
             this.lblCurso.AutoSize = true;
-            this.lblCurso.Location = new System.Drawing.Point(12, 114);
+            this.lblCurso.Location = new System.Drawing.Point(11, 90);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(46, 16);
             this.lblCurso.TabIndex = 8;
@@ -110,7 +108,7 @@
             // cmbTipo
             // 
             this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(55, 81);
+            this.cmbTipo.Location = new System.Drawing.Point(54, 27);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(351, 24);
             this.cmbTipo.TabIndex = 81;
@@ -377,8 +375,9 @@
             // 
             // grpbDadosCurso
             // 
+            this.grpbDadosCurso.Controls.Add(this.lblTurno);
+            this.grpbDadosCurso.Controls.Add(this.cmbTurno);
             this.grpbDadosCurso.Controls.Add(this.lblTurma);
-            this.grpbDadosCurso.Controls.Add(this.grpbTurno);
             this.grpbDadosCurso.Controls.Add(this.cmbTurma);
             this.grpbDadosCurso.Controls.Add(this.cmbTipo);
             this.grpbDadosCurso.Controls.Add(this.lblCurso);
@@ -393,62 +392,38 @@
             this.grpbDadosCurso.TabStop = false;
             this.grpbDadosCurso.Text = "Dados do curso";
             // 
+            // lblTurno
+            // 
+            this.lblTurno.AutoSize = true;
+            this.lblTurno.Location = new System.Drawing.Point(12, 60);
+            this.lblTurno.Name = "lblTurno";
+            this.lblTurno.Size = new System.Drawing.Size(46, 16);
+            this.lblTurno.TabIndex = 85;
+            this.lblTurno.Text = "Turno:";
+            // 
+            // cmbTurno
+            // 
+            this.cmbTurno.Enabled = false;
+            this.cmbTurno.FormattingEnabled = true;
+            this.cmbTurno.Location = new System.Drawing.Point(62, 57);
+            this.cmbTurno.Name = "cmbTurno";
+            this.cmbTurno.Size = new System.Drawing.Size(343, 24);
+            this.cmbTurno.TabIndex = 84;
+            this.cmbTurno.SelectedIndexChanged += new System.EventHandler(this.cmbTurno_SelectionChangeCommitted);
+            // 
             // lblTurma
             // 
             this.lblTurma.AutoSize = true;
-            this.lblTurma.Location = new System.Drawing.Point(13, 144);
+            this.lblTurma.Location = new System.Drawing.Point(7, 138);
             this.lblTurma.Name = "lblTurma";
             this.lblTurma.Size = new System.Drawing.Size(50, 16);
             this.lblTurma.TabIndex = 11;
             this.lblTurma.Text = "Turma:";
             // 
-            // grpbTurno
-            // 
-            this.grpbTurno.Controls.Add(this.rbNoturno);
-            this.grpbTurno.Controls.Add(this.rbVespertino);
-            this.grpbTurno.Controls.Add(this.rbMatutino);
-            this.grpbTurno.Location = new System.Drawing.Point(16, 19);
-            this.grpbTurno.Name = "grpbTurno";
-            this.grpbTurno.Size = new System.Drawing.Size(390, 56);
-            this.grpbTurno.TabIndex = 80;
-            this.grpbTurno.TabStop = false;
-            this.grpbTurno.Text = "Turno";
-            this.grpbTurno.Enter += new System.EventHandler(this.grpbTurno_SelectionChangedCommitted);
-            // 
-            // rbNoturno
-            // 
-            this.rbNoturno.AutoSize = true;
-            this.rbNoturno.Location = new System.Drawing.Point(270, 21);
-            this.rbNoturno.Name = "rbNoturno";
-            this.rbNoturno.Size = new System.Drawing.Size(73, 20);
-            this.rbNoturno.TabIndex = 2;
-            this.rbNoturno.Text = "Noturno";
-            this.rbNoturno.UseVisualStyleBackColor = true;
-            // 
-            // rbVespertino
-            // 
-            this.rbVespertino.AutoSize = true;
-            this.rbVespertino.Location = new System.Drawing.Point(150, 21);
-            this.rbVespertino.Name = "rbVespertino";
-            this.rbVespertino.Size = new System.Drawing.Size(91, 20);
-            this.rbVespertino.TabIndex = 1;
-            this.rbVespertino.Text = "Vespertino";
-            this.rbVespertino.UseVisualStyleBackColor = true;
-            // 
-            // rbMatutino
-            // 
-            this.rbMatutino.AutoSize = true;
-            this.rbMatutino.Location = new System.Drawing.Point(43, 21);
-            this.rbMatutino.Name = "rbMatutino";
-            this.rbMatutino.Size = new System.Drawing.Size(76, 20);
-            this.rbMatutino.TabIndex = 0;
-            this.rbMatutino.Text = "Matutino";
-            this.rbMatutino.UseVisualStyleBackColor = true;
-            // 
             // cmbTurma
             // 
             this.cmbTurma.FormattingEnabled = true;
-            this.cmbTurma.Location = new System.Drawing.Point(64, 141);
+            this.cmbTurma.Location = new System.Drawing.Point(58, 135);
             this.cmbTurma.Name = "cmbTurma";
             this.cmbTurma.Size = new System.Drawing.Size(342, 24);
             this.cmbTurma.TabIndex = 83;
@@ -556,8 +531,6 @@
             this.grpbDadosAluno.PerformLayout();
             this.grpbDadosCurso.ResumeLayout(false);
             this.grpbDadosCurso.PerformLayout();
-            this.grpbTurno.ResumeLayout(false);
-            this.grpbTurno.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,12 +576,10 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblTurma;
         private System.Windows.Forms.ComboBox cmbTurma;
-        private System.Windows.Forms.GroupBox grpbTurno;
-        private System.Windows.Forms.RadioButton rbNoturno;
-        private System.Windows.Forms.RadioButton rbVespertino;
-        private System.Windows.Forms.RadioButton rbMatutino;
         private System.Windows.Forms.MaskedTextBox txtSenha;
         private System.Windows.Forms.Button btnAvançarLogin;
         private System.Windows.Forms.Button btnAvancarDados;
+        private System.Windows.Forms.Label lblTurno;
+        private System.Windows.Forms.ComboBox cmbTurno;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEscola.DAO;
 
 namespace SistemaEscola.Formulários.Admin.Disciplina
 {
@@ -17,9 +18,11 @@ namespace SistemaEscola.Formulários.Admin.Disciplina
             InitializeComponent();
         }
 
+        DisciplinaDAO discDAO = new DisciplinaDAO();
+
         private void PesquisarDisc_Load(object sender, EventArgs e)
         {
-            txtDado.MaxLength = 45;
+            discDAO.pesqDisc(dgvDados);
         }
     }
 }
