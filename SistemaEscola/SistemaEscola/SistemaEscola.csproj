@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceProcess" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classe\Autenticacao.cs" />
     <Compile Include="Classe\Banco.cs" />
+    <Compile Include="Classe\LimparCampos.cs" />
     <Compile Include="DAO\ComboBoxDAO.cs" />
     <Compile Include="DAO\CursoDAO.cs" />
     <Compile Include="DAO\DisciplinaDAO.cs" />
@@ -83,6 +84,18 @@
     </Compile>
     <Compile Include="Formulários\Admin\Curso\CursoForm.Designer.cs">
       <DependentUpon>CursoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\DeletarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\DeletarCurso.Designer.cs">
+      <DependentUpon>DeletarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\PesquisaCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Curso\PesquisaCurso.Designer.cs">
+      <DependentUpon>PesquisaCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Admin\DeletarUsuário.cs">
       <SubType>Form</SubType>
@@ -352,6 +365,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Curso\CursoForm.resx">
       <DependentUpon>CursoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Curso\DeletarCurso.resx">
+      <DependentUpon>DeletarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Curso\PesquisaCurso.resx">
+      <DependentUpon>PesquisaCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\DeletarUsuário.resx">
       <DependentUpon>DeletarUsuário.cs</DependentUpon>

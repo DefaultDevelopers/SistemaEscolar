@@ -34,19 +34,16 @@ namespace SistemaEscola.Classe
                     {
                         JanelaDoAdm adm = new JanelaDoAdm();
                         adm.Show();
-                       // form.Close();
                     }
                     else if (TipoUser == 2)
                     {
                         SistemaEscola.Formulários.Usuarios.Professor.Professor prof = new Formulários.Usuarios.Professor.Professor();
                         prof.Show();
-                        //form.Close();
                     }
                     else if (TipoUser == 3)
                     {
                         AlunoForm aluno = new AlunoForm();
                         aluno.Show();
-                        //form.Close();
                     }
 
                     form.Close();

@@ -45,6 +45,7 @@
             this.btnPesquisarCurso.TabIndex = 9;
             this.btnPesquisarCurso.Text = "Pesquisar Curso";
             this.btnPesquisarCurso.UseVisualStyleBackColor = true;
+            this.btnPesquisarCurso.Click += new System.EventHandler(this.btnPesquisarCurso_Click);
             // 
             // btnDelCurso
             // 
@@ -54,6 +55,7 @@
             this.btnDelCurso.TabIndex = 8;
             this.btnDelCurso.Text = "Deletar Curso";
             this.btnDelCurso.UseVisualStyleBackColor = true;
+            this.btnDelCurso.Click += new System.EventHandler(this.btnDelCurso_Click);
             // 
             // btnAlteraCurso
             // 
@@ -63,6 +65,7 @@
             this.btnAlteraCurso.TabIndex = 7;
             this.btnAlteraCurso.Text = "Alterar Curso";
             this.btnAlteraCurso.UseVisualStyleBackColor = true;
+            this.btnAlteraCurso.Click += new System.EventHandler(this.btnAlteraCurso_Click);
             // 
             // btnCadCurso
             // 

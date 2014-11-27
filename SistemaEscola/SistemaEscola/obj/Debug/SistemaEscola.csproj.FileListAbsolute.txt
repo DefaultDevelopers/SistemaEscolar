@@ -107,3 +107,7 @@ D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\Sistema
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.AlterarCurso.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.CadastrarCurso.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.CursoForm.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.DeletarCurso.resources
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.PesquisaCurso.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.DeletarCurso.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Curso.PesquisaCurso.resources

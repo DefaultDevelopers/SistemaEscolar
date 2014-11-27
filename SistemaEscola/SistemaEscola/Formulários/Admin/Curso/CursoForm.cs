@@ -22,5 +22,23 @@ namespace SistemaEscola.Formulários.Admin.Curso
             CadastrarCurso cadCurso = new CadastrarCurso();
             cadCurso.Show();
         }
+
+        private void btnDelCurso_Click(object sender, EventArgs e)
+        {
+            DeletarCurso delCurso = new DeletarCurso();
+            delCurso.Show();
+        }
+
+        private void btnPesquisarCurso_Click(object sender, EventArgs e)
+        {
+            PesquisaCurso pesqCurso = new PesquisaCurso();
+            pesqCurso.Show();
+        }
+
+        private void btnAlteraCurso_Click(object sender, EventArgs e)
+        {
+            AlterarCurso altCurso = new AlterarCurso();
+            altCurso.Show();
+        }
     }
 }
