@@ -24,77 +24,77 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         AlunoDAO alunoDAO = new AlunoDAO();
         LoginDAO loginDAO = new LoginDAO();
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
-        String nome, telefone, email, cpf, endereco, login, curso, tipo;
+        EnderecoDAO endDAO = new EnderecoDAO();
+        String nome, telefone, email, cpf, login, curso, tipo;
         DateTime dataNasc;
         int turma, senha, turno, user = 3;
 
-        //Pesquisa no Formulário (Comboboxes)
         private void MatricularAluno_Load(object sender, EventArgs e)
         {
+            //Métodos necessários no load do form
             txtLoginAno.Text = Convert.ToString(DateTime.Now.Year);
             cmbBoxDAO.comboTipo(cmbTipo);
-            //cmbBoxDAO.comboCurso(cmbCurso);
             numRandomLogin();
         }
 
+        //Método para criar número aleatório
         private void numRandomLogin()
         {
             Random txtLoginNum = new Random();
             txtLoginNumAleat.Text = Convert.ToString(txtLoginNum.Next(1000, 9999));
         }
 
-        //Classe para salvar no banco
-        private void btnAvancarLogin_Click(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //Login
+            //LOGIN
             Login loginTable = new Login();
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             senha = Convert.ToInt32(txtSenha.Text);
-
+            
             loginTable.Log = login;
             loginTable.Senha = senha;
             loginTable.User = user;
 
             loginDAO.salvarLogin(loginTable);
-            
-            grpbDadosAluno.Enabled = true;
-        }
 
-        private void btnAvancarDados_Click(object sender, EventArgs e)
-        {
-            //Aluno
+            //ALUNO
+            SistemaEscola.Entidades.Aluno alunoEnt = new SistemaEscola.Entidades.Aluno();
+
             nome = txtNome.Text;
             telefone = txtTelefone.Text;
             email = txtEmail.Text;
             cpf = txtCPF.Text;
-            endereco = "Rua: " + txtRua.Text + ", " + txtNum.Text + ", Bairro: " + txtBairro.Text + ", Estado: " + txtEstado.Text + ", Cidade: " + txtCidade.Text + ", CEP: " + txtCEP.Text;
-            dataNasc = Convert.ToDateTime(dtpDataNasc.Text);
+            dataNasc = dtpDataNasc.Value;
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
 
-            SistemaEscola.Entidades.Aluno alunoEnt = new SistemaEscola.Entidades.Aluno();
-
-            //Aluno
             alunoEnt.Nome = nome;
             alunoEnt.Telefone = telefone;
             alunoEnt.Email = email;
             alunoEnt.CPF = cpf;
-            alunoEnt.Endereco = endereco;
             alunoEnt.DataNasc = dataNasc;
             alunoEnt.Login = login;
 
             alunoDAO.salvarAluno(alunoEnt);
 
-            grpbDadosCurso.Enabled = true;            
-        }
+            //ENDEREÇO
+            SistemaEscola.Entidades.Endereco endEnt = new Endereco();
 
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
+            endEnt.Login = login;
+            endEnt.Rua = txtRua.Text;
+            endEnt.Bairro = txtBairro.Text;
+            endEnt.Num = txtNum.Text;
+            endEnt.Estado = txtEstado.Text;
+            endEnt.Cidade = txtCidade.Text;
+            endEnt.CEP = txtCEP.Text;
+
+            endDAO.salvarEnd(endEnt);
+
             SistemaEscola.Entidades.Matricula matrEnt = new SistemaEscola.Entidades.Matricula();
 
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             turma = Convert.ToInt32(cmbTurma.SelectedValue);
 
-            //Matricula            
+            //MATRÍCULA        
             matrEnt.Login = login;
             matrEnt.IdTurma = turma;
 
@@ -105,14 +105,12 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             tipo = Convert.ToString(cmbTipo.SelectedValue);
             cmbBoxDAO.comboTurno(cmbTurno, tipo);
-            cmbTurno.Enabled = true;
         }
 
         private void cmbTurno_SelectionChangeCommitted(object sender, EventArgs e)
         {
             turno = Convert.ToInt32(cmbTurno.SelectedValue);
             cmbBoxDAO.comboCurso(cmbCurso, turno);
-            cmbCurso.Enabled = true;
         }
 
         private void cmbCurso_SelectionChangeCommitted(object sender, EventArgs e)

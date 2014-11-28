@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeletarCurso));
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodCurso = new System.Windows.Forms.MaskedTextBox();
             this.btnDeletar = new System.Windows.Forms.Button();
@@ -103,8 +104,9 @@
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.txtCodCurso);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletarCurso";
-            this.Text = "DeletarCurso";
+            this.Text = "Deletar Curso";
             this.Load += new System.EventHandler(this.DeletarCurso_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);

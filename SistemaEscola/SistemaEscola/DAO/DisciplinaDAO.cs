@@ -103,5 +103,62 @@ namespace SistemaEscola.DAO
                 con.Close();
             }
         }
+
+        public void retornaDisc(MaskedTextBox txtAltDiscCod, TextBox txtNome, TextBox txtDescricao, MaskedTextBox txtCargaHor)
+        {
+            string idDisc = txtAltDiscCod.Text;
+
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            String CursoCmd = "SELECT nome, carga_horaria, descricao FROM Disciplina WHERE idDisciplina = '" + idDisc + "'";
+
+            MySqlCommand cmd = new MySqlCommand(CursoCmd, con);
+
+            con.Open();
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                txtNome.Text = reader["nome"].ToString();
+                txtCargaHor.Text = reader["carga_horaria"].ToString();
+                txtDescricao.Text = reader["descricao"].ToString();
+            }
+
+            con.Close();
+        }
+
+        public void alteraCurso(Disciplina disc, MaskedTextBox txtDisc)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            con.Open();
+
+            try
+            {
+                cmd.CommandText = "UPDATE Disciplina SET nome = '" + disc.Nome + "', descricao = '" + disc.Descricao + "', carga_horaria = " + disc.Carga_Hor + " WHERE idDisciplina = '" + txtDisc.Text + "'";
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show("Houve algum erro ao alterar." + exp.Message);
+            }
+
+            try
+            {
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Dados de disciplina alterados com sucesso.");
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

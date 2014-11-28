@@ -53,6 +53,7 @@
     <Compile Include="DAO\CursoDAO.cs" />
     <Compile Include="DAO\DisciplinaDAO.cs" />
     <Compile Include="DAO\AlunoDAO.cs" />
+    <Compile Include="DAO\EnderecoDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\MatriculaDAO.cs" />
     <Compile Include="DAO\ProfessorDAO.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Entidades\Aluno.cs" />
     <Compile Include="Entidades\Curso.cs" />
     <Compile Include="Entidades\Disciplina.cs" />
+    <Compile Include="Entidades\Endereco.cs" />
     <Compile Include="Entidades\Frequencia.cs" />
     <Compile Include="Entidades\Login.cs" />
     <Compile Include="Entidades\Matricula.cs" />

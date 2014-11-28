@@ -83,5 +83,39 @@ namespace SistemaEscola.DAO
                 con.Close();
             }
         }
+
+        public void alteraMatricula(MaskedTextBox txtCodAluno, SistemaEscola.Entidades.Matricula matrEnt)
+        {
+            String loginAluno = txtCodAluno.Text;
+
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            con.Open();
+
+            try
+            {
+                cmd.CommandText = "UPDATE Matricula SET Turma_idTurma = '" + matrEnt.IdTurma + "' WHERE Aluno_Login_Login = '" + loginAluno + "'";
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show("Houve algum erro ao alterar. [Matrícula]" + exp.Message);
+            }
+
+            try
+            {
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

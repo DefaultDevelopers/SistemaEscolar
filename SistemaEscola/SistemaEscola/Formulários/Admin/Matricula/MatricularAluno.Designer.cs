@@ -70,8 +70,6 @@
             this.txtLoginNumAleat = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
-            this.btnAvançarLogin = new System.Windows.Forms.Button();
-            this.btnAvancarDados = new System.Windows.Forms.Button();
             this.grpbEnd.SuspendLayout();
             this.grpbDadosAluno.SuspendLayout();
             this.grpbDadosCurso.SuspendLayout();
@@ -79,7 +77,6 @@
             // 
             // cmbCurso
             // 
-            this.cmbCurso.Enabled = false;
             this.cmbCurso.FormattingEnabled = true;
             this.cmbCurso.Location = new System.Drawing.Point(63, 87);
             this.cmbCurso.Name = "cmbCurso";
@@ -116,7 +113,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(90, 558);
+            this.btnSalvar.Location = new System.Drawing.Point(77, 516);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(96, 40);
             this.btnSalvar.TabIndex = 84;
@@ -126,7 +123,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(284, 558);
+            this.btnLimpar.Location = new System.Drawing.Point(271, 516);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(96, 40);
             this.btnLimpar.TabIndex = 85;
@@ -157,6 +154,7 @@
             this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDataNasc.Location = new System.Drawing.Point(220, 48);
             this.dtpDataNasc.Name = "dtpDataNasc";
+            this.dtpDataNasc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtpDataNasc.Size = new System.Drawing.Size(180, 22);
             this.dtpDataNasc.TabIndex = 69;
             // 
@@ -364,7 +362,6 @@
             this.grpbDadosAluno.Controls.Add(this.dtpDataNasc);
             this.grpbDadosAluno.Controls.Add(this.txtTelefone);
             this.grpbDadosAluno.Controls.Add(this.txtEmail);
-            this.grpbDadosAluno.Enabled = false;
             this.grpbDadosAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpbDadosAluno.Location = new System.Drawing.Point(12, 87);
             this.grpbDadosAluno.Name = "grpbDadosAluno";
@@ -383,9 +380,8 @@
             this.grpbDadosCurso.Controls.Add(this.lblCurso);
             this.grpbDadosCurso.Controls.Add(this.lblTipo);
             this.grpbDadosCurso.Controls.Add(this.cmbCurso);
-            this.grpbDadosCurso.Enabled = false;
             this.grpbDadosCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbDadosCurso.Location = new System.Drawing.Point(12, 375);
+            this.grpbDadosCurso.Location = new System.Drawing.Point(12, 333);
             this.grpbDadosCurso.Name = "grpbDadosCurso";
             this.grpbDadosCurso.Size = new System.Drawing.Size(420, 176);
             this.grpbDadosCurso.TabIndex = 79;
@@ -403,7 +399,6 @@
             // 
             // cmbTurno
             // 
-            this.cmbTurno.Enabled = false;
             this.cmbTurno.FormattingEnabled = true;
             this.cmbTurno.Location = new System.Drawing.Point(62, 57);
             this.cmbTurno.Name = "cmbTurno";
@@ -423,14 +418,14 @@
             // cmbTurma
             // 
             this.cmbTurma.FormattingEnabled = true;
-            this.cmbTurma.Location = new System.Drawing.Point(58, 135);
+            this.cmbTurma.Location = new System.Drawing.Point(63, 135);
             this.cmbTurma.Name = "cmbTurma";
             this.cmbTurma.Size = new System.Drawing.Size(342, 24);
             this.cmbTurma.TabIndex = 83;
             // 
             // txtLoginNumId
             // 
-            this.txtLoginNumId.Location = new System.Drawing.Point(255, 23);
+            this.txtLoginNumId.Location = new System.Drawing.Point(327, 23);
             this.txtLoginNumId.Mask = "000";
             this.txtLoginNumId.Name = "txtLoginNumId";
             this.txtLoginNumId.Size = new System.Drawing.Size(33, 20);
@@ -439,7 +434,7 @@
             // txtLoginAno
             // 
             this.txtLoginAno.Enabled = false;
-            this.txtLoginAno.Location = new System.Drawing.Point(177, 23);
+            this.txtLoginAno.Location = new System.Drawing.Point(249, 23);
             this.txtLoginAno.MaxLength = 4;
             this.txtLoginAno.Name = "txtLoginAno";
             this.txtLoginAno.Size = new System.Drawing.Size(33, 20);
@@ -449,7 +444,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(12, 23);
+            this.lblLogin.Location = new System.Drawing.Point(84, 23);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(162, 16);
             this.lblLogin.TabIndex = 59;
@@ -458,7 +453,7 @@
             // txtLoginNumAleat
             // 
             this.txtLoginNumAleat.Enabled = false;
-            this.txtLoginNumAleat.Location = new System.Drawing.Point(216, 23);
+            this.txtLoginNumAleat.Location = new System.Drawing.Point(288, 23);
             this.txtLoginNumAleat.MaxLength = 4;
             this.txtLoginNumAleat.Name = "txtLoginNumAleat";
             this.txtLoginNumAleat.Size = new System.Drawing.Size(33, 20);
@@ -468,7 +463,7 @@
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(12, 55);
+            this.lblSenha.Location = new System.Drawing.Point(84, 55);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(152, 16);
             this.lblSenha.TabIndex = 64;
@@ -476,41 +471,17 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(177, 54);
+            this.txtSenha.Location = new System.Drawing.Point(249, 54);
             this.txtSenha.Mask = "0000000000";
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(111, 20);
             this.txtSenha.TabIndex = 63;
             // 
-            // btnAvançarLogin
-            // 
-            this.btnAvançarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvançarLogin.Location = new System.Drawing.Point(298, 39);
-            this.btnAvançarLogin.Name = "btnAvançarLogin";
-            this.btnAvançarLogin.Size = new System.Drawing.Size(134, 36);
-            this.btnAvançarLogin.TabIndex = 64;
-            this.btnAvançarLogin.Text = "Avançar";
-            this.btnAvançarLogin.UseVisualStyleBackColor = true;
-            this.btnAvançarLogin.Click += new System.EventHandler(this.btnAvancarLogin_Click);
-            // 
-            // btnAvancarDados
-            // 
-            this.btnAvancarDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvancarDados.Location = new System.Drawing.Point(299, 333);
-            this.btnAvancarDados.Name = "btnAvancarDados";
-            this.btnAvancarDados.Size = new System.Drawing.Size(134, 36);
-            this.btnAvancarDados.TabIndex = 78;
-            this.btnAvancarDados.Text = "Avançar";
-            this.btnAvancarDados.UseVisualStyleBackColor = true;
-            this.btnAvancarDados.Click += new System.EventHandler(this.btnAvancarDados_Click);
-            // 
             // MatricularAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 609);
-            this.Controls.Add(this.btnAvancarDados);
-            this.Controls.Add(this.btnAvançarLogin);
+            this.ClientSize = new System.Drawing.Size(445, 563);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtLoginNumAleat);
@@ -577,8 +548,6 @@
         private System.Windows.Forms.Label lblTurma;
         private System.Windows.Forms.ComboBox cmbTurma;
         private System.Windows.Forms.MaskedTextBox txtSenha;
-        private System.Windows.Forms.Button btnAvançarLogin;
-        private System.Windows.Forms.Button btnAvancarDados;
         private System.Windows.Forms.Label lblTurno;
         private System.Windows.Forms.ComboBox cmbTurno;
     }

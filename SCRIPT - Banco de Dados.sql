@@ -61,7 +61,9 @@ SELECT * FROM Aluno;
 #Matricula
 #Selects aleatórios
 SELECT Turma_idTurma FROM Matricula WHERE Aluno_Login_Login = '20143447123';
-SELECT idAluno as 'ID do Aluno', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento', endereco as 'Endereço' FROM Login, Aluno, Matricula WHERE Login = Login_Login;
+SELECT idAluno as 'ID do Aluno', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Login, Aluno, Matricula WHERE Login = Login_Login;
 DELETE FROM Login WHERE Login = '20149440123';
 SELECT DISTINCT Turno_idTurno, turno FROM Turma, Turno WHERE Tipo_idTipo = '1' AND Turno_idTurno = idTurno;
 SELECT DISTINCT t.Curso_idCurso, c.nome FROM Turma=t, Curso=c WHERE t.Turno_idTurno = 2 AND Curso_idCurso = idCurso;
+
+SELECT nome, email, cpf, telefone, data_nascimento FROM Aluno WHERE Login_Login = 20141902123;

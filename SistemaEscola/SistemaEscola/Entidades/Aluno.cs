@@ -8,7 +8,7 @@ namespace SistemaEscola.Entidades
 {
     class Aluno
     {
-        String  login, nome, telefone, email, cpf, endereco;
+        String  login, nome, telefone, email, cpf;
         DateTime dataNasc;
 
         public String Login
@@ -16,12 +16,6 @@ namespace SistemaEscola.Entidades
             get { return login; }
             set { login = value; }
         }
-
-        public String Endereco
-        {
-            get { return endereco; }
-            set { endereco = value; }
-        }        
 
         public string Nome
         {
