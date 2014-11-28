@@ -9,10 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaEscola.Formulários.Admin;
 using SistemaEscola.Formulários.Admin.Matricula;
-using SistemaEscola.Formulários.Admin.Professor;
 using SistemaEscola.Formulários.Admin.Turma;
 using SistemaEscola.Formulários.Admin.Disciplina;
-using SistemaEscola.Formulários.Admin.Prof_Turma;
+using SistemaEscola.Formulários.Admin.Professor;
 using SistemaEscola.Formulários.Admin.Curso;
 
 namespace SistemaEscola.Formulários
@@ -52,12 +51,6 @@ namespace SistemaEscola.Formulários
         {
             DeletarUsuário delUser = new DeletarUsuário();
             delUser.ShowDialog();
-        }
-
-        private void btnAdmProfTurma_Click(object sender, EventArgs e)
-        {
-            Prof_Turma profturma = new Prof_Turma();
-            profturma.ShowDialog();
         }
 
         private void btnAdmPesq_Click(object sender, EventArgs e)

@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceProcess" />
@@ -56,6 +56,7 @@
     <Compile Include="DAO\EnderecoDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\MatriculaDAO.cs" />
+    <Compile Include="DAO\Prof-TurmaDAO.cs" />
     <Compile Include="DAO\ProfessorDAO.cs" />
     <Compile Include="DAO\TurmaDAO.cs" />
     <Compile Include="Entidades\Aluno.cs" />
@@ -177,58 +178,52 @@
     <Compile Include="Formulários\Admin\PesquisaUsuário.Designer.cs">
       <DependentUpon>PesquisaUsuário.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\AlterarVinculo.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\AlterarVinculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\AlterarVinculo.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\AlterarVinculo.Designer.cs">
       <DependentUpon>AlterarVinculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\DeletarVinculo.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\DeletarVinculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\DeletarVinculo.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\DeletarVinculo.Designer.cs">
       <DependentUpon>DeletarVinculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\Prof-Turma.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\VincularProfTurma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\Prof-Turma.Designer.cs">
-      <DependentUpon>Prof-Turma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\VincularProfTurma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formulários\Admin\Prof-Turma\VincularProfTurma.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\VincularProfTurma.Designer.cs">
       <DependentUpon>VincularProfTurma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\AlterarDiscMinis.cs">
+    <Compile Include="Formulários\Admin\Professor\Disciplina\AlterarDiscMinis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\AlterarDiscMinis.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Disciplina\AlterarDiscMinis.Designer.cs">
       <DependentUpon>AlterarDiscMinis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\AlterarProf.cs">
+    <Compile Include="Formulários\Admin\Professor\Professor\AlterarProf.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\AlterarProf.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Professor\AlterarProf.Designer.cs">
       <DependentUpon>AlterarProf.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\CadastrarProf.cs">
+    <Compile Include="Formulários\Admin\Professor\Professor\CadastrarProf.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\CadastrarProf.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Professor\CadastrarProf.Designer.cs">
       <DependentUpon>CadastrarProf.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\DeletarDiscMinis.cs">
+    <Compile Include="Formulários\Admin\Professor\Disciplina\DeletarDiscMinis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\DeletarDiscMinis.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Disciplina\DeletarDiscMinis.Designer.cs">
       <DependentUpon>DeletarDiscMinis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\DisciplinaMinistrada.cs">
+    <Compile Include="Formulários\Admin\Professor\Disciplina\DisciplinaMinistrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\DisciplinaMinistrada.Designer.cs">
+    <Compile Include="Formulários\Admin\Professor\Disciplina\DisciplinaMinistrada.Designer.cs">
       <DependentUpon>DisciplinaMinistrada.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Admin\Professor\Professor.cs">
@@ -413,31 +408,28 @@
     <EmbeddedResource Include="Formulários\Admin\PesquisaUsuário.resx">
       <DependentUpon>PesquisaUsuário.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Prof-Turma\AlterarVinculo.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\AlterarVinculo.resx">
       <DependentUpon>AlterarVinculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Prof-Turma\DeletarVinculo.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\DeletarVinculo.resx">
       <DependentUpon>DeletarVinculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Prof-Turma\Prof-Turma.resx">
-      <DependentUpon>Prof-Turma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Prof-Turma\VincularProfTurma.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\VincularProfTurma.resx">
       <DependentUpon>VincularProfTurma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\AlterarDiscMinis.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Disciplina\AlterarDiscMinis.resx">
       <DependentUpon>AlterarDiscMinis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\AlterarProf.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Professor\AlterarProf.resx">
       <DependentUpon>AlterarProf.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\CadastrarProf.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Professor\CadastrarProf.resx">
       <DependentUpon>CadastrarProf.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\DeletarDiscMinis.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Disciplina\DeletarDiscMinis.resx">
       <DependentUpon>DeletarDiscMinis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\DisciplinaMinistrada.resx">
+    <EmbeddedResource Include="Formulários\Admin\Professor\Disciplina\DisciplinaMinistrada.resx">
       <DependentUpon>DisciplinaMinistrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Professor\Professor.resx">
@@ -617,6 +609,7 @@
   <ItemGroup>
     <None Include="Resources\Preciso-do-diploma.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

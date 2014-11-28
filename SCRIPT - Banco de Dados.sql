@@ -49,6 +49,11 @@ SELECT DISTINCT idDisciplina as 'ID da Disciplina', d.nome as 'Nome', carga_hora
 INSERT INTO Login (Login, Senha, User_idUser) VALUES ("admin", 12345, 001);
 #Selects aleatórios
 SELECT * FROM Login;
+SELECT * FROM Professor;
+
+SELECT nome, email, cpf, data_nascimento, telefone, grau_formacao, formacao FROM Professor WHERE Login_Login = '20142512';
+
+DELETE FROM Login WHERE User_idUser = 2;
 SELECT Login , Senha, u.user as 'Tipo de usuário' FROM Login=l, User=u WHERE l.User_idUser=u.idUser;
 SELECT idUser FROM Login WHERE Login = 'admin';
 SELECT nome, idCurso FROM Curso WHERE idTurno = 002 AND idTipo = 1;

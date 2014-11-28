@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaEscola.Formulários.Admin.Prof_Turma
+namespace SistemaEscola.Formulários.Admin.Professor
 {
     public partial class DeletarVinculo : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace SistemaEscola.Formulários.Admin.Prof_Turma
+﻿namespace SistemaEscola.Formulários.Admin.Professor
 {
     partial class VincularProfTurma
     {
@@ -29,22 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VincularProfTurma));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbCodTurma = new System.Windows.Forms.ComboBox();
-            this.cmbCodProf = new System.Windows.Forms.ComboBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtCodProf = new System.Windows.Forms.MaskedTextBox();
+            this.linklblCodProf = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código do Professor:";
             // 
             // label2
             // 
@@ -63,14 +54,6 @@
             this.cmbCodTurma.Size = new System.Drawing.Size(121, 21);
             this.cmbCodTurma.TabIndex = 2;
             // 
-            // cmbCodProf
-            // 
-            this.cmbCodProf.FormattingEnabled = true;
-            this.cmbCodProf.Location = new System.Drawing.Point(147, 20);
-            this.cmbCodProf.Name = "cmbCodProf";
-            this.cmbCodProf.Size = new System.Drawing.Size(121, 21);
-            this.cmbCodProf.TabIndex = 3;
-            // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(39, 84);
@@ -79,6 +62,7 @@
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
@@ -89,17 +73,36 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
+            // txtCodProf
+            // 
+            this.txtCodProf.Location = new System.Drawing.Point(147, 20);
+            this.txtCodProf.Mask = "0000000";
+            this.txtCodProf.Name = "txtCodProf";
+            this.txtCodProf.Size = new System.Drawing.Size(121, 20);
+            this.txtCodProf.TabIndex = 6;
+            // 
+            // linklblCodProf
+            // 
+            this.linklblCodProf.AutoSize = true;
+            this.linklblCodProf.Location = new System.Drawing.Point(36, 23);
+            this.linklblCodProf.Name = "linklblCodProf";
+            this.linklblCodProf.Size = new System.Drawing.Size(105, 13);
+            this.linklblCodProf.TabIndex = 7;
+            this.linklblCodProf.TabStop = true;
+            this.linklblCodProf.Text = "Código do Professor:";
+            this.linklblCodProf.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblCodProf_LinkClicked);
+            // 
             // VincularProfTurma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(307, 125);
+            this.Controls.Add(this.linklblCodProf);
+            this.Controls.Add(this.txtCodProf);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.cmbCodProf);
             this.Controls.Add(this.cmbCodTurma);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VincularProfTurma";
             this.Text = "Vincular Professor/Turma";
@@ -110,11 +113,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbCodTurma;
-        private System.Windows.Forms.ComboBox cmbCodProf;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.MaskedTextBox txtCodProf;
+        private System.Windows.Forms.LinkLabel linklblCodProf;
     }
 }

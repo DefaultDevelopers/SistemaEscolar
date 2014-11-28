@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaEscola.Formulários.Admin.Prof_Turma
+namespace SistemaEscola.Formulários.Admin.Professor
 {
-    public partial class VincularProfTurma : Form
+    public partial class AlterarVinculo : Form
     {
-        public VincularProfTurma()
+        public AlterarVinculo()
         {
             InitializeComponent();
         }

@@ -33,14 +33,12 @@
             this.btnAdmTurma = new System.Windows.Forms.Button();
             this.btnAdmDisc = new System.Windows.Forms.Button();
             this.btnAdmMatr = new System.Windows.Forms.Button();
-            this.btnAdmProfTurma = new System.Windows.Forms.Button();
             this.btnAdmDel = new System.Windows.Forms.Button();
             this.btnAdmPesq = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.picBoxCurso = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.picBoxProfTurma = new System.Windows.Forms.PictureBox();
             this.picBoxMatr = new System.Windows.Forms.PictureBox();
             this.picBoxDisc = new System.Windows.Forms.PictureBox();
             this.picBoxTurma = new System.Windows.Forms.PictureBox();
@@ -48,7 +46,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxCurso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxProfTurma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMatr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxDisc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTurma)).BeginInit();
@@ -95,16 +92,6 @@
             this.btnAdmMatr.UseVisualStyleBackColor = true;
             this.btnAdmMatr.Click += new System.EventHandler(this.btnAdmMatr_Click);
             // 
-            // btnAdmProfTurma
-            // 
-            this.btnAdmProfTurma.Location = new System.Drawing.Point(243, 433);
-            this.btnAdmProfTurma.Name = "btnAdmProfTurma";
-            this.btnAdmProfTurma.Size = new System.Drawing.Size(130, 51);
-            this.btnAdmProfTurma.TabIndex = 10;
-            this.btnAdmProfTurma.Text = "Professor/Turma";
-            this.btnAdmProfTurma.UseVisualStyleBackColor = true;
-            this.btnAdmProfTurma.Click += new System.EventHandler(this.btnAdmProfTurma_Click);
-            // 
             // btnAdmDel
             // 
             this.btnAdmDel.Location = new System.Drawing.Point(40, 433);
@@ -127,7 +114,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(243, 571);
+            this.button1.Location = new System.Drawing.Point(242, 433);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 51);
             this.button1.TabIndex = 16;
@@ -138,7 +125,7 @@
             // picBoxCurso
             // 
             this.picBoxCurso.Image = global::SistemaEscola.Properties.Resources.Preciso_do_diploma;
-            this.picBoxCurso.Location = new System.Drawing.Point(277, 494);
+            this.picBoxCurso.Location = new System.Drawing.Point(276, 356);
             this.picBoxCurso.Name = "picBoxCurso";
             this.picBoxCurso.Size = new System.Drawing.Size(64, 71);
             this.picBoxCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -164,16 +151,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
-            // 
-            // picBoxProfTurma
-            // 
-            this.picBoxProfTurma.Image = global::SistemaEscola.Properties.Resources.Prof_TurmaIcon;
-            this.picBoxProfTurma.Location = new System.Drawing.Point(277, 356);
-            this.picBoxProfTurma.Name = "picBoxProfTurma";
-            this.picBoxProfTurma.Size = new System.Drawing.Size(64, 71);
-            this.picBoxProfTurma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxProfTurma.TabIndex = 11;
-            this.picBoxProfTurma.TabStop = false;
             // 
             // picBoxMatr
             // 
@@ -226,8 +203,6 @@
             this.Controls.Add(this.btnAdmPesq);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnAdmDel);
-            this.Controls.Add(this.picBoxProfTurma);
-            this.Controls.Add(this.btnAdmProfTurma);
             this.Controls.Add(this.picBoxMatr);
             this.Controls.Add(this.btnAdmMatr);
             this.Controls.Add(this.picBoxDisc);
@@ -242,7 +217,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxCurso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxProfTurma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMatr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxDisc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTurma)).EndInit();
@@ -262,8 +236,6 @@
         private System.Windows.Forms.Button btnAdmDisc;
         private System.Windows.Forms.PictureBox picBoxMatr;
         private System.Windows.Forms.Button btnAdmMatr;
-        private System.Windows.Forms.PictureBox picBoxProfTurma;
-        private System.Windows.Forms.Button btnAdmProfTurma;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnAdmDel;
         private System.Windows.Forms.PictureBox pictureBox4;

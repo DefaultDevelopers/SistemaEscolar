@@ -43,6 +43,7 @@ namespace SistemaEscola.DAO
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("O endereço foi salvo com sucesso.");
             }
             catch (Exception exc)
             {
@@ -83,7 +84,7 @@ namespace SistemaEscola.DAO
 
         public void alteraEnd(Endereco endEnt, MaskedTextBox txtCodAluno)
         {
-            String loginAluno = txtCodAluno.Text;
+            String login = txtCodAluno.Text;
 
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
@@ -93,7 +94,7 @@ namespace SistemaEscola.DAO
 
             try
             {
-                cmd.CommandText = "UPDATE endereco SET rua = '" + endEnt.Rua + "', bairro = '" + endEnt.Bairro + "', num = '" + endEnt.Num + "', estado = '" + endEnt.Estado + "', cidade = '" + endEnt.Cidade + "', cep = '" + endEnt.CEP + "' WHERE Login_Login = '" + loginAluno + "'";
+                cmd.CommandText = "UPDATE endereco SET rua = '" + endEnt.Rua + "', bairro = '" + endEnt.Bairro + "', num = '" + endEnt.Num + "', estado = '" + endEnt.Estado + "', cidade = '" + endEnt.Cidade + "', cep = '" + endEnt.CEP + "' WHERE Login_Login = '" + login + "'";
             }
             catch (Exception exp)
             {
@@ -104,6 +105,7 @@ namespace SistemaEscola.DAO
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Dados de endereço alterado com sucesso.");
             }
             catch (Exception exc)
             {

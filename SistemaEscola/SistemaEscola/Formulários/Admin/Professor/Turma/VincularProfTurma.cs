@@ -10,17 +10,21 @@ using System.Windows.Forms;
 
 namespace SistemaEscola.Formulários.Admin.Professor
 {
-    public partial class CadastrarProf : Form
+    public partial class VincularProfTurma : Form
     {
-        public CadastrarProf()
+        public VincularProfTurma()
         {
             InitializeComponent();
         }
 
-        private void CadastrarProf_Load(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-            int ano = DateTime.Now.Year;
-            txtLoginAno.Text = Convert.ToString(ano);
+
+        }
+
+        private void linklblCodProf_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
         }
     }
 }

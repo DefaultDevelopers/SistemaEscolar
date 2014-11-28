@@ -44,6 +44,7 @@ namespace SistemaEscola.DAO
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("O Login foi salvo com sucesso.");
             }
             catch (MySqlException op) {
                 MessageBox.Show("Erro ao salvar. Contate o provedor do seu banco de dados ou tente outro Login." + op.Message);

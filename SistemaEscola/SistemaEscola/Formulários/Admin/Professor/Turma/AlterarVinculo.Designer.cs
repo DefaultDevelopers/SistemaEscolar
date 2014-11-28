@@ -1,6 +1,6 @@
-﻿namespace SistemaEscola.Formulários.Admin.Prof_Turma
+﻿namespace SistemaEscola.Formulários.Admin.Professor
 {
-    partial class DeletarVinculo
+    partial class AlterarVinculo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeletarVinculo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlterarVinculo));
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtCod = new System.Windows.Forms.MaskedTextBox();
             this.lblCod = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtIDVinculo = new System.Windows.Forms.TextBox();
-            this.btnDeletarVinculo = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(314, 32);
+            this.btnPesquisar.Location = new System.Drawing.Point(314, 9);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(135, 23);
             this.btnPesquisar.TabIndex = 8;
@@ -51,7 +51,7 @@
             // 
             // txtCod
             // 
-            this.txtCod.Location = new System.Drawing.Point(191, 35);
+            this.txtCod.Location = new System.Drawing.Point(191, 12);
             this.txtCod.Mask = "0000000";
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(117, 20);
@@ -61,72 +61,64 @@
             // 
             this.lblCod.AutoSize = true;
             this.lblCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCod.Location = new System.Drawing.Point(12, 36);
+            this.lblCod.Location = new System.Drawing.Point(12, 13);
             this.lblCod.Name = "lblCod";
             this.lblCod.Size = new System.Drawing.Size(181, 16);
             this.lblCod.TabIndex = 6;
             this.lblCod.Text = "Digite o código do professor:";
             // 
-            // label1
+            // groupBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(395, 18);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Digite o código do professor para pesquisar seus vínculos:";
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(15, 38);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(434, 197);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dados a alterar";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 61);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(433, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(422, 170);
             this.dataGridView1.TabIndex = 10;
             // 
-            // label2
+            // button1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 289);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 16);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Digite a ID do vínculo a deletar:";
+            this.button1.Location = new System.Drawing.Point(75, 241);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 31);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // txtIDVinculo
+            // button2
             // 
-            this.txtIDVinculo.Location = new System.Drawing.Point(208, 288);
-            this.txtIDVinculo.Name = "txtIDVinculo";
-            this.txtIDVinculo.Size = new System.Drawing.Size(100, 20);
-            this.txtIDVinculo.TabIndex = 12;
+            this.button2.Location = new System.Drawing.Point(309, 241);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 31);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnDeletarVinculo
-            // 
-            this.btnDeletarVinculo.Location = new System.Drawing.Point(314, 286);
-            this.btnDeletarVinculo.Name = "btnDeletarVinculo";
-            this.btnDeletarVinculo.Size = new System.Drawing.Size(135, 23);
-            this.btnDeletarVinculo.TabIndex = 13;
-            this.btnDeletarVinculo.Text = "Pesquisar";
-            this.btnDeletarVinculo.UseVisualStyleBackColor = true;
-            // 
-            // DeletarVinculo
+            // AlterarVinculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 324);
-            this.Controls.Add(this.btnDeletarVinculo);
-            this.Controls.Add(this.txtIDVinculo);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(463, 284);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.lblCod);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "DeletarVinculo";
-            this.Text = "Deletar Vínculo Professor/turma";
+            this.Name = "AlterarVinculo";
+            this.Text = "Alterar Vínculo Professor/Turma";
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,10 +130,9 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.MaskedTextBox txtCod;
         private System.Windows.Forms.Label lblCod;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIDVinculo;
-        private System.Windows.Forms.Button btnDeletarVinculo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
