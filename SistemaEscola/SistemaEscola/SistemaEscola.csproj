@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceProcess" />
@@ -56,6 +56,7 @@
     <Compile Include="DAO\EnderecoDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\MatriculaDAO.cs" />
+    <Compile Include="DAO\Prof-DiscDAO.cs" />
     <Compile Include="DAO\Prof-TurmaDAO.cs" />
     <Compile Include="DAO\ProfessorDAO.cs" />
     <Compile Include="DAO\TurmaDAO.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Entidades\Login.cs" />
     <Compile Include="Entidades\Matricula.cs" />
     <Compile Include="Entidades\Mensagem.cs" />
+    <Compile Include="Entidades\ProfDiscEnt.cs" />
     <Compile Include="Entidades\Professor.cs" />
     <Compile Include="Entidades\Tarefa.cs" />
     <Compile Include="Entidades\Turma.cs" />
@@ -177,6 +179,12 @@
     </Compile>
     <Compile Include="Formulários\Admin\PesquisaUsuário.Designer.cs">
       <DependentUpon>PesquisaUsuário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Professor\Disciplina\PesquisaProfDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Professor\Disciplina\PesquisaProfDisc.Designer.cs">
+      <DependentUpon>PesquisaProfDisc.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Admin\Professor\Turma\AlterarVinculo.cs">
       <SubType>Form</SubType>
@@ -407,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\PesquisaUsuário.resx">
       <DependentUpon>PesquisaUsuário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Professor\Disciplina\PesquisaProfDisc.resx">
+      <DependentUpon>PesquisaProfDisc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Professor\Turma\AlterarVinculo.resx">
       <DependentUpon>AlterarVinculo.cs</DependentUpon>

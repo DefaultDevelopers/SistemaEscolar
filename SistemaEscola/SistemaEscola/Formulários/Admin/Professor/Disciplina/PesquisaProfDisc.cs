@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaEscola.DAO;
 
-namespace SistemaEscola.Formulários.Admin.Professor
+namespace SistemaEscola.Formulários.Admin.Professor.Disciplina
 {
-    public partial class DeletarDiscMinis : Form
+    public partial class PesquisaProfDisc : Form
     {
-        public DeletarDiscMinis()
+        public PesquisaProfDisc()
         {
             InitializeComponent();
         }
@@ -22,15 +22,10 @@ namespace SistemaEscola.Formulários.Admin.Professor
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            profDiscDAO.pesquisaProfDisc(dgvDadosDisc, txtCod);
+            profDiscDAO.pesquisaProfDisc(dgvDados, txtCod);
         }
 
-        private void btnDeletar_Click(object sender, EventArgs e)
-        {
-            profDiscDAO.deletaProfDisc(txtDiscADeletar);
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLblCod_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             PesquisaUsuário pesqUser = new PesquisaUsuário();
             pesqUser.Show();

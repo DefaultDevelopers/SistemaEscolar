@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEscola.Formulários.Admin.Professor.Disciplina;
 
 namespace SistemaEscola.Formulários.Admin.Professor
 {
@@ -50,6 +51,30 @@ namespace SistemaEscola.Formulários.Admin.Professor
         {
             AlterarProf altProf = new AlterarProf();
             altProf.Show();
+        }
+
+        private void btnDiscMinis_Click(object sender, EventArgs e)
+        {
+            DisciplinaMinistrada discMinis = new DisciplinaMinistrada();
+            discMinis.Show();
+        }
+
+        private void btnDeletaDiscMinis_Click(object sender, EventArgs e)
+        {
+            DeletarDiscMinis delDiscMinis = new DeletarDiscMinis();
+            delDiscMinis.Show();
+        }
+
+        private void btnAlteraDiscMinis_Click(object sender, EventArgs e)
+        {
+            AlterarDiscMinis altDiscMinis = new AlterarDiscMinis();
+            altDiscMinis.Show();
+        }
+
+        private void btnPesqDisc_Click(object sender, EventArgs e)
+        {
+            PesquisaProfDisc pesqProfDisc = new PesquisaProfDisc();
+            pesqProfDisc.Show();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEscola.DAO;
 
 namespace SistemaEscola.Formulários.Admin.Professor
 {
@@ -15,6 +16,24 @@ namespace SistemaEscola.Formulários.Admin.Professor
         public AlterarDiscMinis()
         {
             InitializeComponent();
+        }
+
+        Prof_DiscDAO profDiscDAO = new Prof_DiscDAO();
+        ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            profDiscDAO.pesquisaProfDisc(dgvDadosDisc, txtCod);
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            profDiscDAO.alteraProfDisc(cmbDisc, txtDiscAAlterar);
+        }
+
+        private void AlterarDiscMinis_Load(object sender, EventArgs e)
+        {
+            cmbBoxDAO.comboDisc(cmbDisc);
         }
     }
 }

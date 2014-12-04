@@ -108,3 +108,5 @@ D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\Sistema
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.AlterarVinculo.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.DeletarVinculo.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.VincularProfTurma.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.csprojResolveAssemblyReference.cache
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.Disciplina.PesquisaProfDisc.resources

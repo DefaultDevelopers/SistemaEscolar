@@ -12,9 +12,9 @@ namespace SistemaEscola.DAO
 {
     class LoginDAO
     {
-        public void salvarLogin(Login login) {
+        Banco b = new Banco();
 
-            Banco b = new Banco();
+        public void salvarLogin(Login login) {            
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;

@@ -147,5 +147,25 @@ namespace SistemaEscola.DAO
 
             cmbTurno.Text = "";
         }
+
+        public void comboDisc(ComboBox cmbDisc)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            string command = "SELECT nome, idDisciplina FROM Disciplina";
+            MySqlDataAdapter da = new MySqlDataAdapter(command, con);
+
+            con.Open();
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cmbDisc.DataSource = dt;
+            cmbDisc.DisplayMember = "nome";
+            cmbDisc.ValueMember = "idDisciplina";
+
+            con.Close();
+        }
     }
 }

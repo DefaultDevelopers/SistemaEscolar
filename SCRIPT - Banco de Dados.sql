@@ -50,6 +50,7 @@ INSERT INTO Login (Login, Senha, User_idUser) VALUES ("admin", 12345, 001);
 #Selects aleatórios
 SELECT * FROM Login;
 SELECT * FROM Professor;
+SELECT * FROM Professor_Disciplina;
 
 SELECT nome, email, cpf, data_nascimento, telefone, grau_formacao, formacao FROM Professor WHERE Login_Login = '20142512';
 
@@ -59,7 +60,7 @@ SELECT idUser FROM Login WHERE Login = 'admin';
 SELECT nome, idCurso FROM Curso WHERE idTurno = 002 AND idTipo = 1;
 
 #Aluno
-INSERT INTO Aluno (Login_Login, nome, email, cpf, telefone, data_nascimento, endereco) VALUES (2014205123, "Ronaldo", 'ronaldo@', 2312312, 23323123, '2014-11-21', "Rua abacaxi");
+#INSERT INTO Aluno (Login_Login, nome, email, cpf, telefone, data_nascimento, endereco) VALUES (2014205123, "Ronaldo", 'ronaldo@', 2312312, 23323123, '2014-11-21', "Rua abacaxi");
 #Selects aleatórios
 SELECT * FROM Aluno;
 
@@ -72,3 +73,6 @@ SELECT DISTINCT Turno_idTurno, turno FROM Turma, Turno WHERE Tipo_idTipo = '1' A
 SELECT DISTINCT t.Curso_idCurso, c.nome FROM Turma=t, Curso=c WHERE t.Turno_idTurno = 2 AND Curso_idCurso = idCurso;
 
 SELECT nome, email, cpf, telefone, data_nascimento FROM Aluno WHERE Login_Login = 20141902123;
+SELECT Login_Login as 'Matricula', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Aluno WHERE nome LIKE 'Márcio';
+SELECT Login_Login as 'Código', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', grau_formacao as 'Grau de Formação', formacao as 'Formação', data_nascimento as 'Data de Nascimento' FROM Professor WHERE nome LIKE 'arnaldo';
+SELECT DISTINCT Disciplina_idDisciplina, nome FROM Professor_Disciplina, Disciplina WHERE Professor_Login_Login = '20145152' AND Disciplina_idDisciplina = idDisciplina;

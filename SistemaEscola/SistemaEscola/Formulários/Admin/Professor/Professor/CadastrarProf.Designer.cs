@@ -178,14 +178,14 @@
             this.txtCidade.Location = new System.Drawing.Point(301, 57);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(104, 22);
-            this.txtCidade.TabIndex = 29;
+            this.txtCidade.TabIndex = 15;
             // 
             // txtEstado
             // 
             this.txtEstado.Location = new System.Drawing.Point(300, 25);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(105, 22);
-            this.txtEstado.TabIndex = 28;
+            this.txtEstado.TabIndex = 14;
             // 
             // txtCEP
             // 
@@ -193,14 +193,14 @@
             this.txtCEP.Mask = "00000-000";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(132, 22);
-            this.txtCEP.TabIndex = 27;
+            this.txtCEP.TabIndex = 16;
             // 
             // txtNum
             // 
             this.txtNum.Location = new System.Drawing.Point(72, 87);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(128, 22);
-            this.txtNum.TabIndex = 24;
+            this.txtNum.TabIndex = 13;
             // 
             // txtBairro
             // 
@@ -208,7 +208,7 @@
             this.txtBairro.MaxLength = 25;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(138, 22);
-            this.txtBairro.TabIndex = 23;
+            this.txtBairro.TabIndex = 12;
             // 
             // txtRua
             // 
@@ -216,7 +216,7 @@
             this.txtRua.MaxLength = 45;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(147, 22);
-            this.txtRua.TabIndex = 22;
+            this.txtRua.TabIndex = 11;
             // 
             // lblCidade
             // 
@@ -285,7 +285,7 @@
             this.txtNome.Location = new System.Drawing.Point(77, 147);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(147, 20);
-            this.txtNome.TabIndex = 13;
+            this.txtNome.TabIndex = 3;
             // 
             // txtTelefone
             // 
@@ -293,7 +293,7 @@
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(147, 20);
-            this.txtTelefone.TabIndex = 14;
+            this.txtTelefone.TabIndex = 4;
             // 
             // txtEmail
             // 
@@ -301,7 +301,7 @@
             this.txtEmail.MaxLength = 45;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(161, 20);
-            this.txtEmail.TabIndex = 15;
+            this.txtEmail.TabIndex = 5;
             // 
             // txtFormacao
             // 
@@ -309,7 +309,7 @@
             this.txtFormacao.MaxLength = 25;
             this.txtFormacao.Name = "txtFormacao";
             this.txtFormacao.Size = new System.Drawing.Size(138, 20);
-            this.txtFormacao.TabIndex = 18;
+            this.txtFormacao.TabIndex = 9;
             // 
             // dtpDataNasc
             // 
@@ -317,7 +317,7 @@
             this.dtpDataNasc.Location = new System.Drawing.Point(31, 243);
             this.dtpDataNasc.Name = "dtpDataNasc";
             this.dtpDataNasc.Size = new System.Drawing.Size(193, 20);
-            this.dtpDataNasc.TabIndex = 20;
+            this.dtpDataNasc.TabIndex = 6;
             // 
             // cmbGrauFormacao
             // 
@@ -332,14 +332,14 @@
             this.cmbGrauFormacao.Location = new System.Drawing.Point(339, 171);
             this.cmbGrauFormacao.Name = "cmbGrauFormacao";
             this.cmbGrauFormacao.Size = new System.Drawing.Size(96, 21);
-            this.cmbGrauFormacao.TabIndex = 21;
+            this.cmbGrauFormacao.TabIndex = 8;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(96, 397);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(95, 37);
-            this.btnSalvar.TabIndex = 22;
+            this.btnSalvar.TabIndex = 17;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -349,7 +349,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(274, 397);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(95, 37);
-            this.btnLimpar.TabIndex = 23;
+            this.btnLimpar.TabIndex = 18;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
@@ -359,7 +359,7 @@
             this.txtLoginNumId.Mask = "0000";
             this.txtLoginNumId.Name = "txtLoginNumId";
             this.txtLoginNumId.Size = new System.Drawing.Size(74, 20);
-            this.txtLoginNumId.TabIndex = 24;
+            this.txtLoginNumId.TabIndex = 1;
             // 
             // txtCPF
             // 
@@ -367,7 +367,7 @@
             this.txtCPF.Mask = "000.000.000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(161, 20);
-            this.txtCPF.TabIndex = 25;
+            this.txtCPF.TabIndex = 7;
             // 
             // lblSenha
             // 
@@ -395,7 +395,7 @@
             this.txtSenha.Mask = "0000000000";
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(67, 20);
-            this.txtSenha.TabIndex = 29;
+            this.txtSenha.TabIndex = 2;
             // 
             // CadastrarProf
             // 

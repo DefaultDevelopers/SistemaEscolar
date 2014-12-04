@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEscola.DAO;
 
 namespace SistemaEscola.Formulários.Admin
 {
@@ -17,9 +18,31 @@ namespace SistemaEscola.Formulários.Admin
             InitializeComponent();
         }
 
-        private void PesquisaUsuário_Load(object sender, EventArgs e)
+        AlunoDAO alunoDAO = new AlunoDAO();
+        ProfessorDAO profDAO = new ProfessorDAO();       
+
+        private void btnPorNome_Click(object sender, EventArgs e)
         {
-            txtDado.MaxLength = 10;
+            if (rdAluno.Checked)
+            {
+                alunoDAO.pesquisaAluno(dgvDados, txtPorNome);
+            }
+            else
+            {
+                profDAO.pesquisaProf(dgvDados, txtPorNome);
+            }
+        }
+
+        private void btnPorCod_Click(object sender, EventArgs e)
+        {
+            if (rdAluno.Checked)
+            {
+                alunoDAO.pesquisaAluno(dgvDados, txtPorCod);
+            }
+            else
+            {
+                profDAO.pesquisaProf(dgvDados, txtPorCod);
+            }
         }
     }
 }

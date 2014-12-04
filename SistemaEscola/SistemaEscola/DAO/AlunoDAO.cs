@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using SistemaEscola.Entidades;
 using SistemaEscola.Classe;
 using System.Windows.Forms;
+using System.Data;
 
 namespace SistemaEscola.DAO
 {
@@ -110,6 +111,52 @@ namespace SistemaEscola.DAO
             {
                 con.Close();
             }
+        }
+
+        public void pesquisaAluno(DataGridView dgvDados, MaskedTextBox txtPorCod)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            con.Open();
+
+            MySqlDataAdapter mySqlDataAdapter;
+            try
+            {
+                mySqlDataAdapter = new MySqlDataAdapter("SELECT nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Aluno WHERE Login_Login = '" + txtPorCod.Text + "'", con);
+                DataSet DS = new DataSet();
+                mySqlDataAdapter.Fill(DS);
+                dgvDados.DataSource = DS.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Você digitou o código?" + ex.Message);
+            }
+
+
+            con.Close();
+        }
+
+        public void pesquisaAluno(DataGridView dgvDados, TextBox txtPorNome)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            con.Open();
+
+            try
+            {
+                MySqlDataAdapter mySqlDataAdapter;
+                mySqlDataAdapter = new MySqlDataAdapter("SELECT Login_Login as 'Matricula', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Aluno WHERE nome LIKE '" + txtPorNome.Text + "'", con);
+                DataSet DS = new DataSet();
+                mySqlDataAdapter.Fill(DS);
+                dgvDados.DataSource = DS.Tables[0];
+            }
+            catch (MySqlException es)
+            {
+                MessageBox.Show("Você digitou o nome?" + es.Message);
+            }
+
+
+            con.Close();
         }
     }
 }

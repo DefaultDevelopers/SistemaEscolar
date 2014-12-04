@@ -33,44 +33,43 @@
             this.dgvDadosDisc = new System.Windows.Forms.DataGridView();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.lblDiscProf = new System.Windows.Forms.Label();
-            this.dgvDiscProf = new System.Windows.Forms.DataGridView();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.txtCod = new System.Windows.Forms.MaskedTextBox();
             this.lblCod = new System.Windows.Forms.Label();
             this.lblEscolhaDisc = new System.Windows.Forms.Label();
-            this.txtDiscADeletar = new System.Windows.Forms.TextBox();
             this.lblIDADeletar = new System.Windows.Forms.Label();
+            this.txtDiscADeletar = new System.Windows.Forms.MaskedTextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDadosDisc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscProf)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDadosDisc
             // 
             this.lblDadosDisc.AutoSize = true;
             this.lblDadosDisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDadosDisc.Location = new System.Drawing.Point(333, 158);
+            this.lblDadosDisc.Location = new System.Drawing.Point(330, 48);
             this.lblDadosDisc.Name = "lblDadosDisc";
-            this.lblDadosDisc.Size = new System.Drawing.Size(138, 16);
+            this.lblDadosDisc.Size = new System.Drawing.Size(62, 16);
             this.lblDadosDisc.TabIndex = 36;
-            this.lblDadosDisc.Text = "Dados de disciplinas:";
+            this.lblDadosDisc.Text = "Vínculos:";
             // 
             // dgvDadosDisc
             // 
             this.dgvDadosDisc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDadosDisc.Location = new System.Drawing.Point(333, 177);
+            this.dgvDadosDisc.Location = new System.Drawing.Point(333, 67);
             this.dgvDadosDisc.Name = "dgvDadosDisc";
-            this.dgvDadosDisc.Size = new System.Drawing.Size(283, 83);
+            this.dgvDadosDisc.Size = new System.Drawing.Size(283, 193);
             this.dgvDadosDisc.TabIndex = 35;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(234, 96);
+            this.btnPesquisar.Location = new System.Drawing.Point(234, 107);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(93, 23);
             this.btnPesquisar.TabIndex = 34;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnLimpar
             // 
@@ -81,50 +80,33 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
-            // btnAlterar
+            // btnDeletar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(46, 219);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(93, 39);
-            this.btnAlterar.TabIndex = 32;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            // 
-            // lblDiscProf
-            // 
-            this.lblDiscProf.AutoSize = true;
-            this.lblDiscProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscProf.Location = new System.Drawing.Point(333, 49);
-            this.lblDiscProf.Name = "lblDiscProf";
-            this.lblDiscProf.Size = new System.Drawing.Size(156, 16);
-            this.lblDiscProf.TabIndex = 31;
-            this.lblDiscProf.Text = "Disciplinas do professor:";
-            // 
-            // dgvDiscProf
-            // 
-            this.dgvDiscProf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiscProf.Location = new System.Drawing.Point(333, 68);
-            this.dgvDiscProf.Name = "dgvDiscProf";
-            this.dgvDiscProf.Size = new System.Drawing.Size(283, 83);
-            this.dgvDiscProf.TabIndex = 30;
+            this.btnDeletar.Location = new System.Drawing.Point(46, 219);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(93, 39);
+            this.btnDeletar.TabIndex = 32;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // txtCod
             // 
-            this.txtCod.Location = new System.Drawing.Point(192, 70);
-            this.txtCod.Mask = "0000000";
+            this.txtCod.Location = new System.Drawing.Point(202, 81);
+            this.txtCod.Mask = "00000000";
             this.txtCod.Name = "txtCod";
-            this.txtCod.Size = new System.Drawing.Size(135, 20);
+            this.txtCod.Size = new System.Drawing.Size(125, 20);
             this.txtCod.TabIndex = 27;
             // 
             // lblCod
             // 
             this.lblCod.AutoSize = true;
             this.lblCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCod.Location = new System.Drawing.Point(13, 71);
+            this.lblCod.Location = new System.Drawing.Point(13, 82);
             this.lblCod.Name = "lblCod";
-            this.lblCod.Size = new System.Drawing.Size(181, 16);
+            this.lblCod.Size = new System.Drawing.Size(57, 16);
             this.lblCod.TabIndex = 26;
-            this.lblCod.Text = "Digite o código do professor:";
+            this.lblCod.Text = "Digite o ";
             // 
             // lblEscolhaDisc
             // 
@@ -136,38 +118,49 @@
             this.lblEscolhaDisc.TabIndex = 25;
             this.lblEscolhaDisc.Text = "Pesquise quais disciplinas ministradas pelo professor e delete-as";
             // 
-            // txtDiscADeletar
-            // 
-            this.txtDiscADeletar.Location = new System.Drawing.Point(180, 154);
-            this.txtDiscADeletar.Name = "txtDiscADeletar";
-            this.txtDiscADeletar.Size = new System.Drawing.Size(147, 20);
-            this.txtDiscADeletar.TabIndex = 38;
-            this.txtDiscADeletar.Text = "Para deletar";
-            // 
             // lblIDADeletar
             // 
             this.lblIDADeletar.AutoSize = true;
             this.lblIDADeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDADeletar.Location = new System.Drawing.Point(10, 135);
+            this.lblIDADeletar.Location = new System.Drawing.Point(12, 165);
             this.lblIDADeletar.Name = "lblIDADeletar";
-            this.lblIDADeletar.Size = new System.Drawing.Size(321, 16);
+            this.lblIDADeletar.Size = new System.Drawing.Size(241, 16);
             this.lblIDADeletar.TabIndex = 37;
-            this.lblIDADeletar.Text = "Escolha o ID da disciplina ministrada a ser deletada:";
+            this.lblIDADeletar.Text = "Escolha o ID do vínculo a ser deletado:";
+            // 
+            // txtDiscADeletar
+            // 
+            this.txtDiscADeletar.Location = new System.Drawing.Point(250, 161);
+            this.txtDiscADeletar.Mask = "000";
+            this.txtDiscADeletar.Name = "txtDiscADeletar";
+            this.txtDiscADeletar.Size = new System.Drawing.Size(77, 20);
+            this.txtDiscADeletar.TabIndex = 38;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(64, 82);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(132, 16);
+            this.linkLabel1.TabIndex = 39;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "código do professor:";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // DeletarDiscMinis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 275);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.txtDiscADeletar);
             this.Controls.Add(this.lblIDADeletar);
             this.Controls.Add(this.lblDadosDisc);
             this.Controls.Add(this.dgvDadosDisc);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.btnAlterar);
-            this.Controls.Add(this.lblDiscProf);
-            this.Controls.Add(this.dgvDiscProf);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.lblCod);
             this.Controls.Add(this.lblEscolhaDisc);
@@ -175,7 +168,6 @@
             this.Name = "DeletarDiscMinis";
             this.Text = "Deletar Disciplinas Ministradas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDadosDisc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscProf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,13 +179,12 @@
         private System.Windows.Forms.DataGridView dgvDadosDisc;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Label lblDiscProf;
-        private System.Windows.Forms.DataGridView dgvDiscProf;
+        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.MaskedTextBox txtCod;
         private System.Windows.Forms.Label lblCod;
         private System.Windows.Forms.Label lblEscolhaDisc;
-        private System.Windows.Forms.TextBox txtDiscADeletar;
         private System.Windows.Forms.Label lblIDADeletar;
+        private System.Windows.Forms.MaskedTextBox txtDiscADeletar;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
