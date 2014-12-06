@@ -28,7 +28,7 @@ namespace SistemaEscola.Classe
 
             int Senhabd = senhaBanco(login);
             int TipoUser = tipoUser(login);
-
+             
                 if (Senhabd.Equals(senha))
                 {
                     if (TipoUser == 1)

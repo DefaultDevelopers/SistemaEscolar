@@ -30,10 +30,11 @@ namespace SistemaEscola.DAO
 
             try
             {
-                cmd.CommandText = "INSERT INTO Login (Login, Senha, User_idUser) values (@login, @senha, @user)";
+                cmd.CommandText = "INSERT INTO Login (Login, Senha, User_idUser, senhacripto) values (@login, @senha, @user, @cripto)";
                 cmd.Parameters.AddWithValue("@login", login.Log);
                 cmd.Parameters.AddWithValue("@senha", login.Senha);
-                cmd.Parameters.AddWithValue("@user", login.User);                
+                cmd.Parameters.AddWithValue("@user", login.User);
+                cmd.Parameters.AddWithValue("@cripto", login.Crip);
             }
             catch (MySqlException ep)
             {

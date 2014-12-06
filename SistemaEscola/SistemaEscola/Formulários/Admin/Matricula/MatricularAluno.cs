@@ -25,7 +25,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         LoginDAO loginDAO = new LoginDAO();
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
         EnderecoDAO endDAO = new EnderecoDAO();
-        String nome, telefone, email, cpf, login, curso, tipo;
+        String nome, telefone, email, cpf, login, curso, tipo, senhacript;
         DateTime dataNasc;
         int turma, senha, turno, user = 3;
 
@@ -47,13 +47,16 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             //LOGIN
+            CriptMD5 cmd5 = new CriptMD5();
             Login loginTable = new Login();
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             senha = Convert.ToInt32(txtSenha.Text);
-            
+            senhacript = cmd5.getMD5Hash(txtSenha.Text);
+
             loginTable.Log = login;
             loginTable.Senha = senha;
             loginTable.User = user;
+            loginTable.Crip = senhacript;
 
             loginDAO.salvarLogin(loginTable);
 

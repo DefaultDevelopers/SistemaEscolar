@@ -9,7 +9,7 @@ namespace SistemaEscola.Classe
 {
     class Banco
     {
-        private static String conexao = "server=localhost;userid=root;password=1124;database=sistemaescolar";
+        private static String conexao = "server=localhost;userid=root;password=;database=sistemaescolar";
 
         public String Conex()
         {
