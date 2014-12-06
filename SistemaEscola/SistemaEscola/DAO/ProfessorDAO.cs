@@ -46,7 +46,7 @@ namespace SistemaEscola.DAO
 
             con.Close();
         }
-
+        //Retorna os dados de professor na tela de alterar dados de professor
         public void retornaProf(MaskedTextBox txtCodProf, TextBox txtNome, TextBox txtEmail, MaskedTextBox txtCPF, MaskedTextBox txtTel, TextBox txtForm, ComboBox cmbGrauForm, DateTimePicker dtpDataNasc)
         {
             string loginProf = txtCodProf.Text;

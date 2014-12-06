@@ -10,6 +10,7 @@ using SistemaEscola.Formulários.Usuarios.Professor;
 using System.Windows.Forms;
 using SistemaEscola.Formulários;
 
+//Classe para checar se o login está correto
 namespace SistemaEscola.Classe
 {
     class Autenticacao

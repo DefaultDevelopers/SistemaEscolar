@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using SistemaEscola.Entidades;
 using System.Data;
 
+//Classe DAO para o vínculo de professor com disciplina ministrada
 namespace SistemaEscola.DAO
 {
     class Prof_DiscDAO

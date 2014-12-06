@@ -103,7 +103,7 @@ namespace SistemaEscola.DAO
                 con.Close();
             }
         }
-
+        //Retorna os dados da disciplina na tela de alterar dados de disciplina
         public void retornaDisc(MaskedTextBox txtAltDiscCod, TextBox txtNome, TextBox txtDescricao, MaskedTextBox txtCargaHor)
         {
             string idDisc = txtAltDiscCod.Text;

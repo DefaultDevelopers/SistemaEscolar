@@ -8,13 +8,14 @@ using System.Windows.Forms;
 using System.Data;
 using SistemaEscola.Classe;
 
+//Classe responsável pelos dados das comboboxes dos formulários
 namespace SistemaEscola.DAO
 {
     class ComboBoxDAO
     {
 
         Banco b = new Banco();
-
+        //Passa os dados de tipo (integrado, concomitante...)
         public void comboTipo(ComboBox cmbTipo)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -36,7 +37,7 @@ namespace SistemaEscola.DAO
 
             cmbTipo.Text = "";
         }
-
+        //Passa os cursos disponíveis baseado no turno escolhido
         public void comboCurso(ComboBox cmbCurso, int turno)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -58,7 +59,7 @@ namespace SistemaEscola.DAO
 
             cmbCurso.Text = "";
         }
-
+        //Método sobrecarregado que mostra a lista de todos os cursos
         public void comboCurso(ComboBox cmbCurso)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -80,7 +81,7 @@ namespace SistemaEscola.DAO
 
             cmbCurso.Text = "";
         }
-
+        //Passa os códigos de turma disponíveis baseado no curso escolhido
         public void comboTurma(ComboBox cmbTurma, String idCurso)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -103,7 +104,7 @@ namespace SistemaEscola.DAO
 
             cmbTurma.Text = "";
         }
-
+        //Passa os turnos disponíveis baseado no tipo escolhido
         public void comboTurno(ComboBox cmbTurno, String tipo)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -125,7 +126,7 @@ namespace SistemaEscola.DAO
 
             cmbTurno.Text = "";
         }
-
+        //Método sobrecarregado que mostra a lista de todos os turnos
         public void comboTurno(ComboBox cmbTurno)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -147,7 +148,7 @@ namespace SistemaEscola.DAO
 
             cmbTurno.Text = "";
         }
-
+        //Passa as disciplinas disponíveis
         public void comboDisc(ComboBox cmbDisc)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());

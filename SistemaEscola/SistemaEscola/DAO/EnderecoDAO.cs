@@ -54,7 +54,7 @@ namespace SistemaEscola.DAO
                 con.Close();
             }
         }
-
+        //Retorna os dados de endereço na tela de alterar dados de endereço
         public void retornaEnd(MaskedTextBox txtCodAluno, TextBox txtRua, TextBox txtBairro, TextBox txtNum, TextBox txtEstado, TextBox txtCidade, MaskedTextBox txtCEP)
         {
             string loginAluno = txtCodAluno.Text;

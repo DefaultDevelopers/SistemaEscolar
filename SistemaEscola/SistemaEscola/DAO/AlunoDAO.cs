@@ -9,12 +9,14 @@ using SistemaEscola.Classe;
 using System.Windows.Forms;
 using System.Data;
 
+//Possui os métodos de acesso ao banco de dados do aluno
 namespace SistemaEscola.DAO
 {
     class AlunoDAO
     {
         Banco b = new Banco();
 
+        //Salvar novo aluno
         public void salvarAluno(Aluno aluno)
         {            
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -52,7 +54,7 @@ namespace SistemaEscola.DAO
                 con.Close();
             }
         }
-
+        //Retorna os dados de aluno na tela de alterar dados de aluno
         public void retornaAluno(MaskedTextBox txtCodAluno, TextBox txtNome, MaskedTextBox txtTel, TextBox txtEmail, DateTimePicker dtpNasc, MaskedTextBox txtCPF)
         {
             string loginAluno = txtCodAluno.Text;
@@ -78,7 +80,7 @@ namespace SistemaEscola.DAO
 
             con.Close();
         }
-
+        //Altera os dados do aluno
         public void alteraAluno(Aluno aluno, MaskedTextBox txtCodAluno)
         {
             String loginAluno = txtCodAluno.Text;
@@ -112,7 +114,7 @@ namespace SistemaEscola.DAO
                 con.Close();
             }
         }
-
+        //Pesquisa de aluno por código
         public void pesquisaAluno(DataGridView dgvDados, MaskedTextBox txtPorCod)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
@@ -135,7 +137,7 @@ namespace SistemaEscola.DAO
 
             con.Close();
         }
-
+        //Pesquisa de aluno por nome
         public void pesquisaAluno(DataGridView dgvDados, TextBox txtPorNome)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Classe de conexão do banco
 namespace SistemaEscola.Classe
 {
     class Banco

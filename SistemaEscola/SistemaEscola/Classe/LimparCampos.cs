@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Classe responsável pela limpeza dos campos do formulário
 namespace SistemaEscola.Classe
 {
     class LimparCampos
@@ -25,6 +26,14 @@ namespace SistemaEscola.Classe
                 if (b is MaskedTextBox)
                 {
                     (b as MaskedTextBox).Clear();
+                }
+            }
+
+            foreach (Control b in Cont.Controls)
+            {
+                if (b is ComboBox)
+                {
+                    (b as ComboBox).Text = "";
                 }
             }
         }
