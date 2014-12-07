@@ -94,19 +94,13 @@ namespace SistemaEscola.DAO
 
             con.Open();
 
-            try
-            {
-                cmd.CommandText = "UPDATE Matricula SET Turma_idTurma = '" + matrEnt.IdTurma + "' WHERE Aluno_Login_Login = '" + loginAluno + "'";
-            }
-            catch (Exception exp)
-            {
-                MessageBox.Show("Houve algum erro ao alterar. [Matrícula]" + exp.Message);
-            }
+            cmd.CommandText = "UPDATE Matricula SET Turma_idTurma = '" + matrEnt.IdTurma + "' WHERE Aluno_Login_Login = '" + loginAluno + "'";
 
             try
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Matrícula alterada com sucesso!");
             }
             catch (Exception exc)
             {

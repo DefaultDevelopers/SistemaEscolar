@@ -24,7 +24,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            profDAO.retornaProf(txtCod, txtNome, txtEmail, txtCPF, txtTelefone, txtFormacao, cmbGrauFormacao, dtpDataNasc);
+            profDAO.retornaProf(txtCod, txtNome, txtEmail, txtCPF, txtTelefone, txtFormacao, cmbGrauFormacao, txtDataNasc);
             endDAO.retornaEnd(txtCod, txtRua, txtBairro, txtNum, txtEstado, txtCidade, txtCEP);
         }
 
@@ -32,8 +32,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
         {
             //PROFESSOR
             SistemaEscola.Entidades.Professor profEnt = new Entidades.Professor();
-            String nome, telefone, email, cpf, grauForm, form;
-            DateTime dataNasc;
+            String nome, telefone, email, cpf, grauForm, form, dataNasc;
 
             nome = txtNome.Text;
             telefone = txtTelefone.Text;
@@ -41,7 +40,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
             cpf = txtCPF.Text;
             grauForm = cmbGrauFormacao.Text;
             form = txtFormacao.Text;
-            dataNasc = dtpDataNasc.Value;
+            dataNasc = txtDataNasc.Text;
 
             profEnt.Nome = nome;
             profEnt.Telefone = telefone;

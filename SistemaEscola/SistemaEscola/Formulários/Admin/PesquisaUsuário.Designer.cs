@@ -29,31 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PesquisaUsuário));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpPesquisa = new System.Windows.Forms.GroupBox();
             this.rdAluno = new System.Windows.Forms.RadioButton();
             this.rdProf = new System.Windows.Forms.RadioButton();
-            this.btnPorNome = new System.Windows.Forms.Button();
             this.dgvDados = new System.Windows.Forms.DataGridView();
             this.lblPorNome = new System.Windows.Forms.Label();
             this.lblPorCod = new System.Windows.Forms.Label();
             this.txtPorNome = new System.Windows.Forms.TextBox();
-            this.btnPorCod = new System.Windows.Forms.Button();
             this.txtPorCod = new System.Windows.Forms.MaskedTextBox();
-            this.groupBox1.SuspendLayout();
+            this.grpPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grpPesquisa
             // 
-            this.groupBox1.Controls.Add(this.rdAluno);
-            this.groupBox1.Controls.Add(this.rdProf);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(63, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(460, 51);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pesquisar por";
+            this.grpPesquisa.Controls.Add(this.rdAluno);
+            this.grpPesquisa.Controls.Add(this.rdProf);
+            this.grpPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpPesquisa.Location = new System.Drawing.Point(63, 12);
+            this.grpPesquisa.Name = "grpPesquisa";
+            this.grpPesquisa.Size = new System.Drawing.Size(460, 51);
+            this.grpPesquisa.TabIndex = 0;
+            this.grpPesquisa.TabStop = false;
+            this.grpPesquisa.Text = "Pesquisar por";
+            this.grpPesquisa.Enter += new System.EventHandler(this.grpPesquisa_CheckedChanged);
             // 
             // rdAluno
             // 
@@ -77,22 +76,12 @@
             this.rdProf.Text = "Professor";
             this.rdProf.UseVisualStyleBackColor = true;
             // 
-            // btnPorNome
-            // 
-            this.btnPorNome.Location = new System.Drawing.Point(176, 110);
-            this.btnPorNome.Name = "btnPorNome";
-            this.btnPorNome.Size = new System.Drawing.Size(100, 26);
-            this.btnPorNome.TabIndex = 3;
-            this.btnPorNome.Text = "Pesquisar";
-            this.btnPorNome.UseVisualStyleBackColor = true;
-            this.btnPorNome.Click += new System.EventHandler(this.btnPorNome_Click);
-            // 
             // dgvDados
             // 
             this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDados.Location = new System.Drawing.Point(18, 142);
+            this.dgvDados.Location = new System.Drawing.Point(18, 107);
             this.dgvDados.Name = "dgvDados";
-            this.dgvDados.Size = new System.Drawing.Size(552, 226);
+            this.dgvDados.Size = new System.Drawing.Size(552, 261);
             this.dgvDados.TabIndex = 5;
             // 
             // lblPorNome
@@ -121,16 +110,7 @@
             this.txtPorNome.Name = "txtPorNome";
             this.txtPorNome.Size = new System.Drawing.Size(138, 20);
             this.txtPorNome.TabIndex = 8;
-            // 
-            // btnPorCod
-            // 
-            this.btnPorCod.Location = new System.Drawing.Point(423, 107);
-            this.btnPorCod.Name = "btnPorCod";
-            this.btnPorCod.Size = new System.Drawing.Size(100, 26);
-            this.btnPorCod.TabIndex = 9;
-            this.btnPorCod.Text = "Pesquisar";
-            this.btnPorCod.UseVisualStyleBackColor = true;
-            this.btnPorCod.Click += new System.EventHandler(this.btnPorCod_Click);
+            this.txtPorNome.TextChanged += new System.EventHandler(this.txtPorNome_TextChanged);
             // 
             // txtPorCod
             // 
@@ -139,6 +119,7 @@
             this.txtPorCod.Name = "txtPorCod";
             this.txtPorCod.Size = new System.Drawing.Size(138, 20);
             this.txtPorCod.TabIndex = 10;
+            this.txtPorCod.TextChanged += new System.EventHandler(this.txtPorCod_TextChanged);
             // 
             // PesquisaUsuário
             // 
@@ -146,18 +127,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 380);
             this.Controls.Add(this.txtPorCod);
-            this.Controls.Add(this.btnPorCod);
             this.Controls.Add(this.txtPorNome);
             this.Controls.Add(this.lblPorCod);
             this.Controls.Add(this.lblPorNome);
             this.Controls.Add(this.dgvDados);
-            this.Controls.Add(this.btnPorNome);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpPesquisa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PesquisaUsuário";
             this.Text = "Pesquisa de Usuário";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpPesquisa.ResumeLayout(false);
+            this.grpPesquisa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,15 +145,13 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpPesquisa;
         private System.Windows.Forms.RadioButton rdAluno;
         private System.Windows.Forms.RadioButton rdProf;
-        private System.Windows.Forms.Button btnPorNome;
         private System.Windows.Forms.DataGridView dgvDados;
         private System.Windows.Forms.Label lblPorNome;
         private System.Windows.Forms.Label lblPorCod;
         private System.Windows.Forms.TextBox txtPorNome;
-        private System.Windows.Forms.Button btnPorCod;
         private System.Windows.Forms.MaskedTextBox txtPorCod;
     }
 }

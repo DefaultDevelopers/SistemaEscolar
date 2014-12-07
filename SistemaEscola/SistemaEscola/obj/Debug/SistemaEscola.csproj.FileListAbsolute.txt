@@ -165,3 +165,4 @@ D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola
 D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\bin\Debug\SistemaEscola.pdb
 D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.exe
 D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.pdb
+C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.Disciplina.PesquisaProfDisc.resources

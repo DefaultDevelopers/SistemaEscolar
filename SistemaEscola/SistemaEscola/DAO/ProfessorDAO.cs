@@ -47,7 +47,7 @@ namespace SistemaEscola.DAO
             con.Close();
         }
         //Retorna os dados de professor na tela de alterar dados de professor
-        public void retornaProf(MaskedTextBox txtCodProf, TextBox txtNome, TextBox txtEmail, MaskedTextBox txtCPF, MaskedTextBox txtTel, TextBox txtForm, ComboBox cmbGrauForm, DateTimePicker dtpDataNasc)
+        public void retornaProf(MaskedTextBox txtCodProf, TextBox txtNome, TextBox txtEmail, MaskedTextBox txtCPF, MaskedTextBox txtTel, TextBox txtForm, ComboBox cmbGrauForm, MaskedTextBox txtDataNasc)
         {
             string loginProf = txtCodProf.Text;
 
@@ -69,7 +69,7 @@ namespace SistemaEscola.DAO
                 txtTel.Text = reader["telefone"].ToString();
                 txtForm.Text = reader["formacao"].ToString();
                 cmbGrauForm.Text = reader["grau_formacao"].ToString();
-                dtpDataNasc.Value = Convert.ToDateTime(reader["data_nascimento"].ToString());
+                txtDataNasc.Text = reader["data_nascimento"].ToString();
             }
 
             con.Close();

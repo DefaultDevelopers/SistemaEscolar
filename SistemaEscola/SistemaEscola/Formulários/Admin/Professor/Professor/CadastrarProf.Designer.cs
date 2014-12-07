@@ -56,7 +56,6 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtFormacao = new System.Windows.Forms.TextBox();
-            this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
             this.cmbGrauFormacao = new System.Windows.Forms.ComboBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -65,6 +64,7 @@
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             // 
             this.lblDigiteDados.AutoSize = true;
             this.lblDigiteDados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDigiteDados.Location = new System.Drawing.Point(27, 124);
+            this.lblDigiteDados.Location = new System.Drawing.Point(20, 107);
             this.lblDigiteDados.Name = "lblDigiteDados";
             this.lblDigiteDados.Size = new System.Drawing.Size(212, 20);
             this.lblDigiteDados.TabIndex = 0;
@@ -81,7 +81,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(28, 150);
+            this.lblNome.Location = new System.Drawing.Point(21, 133);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 1;
@@ -90,7 +90,7 @@
             // lblTel
             // 
             this.lblTel.AutoSize = true;
-            this.lblTel.Location = new System.Drawing.Point(28, 175);
+            this.lblTel.Location = new System.Drawing.Point(21, 158);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(52, 13);
             this.lblTel.TabIndex = 2;
@@ -99,7 +99,7 @@
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(246, 150);
+            this.lblCPF.Location = new System.Drawing.Point(239, 133);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(30, 13);
             this.lblCPF.TabIndex = 3;
@@ -108,7 +108,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(28, 201);
+            this.lblEmail.Location = new System.Drawing.Point(21, 184);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(38, 13);
             this.lblEmail.TabIndex = 4;
@@ -117,7 +117,7 @@
             // lblGrauForm
             // 
             this.lblGrauForm.AutoSize = true;
-            this.lblGrauForm.Location = new System.Drawing.Point(243, 175);
+            this.lblGrauForm.Location = new System.Drawing.Point(236, 158);
             this.lblGrauForm.Name = "lblGrauForm";
             this.lblGrauForm.Size = new System.Drawing.Size(98, 13);
             this.lblGrauForm.TabIndex = 5;
@@ -126,7 +126,7 @@
             // lblFormacao
             // 
             this.lblFormacao.AutoSize = true;
-            this.lblFormacao.Location = new System.Drawing.Point(243, 200);
+            this.lblFormacao.Location = new System.Drawing.Point(236, 183);
             this.lblFormacao.Name = "lblFormacao";
             this.lblFormacao.Size = new System.Drawing.Size(57, 13);
             this.lblFormacao.TabIndex = 6;
@@ -145,7 +145,7 @@
             // lblDataNasc
             // 
             this.lblDataNasc.AutoSize = true;
-            this.lblDataNasc.Location = new System.Drawing.Point(28, 227);
+            this.lblDataNasc.Location = new System.Drawing.Point(21, 210);
             this.lblDataNasc.Name = "lblDataNasc";
             this.lblDataNasc.Size = new System.Drawing.Size(107, 13);
             this.lblDataNasc.TabIndex = 9;
@@ -166,7 +166,7 @@
             this.groupBox1.Controls.Add(this.lblBairro);
             this.groupBox1.Controls.Add(this.lblRua);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 269);
+            this.groupBox1.Location = new System.Drawing.Point(24, 252);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(411, 122);
             this.groupBox1.TabIndex = 10;
@@ -282,14 +282,14 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(77, 147);
+            this.txtNome.Location = new System.Drawing.Point(70, 130);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(147, 20);
             this.txtNome.TabIndex = 3;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(77, 172);
+            this.txtTelefone.Location = new System.Drawing.Point(70, 155);
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(147, 20);
@@ -297,7 +297,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(63, 198);
+            this.txtEmail.Location = new System.Drawing.Point(56, 181);
             this.txtEmail.MaxLength = 45;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(161, 20);
@@ -305,19 +305,11 @@
             // 
             // txtFormacao
             // 
-            this.txtFormacao.Location = new System.Drawing.Point(297, 197);
+            this.txtFormacao.Location = new System.Drawing.Point(290, 180);
             this.txtFormacao.MaxLength = 25;
             this.txtFormacao.Name = "txtFormacao";
             this.txtFormacao.Size = new System.Drawing.Size(138, 20);
             this.txtFormacao.TabIndex = 9;
-            // 
-            // dtpDataNasc
-            // 
-            this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNasc.Location = new System.Drawing.Point(31, 243);
-            this.dtpDataNasc.Name = "dtpDataNasc";
-            this.dtpDataNasc.Size = new System.Drawing.Size(193, 20);
-            this.dtpDataNasc.TabIndex = 6;
             // 
             // cmbGrauFormacao
             // 
@@ -329,14 +321,14 @@
             "Especializado",
             "Mestre",
             "Doutor"});
-            this.cmbGrauFormacao.Location = new System.Drawing.Point(339, 171);
+            this.cmbGrauFormacao.Location = new System.Drawing.Point(332, 154);
             this.cmbGrauFormacao.Name = "cmbGrauFormacao";
             this.cmbGrauFormacao.Size = new System.Drawing.Size(96, 21);
             this.cmbGrauFormacao.TabIndex = 8;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(96, 397);
+            this.btnSalvar.Location = new System.Drawing.Point(96, 380);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(95, 37);
             this.btnSalvar.TabIndex = 17;
@@ -346,7 +338,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(274, 397);
+            this.btnLimpar.Location = new System.Drawing.Point(274, 380);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(95, 37);
             this.btnLimpar.TabIndex = 18;
@@ -363,7 +355,7 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.Location = new System.Drawing.Point(274, 147);
+            this.txtCPF.Location = new System.Drawing.Point(267, 130);
             this.txtCPF.Mask = "000.000.000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(161, 20);
@@ -397,11 +389,21 @@
             this.txtSenha.Size = new System.Drawing.Size(67, 20);
             this.txtSenha.TabIndex = 2;
             // 
+            // txtDataNasc
+            // 
+            this.txtDataNasc.Location = new System.Drawing.Point(56, 226);
+            this.txtDataNasc.Mask = "00/00/0000";
+            this.txtDataNasc.Name = "txtDataNasc";
+            this.txtDataNasc.Size = new System.Drawing.Size(161, 20);
+            this.txtDataNasc.TabIndex = 6;
+            this.txtDataNasc.ValidatingType = typeof(System.DateTime);
+            // 
             // CadastrarProf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 448);
+            this.ClientSize = new System.Drawing.Size(458, 423);
+            this.Controls.Add(this.txtDataNasc);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblSenha);
@@ -410,7 +412,6 @@
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.cmbGrauFormacao);
-            this.Controls.Add(this.dtpDataNasc);
             this.Controls.Add(this.txtFormacao);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTelefone);
@@ -460,7 +461,6 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtFormacao;
-        private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.ComboBox cmbGrauFormacao;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.TextBox txtBairro;
@@ -475,5 +475,6 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.MaskedTextBox txtSenha;
+        private System.Windows.Forms.MaskedTextBox txtDataNasc;
     }
 }

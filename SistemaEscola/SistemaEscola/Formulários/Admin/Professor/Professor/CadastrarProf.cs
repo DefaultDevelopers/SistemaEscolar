@@ -50,8 +50,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
                 SistemaEscola.Entidades.Professor profEnt = new Entidades.Professor();
                 ProfessorDAO profDAO = new ProfessorDAO();
 
-                String nome, telefone, email, cpf, grauForm, form;
-                DateTime dataNasc;
+                String nome, telefone, email, cpf, grauForm, form, dataNasc;
 
                 nome = txtNome.Text;
                 telefone = txtTelefone.Text;
@@ -59,7 +58,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
                 cpf = txtCPF.Text;
                 grauForm = cmbGrauFormacao.Text;
                 form = txtFormacao.Text;
-                dataNasc = dtpDataNasc.Value;
+                dataNasc = txtDataNasc.Text;
 
                 profEnt.Login = login;
                 profEnt.Nome = nome;

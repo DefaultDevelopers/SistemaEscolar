@@ -8,9 +8,8 @@ namespace SistemaEscola.Entidades
 {
     class Professor
     {
-        private String login, nome, email, cpf, telefone, grau_form, form;
-        int senha;
-        private DateTime dataNasc;        
+        private String login, nome, email, cpf, telefone, grau_form, form, dataNasc;
+        int senha;      
 
         public String Login
         {
@@ -60,7 +59,7 @@ namespace SistemaEscola.Entidades
             set { form = value; }
         }
 
-        public DateTime DataNasc
+        public String DataNasc
         {
             get { return dataNasc; }
             set { dataNasc = value; }

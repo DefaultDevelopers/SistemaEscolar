@@ -25,8 +25,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         LoginDAO loginDAO = new LoginDAO();
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
         EnderecoDAO endDAO = new EnderecoDAO();
-        String nome, telefone, email, cpf, login, curso, tipo, senhacript;
-        DateTime dataNasc;
+        String nome, telefone, email, cpf, login, curso, tipo, senhacript, dataNasc;
         int turma, senha, turno, user = 3;
 
         private void MatricularAluno_Load(object sender, EventArgs e)
@@ -67,7 +66,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             telefone = txtTelefone.Text;
             email = txtEmail.Text;
             cpf = txtCPF.Text;
-            dataNasc = dtpDataNasc.Value;
+            dataNasc = txtDataNasc.Text;
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
 
             alunoEnt.Nome = nome;

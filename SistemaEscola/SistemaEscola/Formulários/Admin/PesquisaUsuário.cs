@@ -21,7 +21,8 @@ namespace SistemaEscola.Formulários.Admin
         AlunoDAO alunoDAO = new AlunoDAO();
         ProfessorDAO profDAO = new ProfessorDAO();       
 
-        private void btnPorNome_Click(object sender, EventArgs e)
+        //Método executado quando o texto muda
+        private void txtPorNome_TextChanged(object sender, EventArgs e)
         {
             if (rdAluno.Checked)
             {
@@ -32,8 +33,8 @@ namespace SistemaEscola.Formulários.Admin
                 profDAO.pesquisaProf(dgvDados, txtPorNome);
             }
         }
-
-        private void btnPorCod_Click(object sender, EventArgs e)
+        //Método executado quando o código muda
+        private void txtPorCod_TextChanged(object sender, EventArgs e)
         {
             if (rdAluno.Checked)
             {
@@ -43,6 +44,12 @@ namespace SistemaEscola.Formulários.Admin
             {
                 profDAO.pesquisaProf(dgvDados, txtPorCod);
             }
+        }
+        //Método que limpa os campos de nome e código quando muda a escolha de pesquisa
+        private void grpPesquisa_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPorCod.Clear();
+            txtPorNome.Clear();
         }
     }
 }

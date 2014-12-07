@@ -41,9 +41,9 @@ namespace SistemaEscola.DAO
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Sucesso!");
             }
-            catch (MySqlException op)
+            catch (MySqlException)
             {
-                MessageBox.Show("Código de professor errado!" + op.Message);
+                MessageBox.Show("Você digitou um código de professor inexistente!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {

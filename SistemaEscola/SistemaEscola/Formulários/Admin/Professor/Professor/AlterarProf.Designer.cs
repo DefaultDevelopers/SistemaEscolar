@@ -35,7 +35,6 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.cmbGrauFormacao = new System.Windows.Forms.ComboBox();
-            this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
             this.txtFormacao = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -62,6 +61,7 @@
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.lblEnd = new System.Windows.Forms.Label();
+            this.txtDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btnPesquisar
@@ -125,14 +125,6 @@
             this.cmbGrauFormacao.Name = "cmbGrauFormacao";
             this.cmbGrauFormacao.Size = new System.Drawing.Size(96, 21);
             this.cmbGrauFormacao.TabIndex = 8;
-            // 
-            // dtpDataNasc
-            // 
-            this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNasc.Location = new System.Drawing.Point(31, 158);
-            this.dtpDataNasc.Name = "dtpDataNasc";
-            this.dtpDataNasc.Size = new System.Drawing.Size(193, 20);
-            this.dtpDataNasc.TabIndex = 6;
             // 
             // txtFormacao
             // 
@@ -356,11 +348,21 @@
             this.lblEnd.TabIndex = 68;
             this.lblEnd.Text = "Endereço";
             // 
+            // txtDataNasc
+            // 
+            this.txtDataNasc.Location = new System.Drawing.Point(63, 158);
+            this.txtDataNasc.Mask = "00/00/0000";
+            this.txtDataNasc.Name = "txtDataNasc";
+            this.txtDataNasc.Size = new System.Drawing.Size(161, 20);
+            this.txtDataNasc.TabIndex = 69;
+            this.txtDataNasc.ValidatingType = typeof(System.DateTime);
+            // 
             // AlterarProf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 366);
+            this.Controls.Add(this.txtDataNasc);
             this.Controls.Add(this.lblEnd);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtEstado);
@@ -379,7 +381,6 @@
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.cmbGrauFormacao);
-            this.Controls.Add(this.dtpDataNasc);
             this.Controls.Add(this.txtFormacao);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtTelefone);
@@ -410,7 +411,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.ComboBox cmbGrauFormacao;
-        private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.TextBox txtFormacao;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
@@ -437,5 +437,6 @@
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lblEnd;
+        private System.Windows.Forms.MaskedTextBox txtDataNasc;
     }
 }

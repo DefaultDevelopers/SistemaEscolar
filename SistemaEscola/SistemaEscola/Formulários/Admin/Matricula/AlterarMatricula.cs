@@ -42,7 +42,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             try
             {
-                alunoDAO.retornaAluno(txtCodAluno, txtNome, txtTelefone, txtEmail, dtpDataNasc, txtCPF);
+                alunoDAO.retornaAluno(txtCodAluno, txtNome, txtTelefone, txtEmail, txtDataNasc, txtCPF);
                 endDAO.retornaEnd(txtCodAluno, txtRua, txtBairro, txtNum, txtEstado, txtCidade, txtCEP);
             }
             catch (MySqlException)
@@ -54,14 +54,13 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             //ALUNO
-            String nome, telefone, email, cpf;
-            DateTime dataNasc;
+            String nome, telefone, email, cpf, dataNasc;
 
             nome = txtNome.Text;
             telefone = txtTelefone.Text;
             email = txtEmail.Text;
             cpf = txtCPF.Text;
-            dataNasc = dtpDataNasc.Value;
+            dataNasc = txtDataNasc.Text;
 
             alunoEnt.Nome = nome;
             alunoEnt.Telefone = telefone;

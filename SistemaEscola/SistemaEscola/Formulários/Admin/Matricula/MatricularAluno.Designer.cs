@@ -37,7 +37,6 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.lblCPF = new System.Windows.Forms.Label();
-            this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -70,6 +69,7 @@
             this.txtLoginNumAleat = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.grpbEnd.SuspendLayout();
             this.grpbDadosAluno.SuspendLayout();
             this.grpbDadosCurso.SuspendLayout();
@@ -147,16 +147,6 @@
             this.lblCPF.Size = new System.Drawing.Size(37, 16);
             this.lblCPF.TabIndex = 55;
             this.lblCPF.Text = "CPF:";
-            // 
-            // dtpDataNasc
-            // 
-            this.dtpDataNasc.CustomFormat = "dd-mm-yyyy";
-            this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNasc.Location = new System.Drawing.Point(220, 48);
-            this.dtpDataNasc.Name = "dtpDataNasc";
-            this.dtpDataNasc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpDataNasc.Size = new System.Drawing.Size(180, 22);
-            this.dtpDataNasc.TabIndex = 69;
             // 
             // txtEmail
             // 
@@ -351,6 +341,7 @@
             // 
             // grpbDadosAluno
             // 
+            this.grpbDadosAluno.Controls.Add(this.txtDataNasc);
             this.grpbDadosAluno.Controls.Add(this.grpbEnd);
             this.grpbDadosAluno.Controls.Add(this.lblNome);
             this.grpbDadosAluno.Controls.Add(this.lblTelefone);
@@ -359,7 +350,6 @@
             this.grpbDadosAluno.Controls.Add(this.lblDataNasc);
             this.grpbDadosAluno.Controls.Add(this.lblCPF);
             this.grpbDadosAluno.Controls.Add(this.txtNome);
-            this.grpbDadosAluno.Controls.Add(this.dtpDataNasc);
             this.grpbDadosAluno.Controls.Add(this.txtTelefone);
             this.grpbDadosAluno.Controls.Add(this.txtEmail);
             this.grpbDadosAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -477,6 +467,15 @@
             this.txtSenha.Size = new System.Drawing.Size(111, 20);
             this.txtSenha.TabIndex = 63;
             // 
+            // txtDataNasc
+            // 
+            this.txtDataNasc.Location = new System.Drawing.Point(223, 48);
+            this.txtDataNasc.Mask = "00/00/0000";
+            this.txtDataNasc.Name = "txtDataNasc";
+            this.txtDataNasc.Size = new System.Drawing.Size(176, 22);
+            this.txtDataNasc.TabIndex = 69;
+            this.txtDataNasc.ValidatingType = typeof(System.DateTime);
+            // 
             // MatricularAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -517,7 +516,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.Label lblCPF;
-        private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.TextBox txtNome;
@@ -550,5 +548,6 @@
         private System.Windows.Forms.MaskedTextBox txtSenha;
         private System.Windows.Forms.Label lblTurno;
         private System.Windows.Forms.ComboBox cmbTurno;
+        private System.Windows.Forms.MaskedTextBox txtDataNasc;
     }
 }

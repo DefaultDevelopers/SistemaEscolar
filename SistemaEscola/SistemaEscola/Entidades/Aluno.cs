@@ -8,8 +8,7 @@ namespace SistemaEscola.Entidades
 {
     class Aluno
     {
-        String  login, nome, telefone, email, cpf;
-        DateTime dataNasc;
+        String  login, nome, telefone, email, cpf, dataNasc;
 
         public String Login
         {
@@ -41,7 +40,7 @@ namespace SistemaEscola.Entidades
             set { cpf = value; }
         }
 
-        public DateTime DataNasc
+        public String DataNasc
         {
             get { return dataNasc; }
             set { dataNasc = value; }

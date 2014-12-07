@@ -41,7 +41,6 @@
             this.lblDataNasc = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -67,6 +66,7 @@
             this.lblEnd = new System.Windows.Forms.Label();
             this.lblCur = new System.Windows.Forms.Label();
             this.cmbTurno = new System.Windows.Forms.ComboBox();
+            this.txtDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btnAlterar
@@ -74,7 +74,7 @@
             this.btnAlterar.Location = new System.Drawing.Point(103, 433);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(88, 39);
-            this.btnAlterar.TabIndex = 2;
+            this.btnAlterar.TabIndex = 18;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
@@ -84,7 +84,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(263, 433);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(88, 39);
-            this.btnLimpar.TabIndex = 3;
+            this.btnLimpar.TabIndex = 19;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -95,14 +95,14 @@
             this.txtCodAluno.Mask = "00000000000";
             this.txtCodAluno.Name = "txtCodAluno";
             this.txtCodAluno.Size = new System.Drawing.Size(106, 20);
-            this.txtCodAluno.TabIndex = 4;
+            this.txtCodAluno.TabIndex = 1;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Location = new System.Drawing.Point(321, 14);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(114, 23);
-            this.btnPesquisar.TabIndex = 5;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -153,7 +153,7 @@
             this.txtCPF.Mask = "000.000.000-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(151, 20);
-            this.txtCPF.TabIndex = 67;
+            this.txtCPF.TabIndex = 7;
             // 
             // lblDataNasc
             // 
@@ -181,18 +181,7 @@
             this.txtNome.MaxLength = 45;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(151, 20);
-            this.txtNome.TabIndex = 62;
-            // 
-            // dtpDataNasc
-            // 
-            this.dtpDataNasc.CustomFormat = "dd/mm/yyyy";
-            this.dtpDataNasc.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNasc.Location = new System.Drawing.Point(248, 91);
-            this.dtpDataNasc.Name = "dtpDataNasc";
-            this.dtpDataNasc.Size = new System.Drawing.Size(187, 20);
-            this.dtpDataNasc.TabIndex = 65;
-            this.dtpDataNasc.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.txtNome.TabIndex = 3;
             // 
             // txtTelefone
             // 
@@ -200,7 +189,7 @@
             this.txtTelefone.Mask = "(00) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(133, 20);
-            this.txtTelefone.TabIndex = 63;
+            this.txtTelefone.TabIndex = 4;
             // 
             // txtEmail
             // 
@@ -208,21 +197,21 @@
             this.txtEmail.MaxLength = 45;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(151, 20);
-            this.txtEmail.TabIndex = 64;
+            this.txtEmail.TabIndex = 5;
             // 
             // txtCidade
             // 
             this.txtCidade.Location = new System.Drawing.Point(309, 216);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(127, 20);
-            this.txtCidade.TabIndex = 52;
+            this.txtCidade.TabIndex = 12;
             // 
             // txtEstado
             // 
             this.txtEstado.Location = new System.Drawing.Point(308, 188);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(127, 20);
-            this.txtEstado.TabIndex = 51;
+            this.txtEstado.TabIndex = 11;
             // 
             // txtCEP
             // 
@@ -230,14 +219,14 @@
             this.txtCEP.Mask = "00000-000";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(143, 20);
-            this.txtCEP.TabIndex = 50;
+            this.txtCEP.TabIndex = 13;
             // 
             // txtNum
             // 
             this.txtNum.Location = new System.Drawing.Point(103, 248);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(139, 20);
-            this.txtNum.TabIndex = 49;
+            this.txtNum.TabIndex = 10;
             // 
             // txtBairro
             // 
@@ -245,7 +234,7 @@
             this.txtBairro.MaxLength = 25;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(153, 20);
-            this.txtBairro.TabIndex = 48;
+            this.txtBairro.TabIndex = 9;
             // 
             // txtRua
             // 
@@ -253,7 +242,7 @@
             this.txtRua.MaxLength = 45;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(160, 20);
-            this.txtRua.TabIndex = 45;
+            this.txtRua.TabIndex = 8;
             // 
             // lblCEP
             // 
@@ -341,7 +330,7 @@
             this.cmbTurma.Location = new System.Drawing.Point(89, 397);
             this.cmbTurma.Name = "cmbTurma";
             this.cmbTurma.Size = new System.Drawing.Size(346, 21);
-            this.cmbTurma.TabIndex = 74;
+            this.cmbTurma.TabIndex = 17;
             // 
             // cmbTipo
             // 
@@ -349,7 +338,7 @@
             this.cmbTipo.Location = new System.Drawing.Point(84, 309);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(351, 21);
-            this.cmbTipo.TabIndex = 69;
+            this.cmbTipo.TabIndex = 14;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectionChangeCommitted);
             // 
             // lblCurso
@@ -378,7 +367,7 @@
             this.cmbCurso.Location = new System.Drawing.Point(89, 367);
             this.cmbCurso.Name = "cmbCurso";
             this.cmbCurso.Size = new System.Drawing.Size(346, 21);
-            this.cmbCurso.TabIndex = 72;
+            this.cmbCurso.TabIndex = 16;
             this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.cmbCurso_SelectionChangeCommitted);
             // 
             // label1
@@ -417,14 +406,24 @@
             this.cmbTurno.Location = new System.Drawing.Point(84, 336);
             this.cmbTurno.Name = "cmbTurno";
             this.cmbTurno.Size = new System.Drawing.Size(351, 21);
-            this.cmbTurno.TabIndex = 78;
+            this.cmbTurno.TabIndex = 15;
             this.cmbTurno.SelectedIndexChanged += new System.EventHandler(this.cmbTurno_SelectionChangeCommitted);
+            // 
+            // txtDataNasc
+            // 
+            this.txtDataNasc.Location = new System.Drawing.Point(251, 91);
+            this.txtDataNasc.Mask = "00/00/0000";
+            this.txtDataNasc.Name = "txtDataNasc";
+            this.txtDataNasc.Size = new System.Drawing.Size(184, 20);
+            this.txtDataNasc.TabIndex = 6;
+            this.txtDataNasc.ValidatingType = typeof(System.DateTime);
             // 
             // AlterarMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 490);
+            this.Controls.Add(this.txtDataNasc);
             this.Controls.Add(this.cmbTurno);
             this.Controls.Add(this.lblCur);
             this.Controls.Add(this.lblEnd);
@@ -462,7 +461,6 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.dtpDataNasc);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlterarMatricula";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -487,7 +485,6 @@
         private System.Windows.Forms.Label lblDataNasc;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtCidade;
@@ -513,5 +510,6 @@
         private System.Windows.Forms.Label lblEnd;
         private System.Windows.Forms.Label lblCur;
         private System.Windows.Forms.ComboBox cmbTurno;
+        private System.Windows.Forms.MaskedTextBox txtDataNasc;
     }
 }

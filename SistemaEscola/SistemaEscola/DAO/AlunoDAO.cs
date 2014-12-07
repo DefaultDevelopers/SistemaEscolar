@@ -55,7 +55,7 @@ namespace SistemaEscola.DAO
             }
         }
         //Retorna os dados de aluno na tela de alterar dados de aluno
-        public void retornaAluno(MaskedTextBox txtCodAluno, TextBox txtNome, MaskedTextBox txtTel, TextBox txtEmail, DateTimePicker dtpNasc, MaskedTextBox txtCPF)
+        public void retornaAluno(MaskedTextBox txtCodAluno, TextBox txtNome, MaskedTextBox txtTel, TextBox txtEmail, MaskedTextBox txtNasc, MaskedTextBox txtCPF)
         {
             string loginAluno = txtCodAluno.Text;
 
@@ -75,7 +75,7 @@ namespace SistemaEscola.DAO
                 txtEmail.Text = reader["email"].ToString();
                 txtCPF.Text = reader["cpf"].ToString();
                 txtTel.Text = reader["telefone"].ToString();
-                dtpNasc.Value = Convert.ToDateTime(reader["data_nascimento"].ToString());
+                txtNasc.Text = reader["data_nascimento"].ToString();
             }
 
             con.Close();
@@ -91,19 +91,13 @@ namespace SistemaEscola.DAO
 
             con.Open();
 
-            try
-            {
-                cmd.CommandText = "UPDATE Aluno SET nome = '" + aluno.Nome + "', email = '" + aluno.Email + "', cpf = '" + aluno.CPF + "', telefone = '" + aluno.Telefone + "', data_nascimento = '" + aluno.DataNasc + "' WHERE Login_Login = '" + loginAluno + "'";
-            }
-            catch (MySqlException exp)
-            {
-                MessageBox.Show("Houve algum erro ao alterar. [Aluno]" + exp.Message);
-            }
+            cmd.CommandText = "UPDATE Aluno SET nome = '" + aluno.Nome + "', email = '" + aluno.Email + "', cpf = '" + aluno.CPF + "', telefone = '" + aluno.Telefone + "', data_nascimento = '" + aluno.DataNasc + "' WHERE Login_Login = '" + loginAluno + "'";
 
             try
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Dados de aluno alterados com sucesso.");
             }
             catch (MySqlException exc)
             {
