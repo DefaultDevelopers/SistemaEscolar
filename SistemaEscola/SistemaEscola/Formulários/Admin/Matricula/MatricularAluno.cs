@@ -48,17 +48,17 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             //LOGIN
             CriptMD5 cmd5 = new CriptMD5();
-            Login loginTable = new Login();
+            Login loginEnt = new Login();
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             senha = Convert.ToInt32(txtSenha.Text);
             senhacript = cmd5.getMD5Hash(txtSenha.Text);
 
-            loginTable.Log = login;
-            loginTable.Senha = senha;
-            loginTable.User = user;
-            loginTable.Crip = senhacript;
+            loginEnt.Log = login;
+            loginEnt.Senha = senha;
+            loginEnt.User = user;
+            loginEnt.Crip = senhacript;
 
-            loginDAO.salvarLogin(loginTable);
+            loginDAO.salvarLogin(loginEnt);
 
             //ALUNO
             SistemaEscola.Entidades.Aluno alunoEnt = new SistemaEscola.Entidades.Aluno();
