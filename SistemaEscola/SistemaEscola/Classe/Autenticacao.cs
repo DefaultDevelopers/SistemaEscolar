@@ -9,6 +9,7 @@ using SistemaEscola.Formulários.Usuarios.AlunoForms;
 using SistemaEscola.Formulários.Usuarios.Professor;
 using System.Windows.Forms;
 using SistemaEscola.Formulários;
+using SistemaEscola.DAO;
 
 //Classe para checar se o login está correto
 namespace SistemaEscola.Classe
@@ -18,6 +19,7 @@ namespace SistemaEscola.Classe
         Banco b = new Banco();
         private MySqlConnection con;
         FormPrincipal form = new FormPrincipal();
+        DadosDeUsuarioDAO dadosUserDAO = new DadosDeUsuarioDAO();
 
         public Autenticacao()
         {
@@ -38,13 +40,15 @@ namespace SistemaEscola.Classe
                     }
                     else if (TipoUser == 2)
                     {
-                        SistemaEscola.Formulários.Usuarios.Professor.Professor prof = new Formulários.Usuarios.Professor.Professor();
-                        prof.Show();
+                        SistemaEscola.Formulários.Usuarios.Professor.Professor profForm = new Formulários.Usuarios.Professor.Professor();
+                        profForm.getDados(dadosUserDAO.getProf(login));
+                        profForm.Show();
                     }
                     else if (TipoUser == 3)
                     {
-                        AlunoForm aluno = new AlunoForm();
-                        aluno.Show();
+                        AlunoForm alunoForm = new AlunoForm();
+                        alunoForm.getDados(dadosUserDAO.getAluno(login));
+                        alunoForm.Show();
                     }
 
                     form.Close();

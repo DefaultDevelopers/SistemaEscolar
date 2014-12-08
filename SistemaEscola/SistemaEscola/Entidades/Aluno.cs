@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Entidades
 {
-    class Aluno
+    public class Aluno
     {
         String  login, nome, telefone, email, cpf, dataNasc;
 

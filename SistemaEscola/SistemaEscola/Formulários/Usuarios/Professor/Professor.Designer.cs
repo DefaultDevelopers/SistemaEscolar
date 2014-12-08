@@ -101,6 +101,7 @@
             this.Name = "Professor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professor";
+            this.Load += new System.EventHandler(this.Professor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxProf)).EndInit();
             this.ResumeLayout(false);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaEscola.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,13 @@ namespace SistemaEscola.Formulários.Admin
             InitializeComponent();
         }
 
+        DadosUsuarioEnt ent = new DadosUsuarioEnt();
+
+        public void getUserObj(DadosUsuarioEnt userData)
+        {
+            ent = userData;
+        }
+
         //Mensagem
         MailMessage message = new MailMessage();
         String anexo;
@@ -30,11 +38,9 @@ namespace SistemaEscola.Formulários.Admin
 
         private void SendEmail()
         {
-            
-
             String para = txtPara.Text;
             String assunto = txtAssunto.Text;
-            String mens = txtMensagem.Text;            
+            String mens = "Você recebeu uma mensagem do Sistema Acadêmico. Não responda este e-mail." + "\n\nSua mensagem: '" + txtMensagem.Text + "'\n\nContato do remetente:" + "\nNome: " + ent.Nome + "\nE-mail: " + ent.Email + "\nTelefone: " + ent.Telefone;
 
             //Estes 2 campos corresponde a quem está enviando o e-mail
             message.Sender = new MailAddress("noreplyacademico@gmail.com", "Sistema Acadêmico");
@@ -91,6 +97,11 @@ namespace SistemaEscola.Formulários.Admin
         {           
             openFileAnexo.ShowDialog();
             txtAnexo.Text = openFileAnexo.FileName;
+        }
+
+        private void EnviarMsg_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

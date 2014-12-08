@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaEscola.Formulários.Admin;
 using SistemaEscola.Formulários.Admin.Tarefas;
+using SistemaEscola.Entidades;
 
 namespace SistemaEscola.Formulários.Usuarios.Professor
 {
@@ -19,9 +20,17 @@ namespace SistemaEscola.Formulários.Usuarios.Professor
             InitializeComponent();
         }
 
+        DadosUsuarioEnt userData = new DadosUsuarioEnt();
+
+        public void getDados(DadosUsuarioEnt dados)
+        {
+            userData = dados;
+        }
+
         private void btnMensagem_Click(object sender, EventArgs e)
         {
             EnviarMsg msg = new EnviarMsg();
+            msg.getUserObj(userData);
             msg.Show();
         }
 
@@ -33,7 +42,7 @@ namespace SistemaEscola.Formulários.Usuarios.Professor
 
         private void btnFrequencia_Click(object sender, EventArgs e)
         {
-            Frequencia freq = new Frequencia();
+            InserirFrequencia freq = new InserirFrequencia();
             freq.Show();
         }
 
@@ -41,6 +50,11 @@ namespace SistemaEscola.Formulários.Usuarios.Professor
         {
             Tarefas taref = new Tarefas();
             taref.Show();
+        }
+
+        private void Professor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

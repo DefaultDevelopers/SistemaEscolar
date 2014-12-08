@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Entidades
 {
-    class Professor
+    public class Professor
     {
         private String login, nome, email, cpf, telefone, grau_form, form, dataNasc;
         int senha;      

@@ -1,6 +1,6 @@
 ﻿namespace SistemaEscola.Formulários.Usuarios.Professor
 {
-    partial class Frequencia
+    partial class InserirFrequencia
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frequencia));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InserirFrequencia));
             this.dgvFrequencia = new System.Windows.Forms.DataGridView();
             this.picBoxFrequencia = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbTurma = new System.Windows.Forms.ComboBox();
             this.dtpAula = new System.Windows.Forms.DateTimePicker();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnInserir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFrequencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxFrequencia)).BeginInit();
@@ -63,7 +62,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 34);
+            this.label1.Location = new System.Drawing.Point(109, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 14;
@@ -82,9 +81,9 @@
             // cmbTurma
             // 
             this.cmbTurma.FormattingEnabled = true;
-            this.cmbTurma.Location = new System.Drawing.Point(234, 33);
+            this.cmbTurma.Location = new System.Drawing.Point(234, 12);
             this.cmbTurma.Name = "cmbTurma";
-            this.cmbTurma.Size = new System.Drawing.Size(136, 21);
+            this.cmbTurma.Size = new System.Drawing.Size(164, 21);
             this.cmbTurma.TabIndex = 16;
             // 
             // dtpAula
@@ -92,17 +91,8 @@
             this.dtpAula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpAula.Location = new System.Drawing.Point(234, 56);
             this.dtpAula.Name = "dtpAula";
-            this.dtpAula.Size = new System.Drawing.Size(136, 20);
+            this.dtpAula.Size = new System.Drawing.Size(164, 20);
             this.dtpAula.TabIndex = 17;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Location = new System.Drawing.Point(376, 53);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(99, 23);
-            this.btnPesquisar.TabIndex = 18;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // btnInserir
             // 
@@ -113,13 +103,12 @@
             this.btnInserir.Text = "Inserir Frequência";
             this.btnInserir.UseVisualStyleBackColor = true;
             // 
-            // Frequencia
+            // InserirFrequencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 359);
             this.Controls.Add(this.btnInserir);
-            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dtpAula);
             this.Controls.Add(this.cmbTurma);
             this.Controls.Add(this.label2);
@@ -127,8 +116,9 @@
             this.Controls.Add(this.dgvFrequencia);
             this.Controls.Add(this.picBoxFrequencia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Frequencia";
+            this.Name = "InserirFrequencia";
             this.Text = "Frequência";
+            this.Load += new System.EventHandler(this.InserirFrequencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFrequencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxFrequencia)).EndInit();
             this.ResumeLayout(false);
@@ -144,7 +134,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbTurma;
         private System.Windows.Forms.DateTimePicker dtpAula;
-        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnInserir;
     }
 }

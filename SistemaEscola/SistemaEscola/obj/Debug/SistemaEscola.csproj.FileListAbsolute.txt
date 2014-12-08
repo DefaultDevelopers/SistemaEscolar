@@ -79,7 +79,6 @@ D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\Sistema
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Turma.PesquisarTurma.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Turma.Turma.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Boletim.resources
-D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Frequencia.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.Professor.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.AlunoForms.AlunoForm.resources
 D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.AlunoForms.BoletimForm.resources
@@ -167,3 +166,5 @@ D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola
 D:\Documentos\Git\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.pdb
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.Disciplina.PesquisaProfDisc.resources
 C:\Users\Felipe\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.Turma.PesquisaProfTurma.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Admin.Professor.Turma.PesquisaProfTurma.resources
+D:\Dropbox\Repositório\defaultrep\SistemaEscola\SistemaEscola\obj\Debug\SistemaEscola.Formulários.Usuarios.Professor.InserirFrequencia.resources

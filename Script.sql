@@ -38,3 +38,4 @@ SELECT * FROM Professor;
 SELECT * FROM professor_turma;
 DELETE FROM Login WHERE Login = 20141234 AND Senha = 12345;
 delete from Professor_Turma where idProfTurma = 2;
+SELECT DISTINCT nome, cpf, email FROM Login, Aluno, Professor WHERE Login = Login_Login AND Login_Login = 20149256123;

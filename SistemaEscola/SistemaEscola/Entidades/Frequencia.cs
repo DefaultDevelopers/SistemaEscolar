@@ -8,22 +8,29 @@ namespace SistemaEscola.Entidades
 {
     class Frequencia
     {
-        int idAluno, idProfessor_Disciplina, idTurma, falta;
+        String idProf, idAluno, idDisciplina, idTurma;
+        int falta;
         DateTime dataCriado, dataAula;
 
-        public int IdAluno
+        public String IdProf
+        {
+            get { return idProf; }
+            set { idProf = value; }
+        }   
+
+        public String IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
         }        
 
-        public int IdProfessor_Discpina
+        public String IdDisciplina
         {
-            get { return idProfessor_Disciplina; }
-            set { idProfessor_Disciplina = value; }
+            get { return idDisciplina; }
+            set { idDisciplina = value; }
         }
 
-        public int IdTurma
+        public String IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
