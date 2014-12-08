@@ -104,6 +104,29 @@ namespace SistemaEscola.DAO
 
             cmbTurma.Text = "";
         }
+        //Passa os códigos de turma dispon~iveis
+        public void comboTurma(ComboBox cmbTurma)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+
+            string command = "SELECT DISTINCT idTurma FROM Turma";
+            MySqlDataAdapter da = new MySqlDataAdapter(command, con);
+
+            con.Open();
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            cmbTurma.DisplayMember = "idTurma";
+            cmbTurma.ValueMember = "idTurma";
+            cmbTurma.DataSource = dt;
+
+            con.Close();
+
+            cmbTurma.Text = "";
+        }
         //Passa os turnos disponíveis baseado no tipo escolhido
         public void comboTurno(ComboBox cmbTurno, String tipo)
         {

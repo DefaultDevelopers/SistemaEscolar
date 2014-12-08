@@ -43,6 +43,7 @@
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.Size = new System.Drawing.Size(387, 256);
             this.dgvDados.TabIndex = 0;
+            this.dgvDados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellContentClick);
             // 
             // linkLblCod
             // 
@@ -63,6 +64,7 @@
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(100, 20);
             this.txtCod.TabIndex = 2;
+            this.txtCod.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCod_MaskInputRejected);
             // 
             // btnPesquisar
             // 

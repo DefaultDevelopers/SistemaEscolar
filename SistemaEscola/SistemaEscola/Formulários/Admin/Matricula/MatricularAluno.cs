@@ -56,6 +56,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             loginEnt.Senha = senha;
             loginEnt.User = user;
 
+            
             loginDAO.salvarLogin(loginEnt);
 
             //ALUNO

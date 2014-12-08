@@ -71,6 +71,7 @@
     <Compile Include="Entidades\Mensagem.cs" />
     <Compile Include="Entidades\ProfDiscEnt.cs" />
     <Compile Include="Entidades\Professor.cs" />
+    <Compile Include="Entidades\ProfTurmaEnt.cs" />
     <Compile Include="Entidades\Tarefa.cs" />
     <Compile Include="Entidades\Turma.cs" />
     <Compile Include="Formulários\Admin\Curso\AlterarCurso.cs">
@@ -187,17 +188,23 @@
     <Compile Include="Formulários\Admin\Professor\Disciplina\PesquisaProfDisc.Designer.cs">
       <DependentUpon>PesquisaProfDisc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\Turma\AlterarVinculo.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\AlterarProfTurma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\Turma\AlterarVinculo.Designer.cs">
-      <DependentUpon>AlterarVinculo.cs</DependentUpon>
+    <Compile Include="Formulários\Admin\Professor\Turma\AlterarProfTurma.Designer.cs">
+      <DependentUpon>AlterarProfTurma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\Turma\DeletarVinculo.cs">
+    <Compile Include="Formulários\Admin\Professor\Turma\DeletarProfTurma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Admin\Professor\Turma\DeletarVinculo.Designer.cs">
-      <DependentUpon>DeletarVinculo.cs</DependentUpon>
+    <Compile Include="Formulários\Admin\Professor\Turma\DeletarProfTurma.Designer.cs">
+      <DependentUpon>DeletarProfTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\Admin\Professor\Turma\PesquisaProfTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\Admin\Professor\Turma\PesquisaProfTurma.Designer.cs">
+      <DependentUpon>PesquisaProfTurma.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Admin\Professor\Turma\VincularProfTurma.cs">
       <SubType>Form</SubType>
@@ -420,11 +427,14 @@
     <EmbeddedResource Include="Formulários\Admin\Professor\Disciplina\PesquisaProfDisc.resx">
       <DependentUpon>PesquisaProfDisc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\AlterarVinculo.resx">
-      <DependentUpon>AlterarVinculo.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\AlterarProfTurma.resx">
+      <DependentUpon>AlterarProfTurma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\DeletarVinculo.resx">
-      <DependentUpon>DeletarVinculo.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\DeletarProfTurma.resx">
+      <DependentUpon>DeletarProfTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\Admin\Professor\Turma\PesquisaProfTurma.resx">
+      <DependentUpon>PesquisaProfTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Admin\Professor\Turma\VincularProfTurma.resx">
       <DependentUpon>VincularProfTurma.cs</DependentUpon>

@@ -30,5 +30,15 @@ namespace SistemaEscola.Formulários.Admin.Professor.Disciplina
             PesquisaUsuário pesqUser = new PesquisaUsuário();
             pesqUser.Show();
         }
+
+        private void txtCod_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void dgvDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

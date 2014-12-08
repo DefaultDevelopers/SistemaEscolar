@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaEscola.Formulários.Admin.Professor.Disciplina;
+using SistemaEscola.Formulários.Admin.Professor.Turma;
 
 namespace SistemaEscola.Formulários.Admin.Professor
 {
@@ -38,7 +39,8 @@ namespace SistemaEscola.Formulários.Admin.Professor
 
         private void btnPesqTurmaAula_Click(object sender, EventArgs e)
         {
-
+            PesquisaProfTurma pesqProfTurma = new PesquisaProfTurma();
+            pesqProfTurma.Show();
         }
 
         private void btnCadProf_Click(object sender, EventArgs e)

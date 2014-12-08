@@ -72,11 +72,12 @@
             this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // txtCodProf
             // 
             this.txtCodProf.Location = new System.Drawing.Point(147, 20);
-            this.txtCodProf.Mask = "0000000";
+            this.txtCodProf.Mask = "00000000";
             this.txtCodProf.Name = "txtCodProf";
             this.txtCodProf.Size = new System.Drawing.Size(121, 20);
             this.txtCodProf.TabIndex = 6;
@@ -106,6 +107,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VincularProfTurma";
             this.Text = "Vincular Professor/Turma";
+            this.Load += new System.EventHandler(this.VincularProfTurma_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

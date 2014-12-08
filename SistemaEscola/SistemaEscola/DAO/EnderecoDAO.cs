@@ -47,7 +47,7 @@ namespace SistemaEscola.DAO
             }
             catch (Exception exc)
             {
-                MessageBox.Show(exc.Message);
+                MessageBox.Show("Erro com o login." + "\n" + exc.Message);
             }
             finally
             {

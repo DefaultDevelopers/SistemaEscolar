@@ -32,5 +32,9 @@ INSERT INTO Disciplina (idDisciplina, carga_horaria, nome, descricao) VALUES (09
 INSERT INTO Login (Login, Senha, User_idUser) VALUES ("admin", 12345, 001);
 
 #SELECTs
+select * from login;
 SELECT * FROM Aluno;
 SELECT * FROM Professor;
+SELECT * FROM professor_turma;
+DELETE FROM Login WHERE Login = 20141234 AND Senha = 12345;
+delete from Professor_Turma where idProfTurma = 2;

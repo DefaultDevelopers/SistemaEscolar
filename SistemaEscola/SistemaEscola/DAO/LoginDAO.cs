@@ -14,7 +14,7 @@ namespace SistemaEscola.DAO
     {
         Banco b = new Banco();
 
-        public void salvarLogin(Login login) {            
+        public Boolean salvarLogin(Login login) {            
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
@@ -28,26 +28,21 @@ namespace SistemaEscola.DAO
                 MessageBox.Show("Erro no banco de dados. Contate o provedor do seu sistema." + eo.Message);
             }
 
-            try
-            {
-                cmd.CommandText = "INSERT INTO Login (Login, Senha, User_idUser) values (@login, @senha, @user)";
-                cmd.Parameters.AddWithValue("@login", login.Log);
-                cmd.Parameters.AddWithValue("@senha", login.Senha);
-                cmd.Parameters.AddWithValue("@user", login.User);
-            }
-            catch (MySqlException ep)
-            {
-                MessageBox.Show("Login já existe. Por favor digite dígitos diferentes no campo." + ep.Message);
-            }
+            cmd.CommandText = "INSERT INTO Login (Login, Senha, User_idUser) values (@login, @senha, @user)";
+            cmd.Parameters.AddWithValue("@login", login.Log);
+            cmd.Parameters.AddWithValue("@senha", login.Senha);
+            cmd.Parameters.AddWithValue("@user", login.User);
 
             try
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("O Login foi salvo com sucesso.");
+                return true;
             }
             catch (MySqlException op) {
-                MessageBox.Show("Erro ao salvar. Contate o provedor do seu banco de dados ou tente outro Login." + op.Message);
+                MessageBox.Show("O login que você digitou já está cadastrado no sistema. Tente outro." + "\n" + op.Message);
+                return false;
             }
             finally
             {

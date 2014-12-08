@@ -41,7 +41,7 @@ namespace SistemaEscola.DAO
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Erro ao salvar dados de professor.");
+                MessageBox.Show("Erro com o login.");
             }
 
             con.Close();

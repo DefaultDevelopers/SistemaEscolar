@@ -47,7 +47,23 @@ namespace SistemaEscola.DAO
             con.Open();
 
             MySqlDataAdapter mySqlDataAdapter;
-            mySqlDataAdapter = new MySqlDataAdapter("Select * from matricula", con);
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT DISTINCT Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Matricula, Aluno WHERE Aluno_Login_Login = Login_Login ORDER BY nome", con);
+            DataSet DS = new DataSet();
+            mySqlDataAdapter.Fill(DS);
+            dgvDados.DataSource = DS.Tables[0];
+
+
+            con.Close();
+        }
+
+        public void pesquisaMatricula(DataGridView dgvDados, MaskedTextBox txtPorCod)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            con.Open();
+
+            MySqlDataAdapter mySqlDataAdapter;
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT DISTINCT Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Matricula, Aluno WHERE Aluno_Login_Login = Login_Login AND Login_Login = '" + txtPorCod.Text+ "' ORDER BY nome", con);
             DataSet DS = new DataSet();
             mySqlDataAdapter.Fill(DS);
             dgvDados.DataSource = DS.Tables[0];

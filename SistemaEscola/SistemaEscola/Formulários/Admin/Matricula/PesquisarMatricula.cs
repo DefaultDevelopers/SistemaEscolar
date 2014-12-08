@@ -26,5 +26,15 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         {
             matrDAO.pesquisaMatricula(dgvDados);
         }
+
+        private void txtPorCod_TextChanged(object sender, EventArgs e)
+        {
+            matrDAO.pesquisaMatricula(dgvDados, txtPorCod);
+        }
+
+        private void btnPesquisaGeral_Click(object sender, EventArgs e)
+        {
+            PesquisarMatricula_Load(sender, e);
+        }
     }
 }

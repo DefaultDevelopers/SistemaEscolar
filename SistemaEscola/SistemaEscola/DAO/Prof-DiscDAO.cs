@@ -43,7 +43,7 @@ namespace SistemaEscola.DAO
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Você digitou um código de professor inexistente!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Você digitou um código de professor inexistente ou está repetindo a disciplina!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {

@@ -29,8 +29,6 @@ namespace SistemaEscola.Formulários.Admin.Professor
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            try
-            {
                 //LOGIN
                 String login;
                 int senha;
@@ -49,7 +47,6 @@ namespace SistemaEscola.Formulários.Admin.Professor
                 //PROFESSOR
                 SistemaEscola.Entidades.Professor profEnt = new Entidades.Professor();
                 ProfessorDAO profDAO = new ProfessorDAO();
-
                 String nome, telefone, email, cpf, grauForm, form, dataNasc;
 
                 nome = txtNome.Text;
@@ -93,11 +90,6 @@ namespace SistemaEscola.Formulários.Admin.Professor
                 endEnt.CEP = cep;
 
                 endDAO.salvarEnd(endEnt);
-            }
-            catch (MySqlException vc)
-            {
-                MessageBox.Show("Erro ao cadastrar." + vc.Message);
-            }
         }
     }
 }
