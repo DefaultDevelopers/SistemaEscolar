@@ -31,7 +31,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             //PROFESSOR
-            SistemaEscola.Entidades.Professor profEnt = new Entidades.Professor();
+            SistemaEscola.Entidades.ProfessorEnt profEnt = new Entidades.ProfessorEnt();
             String nome, telefone, email, cpf, grauForm, form, dataNasc;
 
             nome = txtNome.Text;

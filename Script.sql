@@ -39,3 +39,8 @@ SELECT * FROM professor_turma;
 DELETE FROM Login WHERE Login = 20141234 AND Senha = 12345;
 delete from Professor_Turma where idProfTurma = 2;
 SELECT DISTINCT nome, cpf, email FROM Login, Aluno, Professor WHERE Login = Login_Login AND Login_Login = 20149256123;
+
+insert into boletim (Aluno_Login_Login, Professor_Login_Login, Turma_idTurma, Disciplina_idDisciplina, ano, nota1, nota2, nota3, nota4, media) values ('20142321123', null, 610, null, null, null, null, null, null, null);
+select * from boletim;
+
+SELECT Aluno_Login_Login as 'Matrícula', nome as 'Nome', Turma_idTurma as 'Turma', Disciplina_idDisciplina as 'ID da Disciplina', nota1 as 'Nota 1º BM', nota2 as 'Nota 2º BM', nota3 as 'Nota 3º BM', nota4 as 'Nota 4º BM', media as 'Média' FROM Boletim, Aluno WHERE Login_Login = Aluno_Login_Login;

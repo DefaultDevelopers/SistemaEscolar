@@ -189,6 +189,8 @@ namespace SistemaEscola.DAO
             cmbDisc.DisplayMember = "nome";
             cmbDisc.ValueMember = "idDisciplina";
 
+            cmbDisc.Text = "";
+
             con.Close();
         }
     }

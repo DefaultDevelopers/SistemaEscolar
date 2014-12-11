@@ -45,7 +45,7 @@
             this.dgvFrequencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFrequencia.Location = new System.Drawing.Point(16, 87);
             this.dgvFrequencia.Name = "dgvFrequencia";
-            this.dgvFrequencia.Size = new System.Drawing.Size(459, 219);
+            this.dgvFrequencia.Size = new System.Drawing.Size(559, 219);
             this.dgvFrequencia.TabIndex = 13;
             // 
             // picBoxFrequencia
@@ -62,7 +62,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 13);
+            this.label1.Location = new System.Drawing.Point(151, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 14;
@@ -72,7 +72,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(109, 60);
+            this.label2.Location = new System.Drawing.Point(151, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 16);
             this.label2.TabIndex = 15;
@@ -81,7 +81,7 @@
             // cmbTurma
             // 
             this.cmbTurma.FormattingEnabled = true;
-            this.cmbTurma.Location = new System.Drawing.Point(234, 12);
+            this.cmbTurma.Location = new System.Drawing.Point(276, 12);
             this.cmbTurma.Name = "cmbTurma";
             this.cmbTurma.Size = new System.Drawing.Size(164, 21);
             this.cmbTurma.TabIndex = 16;
@@ -89,14 +89,14 @@
             // dtpAula
             // 
             this.dtpAula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpAula.Location = new System.Drawing.Point(234, 56);
+            this.dtpAula.Location = new System.Drawing.Point(276, 39);
             this.dtpAula.Name = "dtpAula";
             this.dtpAula.Size = new System.Drawing.Size(164, 20);
             this.dtpAula.TabIndex = 17;
             // 
             // btnInserir
             // 
-            this.btnInserir.Location = new System.Drawing.Point(376, 314);
+            this.btnInserir.Location = new System.Drawing.Point(476, 312);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(99, 37);
             this.btnInserir.TabIndex = 19;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 359);
+            this.ClientSize = new System.Drawing.Size(591, 359);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.dtpAula);
             this.Controls.Add(this.cmbTurma);

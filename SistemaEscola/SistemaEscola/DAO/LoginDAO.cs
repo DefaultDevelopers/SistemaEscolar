@@ -37,7 +37,6 @@ namespace SistemaEscola.DAO
             {
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("O Login foi salvo com sucesso.");
                 return true;
             }
             catch (MySqlException op) {

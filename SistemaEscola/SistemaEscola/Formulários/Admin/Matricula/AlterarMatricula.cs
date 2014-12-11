@@ -27,7 +27,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         MatriculaDAO matrDAO = new MatriculaDAO();
         Aluno alunoEnt = new Aluno();
         Endereco endEnt = new Endereco();
-        SistemaEscola.Entidades.Matricula matrEnt = new Entidades.Matricula();
+        SistemaEscola.Entidades.MatriculaEnt matrEnt = new Entidades.MatriculaEnt();
         LimparCampos limpa = new LimparCampos();
 
         String tipo, curso;

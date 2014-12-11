@@ -16,7 +16,7 @@ namespace SistemaEscola.DAO
 
         Banco b = new Banco();
 
-        public void salvarTurma(SistemaEscola.Entidades.Turma turma)
+        public void salvarTurma(SistemaEscola.Entidades.TurmaEnt turma)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
@@ -148,7 +148,7 @@ namespace SistemaEscola.DAO
             con.Close();
         }
 
-        public void alteraTurma(Turma turma)
+        public void alteraTurma(TurmaEnt turma)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();

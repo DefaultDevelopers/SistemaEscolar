@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Entidades
 {
-    class Turma
+    class TurmaEnt
     {
         int idTurma, idCurso, turno, tipo;
         String sala;

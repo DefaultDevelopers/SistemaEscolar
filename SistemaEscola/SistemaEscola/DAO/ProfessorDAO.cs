@@ -15,7 +15,7 @@ namespace SistemaEscola.DAO
     {
         Banco b = new Banco();
 
-        public void salvarProf(Professor professor)
+        public void salvarProf(ProfessorEnt professor)
         {            
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
@@ -75,7 +75,7 @@ namespace SistemaEscola.DAO
             con.Close();
         }
 
-        public void alteraProf(Professor profEnt, MaskedTextBox txtCod)
+        public void alteraProf(ProfessorEnt profEnt, MaskedTextBox txtCod)
         {
             String login = txtCod.Text;
 

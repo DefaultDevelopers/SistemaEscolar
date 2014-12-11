@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Entidades
 {
-    class Matricula
+    class MatriculaEnt
     {
         private int idTurma;
         private String login;       

@@ -40,7 +40,7 @@ namespace SistemaEscola.Formulários.Admin.Turma
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            SistemaEscola.Entidades.Turma turmaEnt = new Entidades.Turma();
+            SistemaEscola.Entidades.TurmaEnt turmaEnt = new Entidades.TurmaEnt();
             String sala;
             int idCurso, idTurma, turno, tipo;
 

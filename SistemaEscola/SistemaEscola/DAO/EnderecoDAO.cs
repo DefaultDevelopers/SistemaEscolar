@@ -42,12 +42,11 @@ namespace SistemaEscola.DAO
             try
             {
                 cmd.Prepare();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("O endereço foi salvo com sucesso.");
+                cmd.ExecuteNonQuery();                
             }
-            catch (Exception exc)
+            catch (MySqlException)
             {
-                MessageBox.Show("Erro com o login." + "\n" + exc.Message);
+                MessageBox.Show("Erro com o login.");
             }
             finally
             {

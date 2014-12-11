@@ -46,7 +46,7 @@
             this.dgvBoletim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBoletim.Location = new System.Drawing.Point(14, 86);
             this.dgvBoletim.Name = "dgvBoletim";
-            this.dgvBoletim.Size = new System.Drawing.Size(459, 219);
+            this.dgvBoletim.Size = new System.Drawing.Size(524, 219);
             this.dgvBoletim.TabIndex = 8;
             // 
             // picBoxBoletim
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(107, 24);
+            this.label1.Location = new System.Drawing.Point(153, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 9;
@@ -73,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(107, 52);
+            this.label2.Location = new System.Drawing.Point(153, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 16);
             this.label2.TabIndex = 10;
@@ -82,7 +82,7 @@
             // cmbTurma
             // 
             this.cmbTurma.FormattingEnabled = true;
-            this.cmbTurma.Location = new System.Drawing.Point(232, 23);
+            this.cmbTurma.Location = new System.Drawing.Point(278, 21);
             this.cmbTurma.Name = "cmbTurma";
             this.cmbTurma.Size = new System.Drawing.Size(157, 21);
             this.cmbTurma.TabIndex = 11;
@@ -90,34 +90,35 @@
             // cmbDisc
             // 
             this.cmbDisc.FormattingEnabled = true;
-            this.cmbDisc.Location = new System.Drawing.Point(256, 51);
+            this.cmbDisc.Location = new System.Drawing.Point(302, 49);
             this.cmbDisc.Name = "cmbDisc";
             this.cmbDisc.Size = new System.Drawing.Size(133, 21);
             this.cmbDisc.TabIndex = 12;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(398, 49);
+            this.btnPesquisar.Location = new System.Drawing.Point(443, 47);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.Size = new System.Drawing.Size(95, 23);
             this.btnPesquisar.TabIndex = 13;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnInserir
             // 
-            this.btnInserir.Location = new System.Drawing.Point(338, 314);
+            this.btnInserir.Location = new System.Drawing.Point(401, 312);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(137, 33);
             this.btnInserir.TabIndex = 14;
-            this.btnInserir.Text = "Inserir Frequência";
+            this.btnInserir.Text = "Inserir Boletim";
             this.btnInserir.UseVisualStyleBackColor = true;
             // 
             // Boletim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 357);
+            this.ClientSize = new System.Drawing.Size(552, 349);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.cmbDisc);
@@ -129,6 +130,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Boletim";
             this.Text = "Boletim";
+            this.Load += new System.EventHandler(this.Boletim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBoletim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxBoletim)).EndInit();
             this.ResumeLayout(false);

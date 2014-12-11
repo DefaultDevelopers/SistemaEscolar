@@ -13,7 +13,7 @@ namespace SistemaEscola.DAO
 
         Banco b = new Banco();       
 
-        public void salvarMatricula(SistemaEscola.Entidades.Matricula matr, String login, int senha)
+        public void salvarMatricula(SistemaEscola.Entidades.MatriculaEnt matr, String login, int senha)
         {
             MySqlConnection con = new MySqlConnection(b.Conex());
             MySqlCommand cmd = new MySqlCommand();
@@ -100,7 +100,7 @@ namespace SistemaEscola.DAO
             }
         }
 
-        public void alteraMatricula(MaskedTextBox txtCodAluno, SistemaEscola.Entidades.Matricula matrEnt)
+        public void alteraMatricula(MaskedTextBox txtCodAluno, SistemaEscola.Entidades.MatriculaEnt matrEnt)
         {
             String loginAluno = txtCodAluno.Text;
 

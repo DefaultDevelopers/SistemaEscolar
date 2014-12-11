@@ -48,9 +48,9 @@
   <ItemGroup>
     <Compile Include="Classe\Autenticacao.cs" />
     <Compile Include="Classe\Banco.cs" />
-    <Compile Include="Classe\CriptMD5.cs" />
     <Compile Include="Classe\DadosDeUsuario.cs" />
     <Compile Include="Classe\LimparCampos.cs" />
+    <Compile Include="DAO\BoletimDAO.cs" />
     <Compile Include="DAO\ComboBoxDAO.cs" />
     <Compile Include="DAO\CursoDAO.cs" />
     <Compile Include="DAO\DadosDeUsuarioDAO.cs" />
@@ -65,19 +65,20 @@
     <Compile Include="DAO\ProfessorDAO.cs" />
     <Compile Include="DAO\TurmaDAO.cs" />
     <Compile Include="Entidades\Aluno.cs" />
+    <Compile Include="Entidades\BoletimEnt.cs" />
     <Compile Include="Entidades\Curso.cs" />
     <Compile Include="Entidades\DadosUsuarioEnt.cs" />
     <Compile Include="Entidades\Disciplina.cs" />
     <Compile Include="Entidades\Endereco.cs" />
     <Compile Include="Entidades\Frequencia.cs" />
     <Compile Include="Entidades\Login.cs" />
-    <Compile Include="Entidades\Matricula.cs" />
+    <Compile Include="Entidades\MatriculaEnt.cs" />
     <Compile Include="Entidades\Mensagem.cs" />
     <Compile Include="Entidades\ProfDiscEnt.cs" />
-    <Compile Include="Entidades\Professor.cs" />
+    <Compile Include="Entidades\ProfessorEnt.cs" />
     <Compile Include="Entidades\ProfTurmaEnt.cs" />
     <Compile Include="Entidades\Tarefa.cs" />
-    <Compile Include="Entidades\Turma.cs" />
+    <Compile Include="Entidades\TurmaEnt.cs" />
     <Compile Include="Formulários\Admin\Curso\AlterarCurso.cs">
       <SubType>Form</SubType>
     </Compile>

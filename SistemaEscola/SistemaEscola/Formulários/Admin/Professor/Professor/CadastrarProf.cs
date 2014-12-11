@@ -45,7 +45,7 @@ namespace SistemaEscola.Formulários.Admin.Professor
                 loginDAO.salvarLogin(loginEnt);
 
                 //PROFESSOR
-                SistemaEscola.Entidades.Professor profEnt = new Entidades.Professor();
+                SistemaEscola.Entidades.ProfessorEnt profEnt = new Entidades.ProfessorEnt();
                 ProfessorDAO profDAO = new ProfessorDAO();
                 String nome, telefone, email, cpf, grauForm, form, dataNasc;
 

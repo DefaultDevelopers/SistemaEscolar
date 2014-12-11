@@ -25,7 +25,8 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         LoginDAO loginDAO = new LoginDAO();
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
         EnderecoDAO endDAO = new EnderecoDAO();
-        String nome, telefone, email, cpf, login, curso, tipo, senhacript, dataNasc;
+        BoletimDAO boletimDAO = new BoletimDAO();
+        String nome, telefone, email, cpf, login, curso, tipo, dataNasc;
         int turma, senha, turno, user = 3;
 
         private void MatricularAluno_Load(object sender, EventArgs e)
@@ -46,16 +47,13 @@ namespace SistemaEscola.Formulários.Admin.Matricula
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             //LOGIN
-            CriptMD5 cmd5 = new CriptMD5();
             Login loginEnt = new Login();
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             senha = Convert.ToInt32(txtSenha.Text);
-            senhacript = cmd5.getMD5Hash(txtSenha.Text);
 
             loginEnt.Log = login;
             loginEnt.Senha = senha;
             loginEnt.User = user;
-
             
             loginDAO.salvarLogin(loginEnt);
 
@@ -91,7 +89,7 @@ namespace SistemaEscola.Formulários.Admin.Matricula
 
             endDAO.salvarEnd(endEnt);
 
-            SistemaEscola.Entidades.Matricula matrEnt = new SistemaEscola.Entidades.Matricula();
+            SistemaEscola.Entidades.MatriculaEnt matrEnt = new SistemaEscola.Entidades.MatriculaEnt();
 
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             turma = Convert.ToInt32(cmbTurma.SelectedValue);
@@ -101,6 +99,13 @@ namespace SistemaEscola.Formulários.Admin.Matricula
             matrEnt.IdTurma = turma;
 
             matrDAO.salvarMatricula(matrEnt, login, senha);
+
+            //BOLETIM
+            BoletimEnt boletimEnt = new BoletimEnt();
+            boletimEnt.AlunoLogin = login;      
+            boletimEnt.IdTurma = turma;       
+
+            boletimDAO.salvarBoletim(boletimEnt);
         }
 
         private void cmbTipo_SelectionChangeCommitted(object sender, EventArgs e)

@@ -21,7 +21,7 @@ namespace SistemaEscola.Formulários.Admin.Turma
 
         ComboBoxDAO cmbBoxDAO = new ComboBoxDAO();
         TurmaDAO turmaDAO = new TurmaDAO();
-        SistemaEscola.Entidades.Turma turmaEnt = new Entidades.Turma();
+        SistemaEscola.Entidades.TurmaEnt turmaEnt = new Entidades.TurmaEnt();
 
         private void CadastroTurma_Load(object sender, EventArgs e)
         {
