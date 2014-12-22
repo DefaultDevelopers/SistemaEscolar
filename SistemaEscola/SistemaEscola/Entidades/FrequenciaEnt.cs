@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Entidades
 {
-    class Frequencia
+    public class FrequenciaEnt
     {
-        String idProf, idAluno, idDisciplina, idTurma;
-        int falta;
-        DateTime dataCriado, dataAula;
-
-        public String IdProf
-        {
-            get { return idProf; }
-            set { idProf = value; }
-        }   
+        private String idAluno;
+        private int falta, idTurma, idDisciplina;
+        private DateTime dataCriado, dataAula;
 
         public String IdAluno
         {
@@ -24,13 +18,13 @@ namespace SistemaEscola.Entidades
             set { idAluno = value; }
         }        
 
-        public String IdDisciplina
+        public int IdDisciplina
         {
             get { return idDisciplina; }
             set { idDisciplina = value; }
         }
 
-        public String IdTurma
+        public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }

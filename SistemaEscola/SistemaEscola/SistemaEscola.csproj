@@ -71,7 +71,7 @@
     <Compile Include="Entidades\DadosUsuarioEnt.cs" />
     <Compile Include="Entidades\Disciplina.cs" />
     <Compile Include="Entidades\EnderecoEnt.cs" />
-    <Compile Include="Entidades\Frequencia.cs" />
+    <Compile Include="Entidades\FrequenciaEnt.cs" />
     <Compile Include="Entidades\Login.cs" />
     <Compile Include="Entidades\MatriculaEnt.cs" />
     <Compile Include="Entidades\Mensagem.cs" />
