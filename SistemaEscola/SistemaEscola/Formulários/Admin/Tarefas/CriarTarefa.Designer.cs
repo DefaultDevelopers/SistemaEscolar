@@ -32,9 +32,9 @@
             this.lblAssunto = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblDescricao = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtAssunto = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.dtpFim = new System.Windows.Forms.DateTimePicker();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -69,29 +69,29 @@
             this.lblDescricao.TabIndex = 2;
             this.lblDescricao.Text = "Descrição:";
             // 
-            // textBox1
+            // txtAssunto
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 12);
-            this.textBox1.MaxLength = 45;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtAssunto.Location = new System.Drawing.Point(79, 12);
+            this.txtAssunto.MaxLength = 45;
+            this.txtAssunto.Name = "txtAssunto";
+            this.txtAssunto.Size = new System.Drawing.Size(181, 20);
+            this.txtAssunto.TabIndex = 3;
             // 
-            // textBox2
+            // txtDescricao
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 70);
-            this.textBox2.MaxLength = 200;
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 138);
-            this.textBox2.TabIndex = 4;
+            this.txtDescricao.Location = new System.Drawing.Point(93, 70);
+            this.txtDescricao.MaxLength = 200;
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(167, 138);
+            this.txtDescricao.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // dtpFim
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(60, 38);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpFim.Location = new System.Drawing.Point(60, 38);
+            this.dtpFim.Name = "dtpFim";
+            this.dtpFim.Size = new System.Drawing.Size(200, 20);
+            this.dtpFim.TabIndex = 5;
             // 
             // btnSalvar
             // 
@@ -101,6 +101,7 @@
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
@@ -118,15 +119,16 @@
             this.ClientSize = new System.Drawing.Size(277, 264);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtpFim);
+            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtAssunto);
             this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblAssunto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CriarTarefa";
             this.Text = "Crie Sua Tarefa";
+            this.Load += new System.EventHandler(this.CriarTarefa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,9 +139,9 @@
         private System.Windows.Forms.Label lblAssunto;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Label lblDescricao;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtAssunto;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.DateTimePicker dtpFim;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
     }

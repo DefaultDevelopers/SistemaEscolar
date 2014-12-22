@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemaEscola.DAO;
+using SistemaEscola.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,22 @@ namespace SistemaEscola.Formulários.Admin.Tarefas
 {
     public partial class VerTarefas : Form
     {
-        public VerTarefas()
+        DadosUsuarioEnt ent = new DadosUsuarioEnt();
+
+        public VerTarefas(DadosUsuarioEnt entUser)
         {
             InitializeComponent();
+            ent = entUser;
+        }
+
+        TarefaDAO tarefasDAO = new TarefaDAO();
+        TarefaEnt tarefaEnt = new TarefaEnt();
+
+        private void VerTarefas_Load(object sender, EventArgs e)
+        {
+            String login = ent.Login;
+            tarefaEnt.Login = login;
+            tarefasDAO.pesquisar(dgvTarefas, tarefaEnt);
         }
     }
 }

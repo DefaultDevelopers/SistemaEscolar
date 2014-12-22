@@ -24,9 +24,10 @@ namespace SistemaEscola.DAO
 
             try
             {
-                cmd.CommandText = "INSERT INTO Frequencia (Professor_Login_Login, Aluno_Login_Login, data_aula, falta, data_criado) VALUES (@ProfLogin, @AlunoLogin, @dataAula, @falta, @dataCriado)";
-                cmd.Parameters.AddWithValue("@ProfLogin", freq.IdProf);
+                cmd.CommandText = "INSERT INTO Frequencia (Aluno_Login_Login,Turma_idTurma,Disciplina_idDisciplina, data_aula, falta, data_criado) VALUES (@AlunoLogin, @Turma, @Disciplina, @dataAula, @falta, @dataCriado)";
                 cmd.Parameters.AddWithValue("@AlunoLogin", freq.IdAluno);
+                cmd.Parameters.AddWithValue("@Turma", freq.IdTurma);
+                cmd.Parameters.AddWithValue("@Disciplina", freq.IdDisciplina);
                 cmd.Parameters.AddWithValue("@dataAula", freq.DataAula);
                 cmd.Parameters.AddWithValue("@falta", freq.Falta);
                 cmd.Parameters.AddWithValue("@dataCriado", freq.DataCriado);

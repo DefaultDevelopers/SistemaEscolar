@@ -34,13 +34,20 @@ INSERT INTO Login (Login, Senha, User_idUser) VALUES ("admin", 12345, 001);
 #SELECTs
 select * from login;
 SELECT * FROM Aluno;
+select * from matricula;
 SELECT * FROM Professor;
 SELECT * FROM professor_turma;
-DELETE FROM Login WHERE Login = 20141234 AND Senha = 12345;
-delete from Professor_Turma where idProfTurma = 2;
-SELECT DISTINCT nome, cpf, email FROM Login, Aluno, Professor WHERE Login = Login_Login AND Login_Login = 20149256123;
-
-insert into boletim (Aluno_Login_Login, Professor_Login_Login, Turma_idTurma, Disciplina_idDisciplina, ano, nota1, nota2, nota3, nota4, media) values ('20142321123', null, 610, null, null, null, null, null, null, null);
 select * from boletim;
+select * from disc_boletim;
 
-SELECT Aluno_Login_Login as 'Matrícula', nome as 'Nome', Turma_idTurma as 'Turma', Disciplina_idDisciplina as 'ID da Disciplina', nota1 as 'Nota 1º BM', nota2 as 'Nota 2º BM', nota3 as 'Nota 3º BM', nota4 as 'Nota 4º BM', media as 'Média' FROM Boletim, Aluno WHERE Login_Login = Aluno_Login_Login;
+INSERT INTO Login (Login, Senha, User_idUser) VALUES ("12345", 12345, 003);
+insert into aluno (Login_Login, nome, email, cpf, telefone, data_nascimento) values ('12345', 'arnaldo', 'aaasa', '21331213', '12391203', '2014-12-22');
+
+
+insert into boletim (Aluno_Login_Login, Turma_idTurma, Disciplina_idDisciplina, nota1, nota2, nota3, nota4, media, ano) values ('12345', 610, 95, 0, 0, 0, 0, 0, 2014);
+#inserir
+insert into boletim (Aluno_Login_Login, Turma_idTurma, Disciplina_idDisciplina, nota1, nota2, nota3, nota4, media, ano) values ('12345', 610, 25, 0, 0, 0, 0, 0, 2014) ON DUPLICATE KEY UPDATE nota1 = 9;
+insert into disc_boletim (Disciplina_idDisciplina) values (95);
+
+#pesquisar
+select distinct Login_Login as 'Matrícula', nome as 'Nome', nota1, nota2, nota3, nota4 FROM boletim, aluno where Turma_idTurma = 610 AND Disciplina_idDisciplina = 25;

@@ -8,32 +8,32 @@ namespace SistemaEscola.Entidades
 {
     class BoletimEnt
     {
-        String alunoLogin, profLogin;
-        int idTurma, idDisc, ano;
+        String login;
+        int idTurma, ano, idDisc, idBoletim;
         Double nota1, nota2, nota3, nota4, media;
 
-        public String AlunoLogin
+        public int IdBoletim
         {
-            get { return alunoLogin; }
-            set { alunoLogin = value; }
+            get { return idBoletim; }
+            set { idBoletim = value; }
         }
 
-        public String ProfLogin
+        public int IdDisc
         {
-            get { return profLogin; }
-            set { profLogin = value; }
+            get { return idDisc; }
+            set { idDisc = value; }
+        }
+
+        public String Login
+        {
+            get { return login; }
+            set { login = value; }
         }
 
         public int IdTurma
         {
             get { return idTurma; }
             set { idTurma = value; }
-        }
-        
-        public int IdDisc
-        {
-            get { return idDisc; }
-            set { idDisc = value; }
         }
 
         public int Ano

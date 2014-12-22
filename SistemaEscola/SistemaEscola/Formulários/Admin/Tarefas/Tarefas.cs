@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaEscola.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,21 +18,28 @@ namespace SistemaEscola.Formulários.Admin.Tarefas
             InitializeComponent();
         }
 
+        DadosUsuarioEnt ent = new DadosUsuarioEnt();
+
+        public void getUserObj(DadosUsuarioEnt userData)
+        {
+            ent = userData;
+        }
+
         private void btnCriarTarefa_Click(object sender, EventArgs e)
         {
-            CriarTarefa criaTarefa = new CriarTarefa();
+            CriarTarefa criaTarefa = new CriarTarefa(ent);
             criaTarefa.Show();
         }
 
         private void btnVerTarefas_Click(object sender, EventArgs e)
         {
-            VerTarefas verTarefas = new VerTarefas();
+            VerTarefas verTarefas = new VerTarefas(ent);
             verTarefas.Show();
         }
 
         private void btnAlterarTarefas_Click(object sender, EventArgs e)
         {
-            AlterarTarefas altTarefa = new AlterarTarefas();
+            AlterarTarefas altTarefa = new AlterarTarefas(ent);
             altTarefa.Show();
         }
 
@@ -39,6 +47,11 @@ namespace SistemaEscola.Formulários.Admin.Tarefas
         {
             DeletarTarefas delTarefa = new DeletarTarefas();
             delTarefa.Show();
+        }
+
+        private void Tarefas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

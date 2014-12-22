@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceProcess" />
@@ -63,13 +63,14 @@
     <Compile Include="DAO\Prof-DiscDAO.cs" />
     <Compile Include="DAO\Prof-TurmaDAO.cs" />
     <Compile Include="DAO\ProfessorDAO.cs" />
+    <Compile Include="DAO\TarefaDAO.cs" />
     <Compile Include="DAO\TurmaDAO.cs" />
-    <Compile Include="Entidades\Aluno.cs" />
+    <Compile Include="Entidades\AlunoEnt.cs" />
     <Compile Include="Entidades\BoletimEnt.cs" />
     <Compile Include="Entidades\Curso.cs" />
     <Compile Include="Entidades\DadosUsuarioEnt.cs" />
     <Compile Include="Entidades\Disciplina.cs" />
-    <Compile Include="Entidades\Endereco.cs" />
+    <Compile Include="Entidades\EnderecoEnt.cs" />
     <Compile Include="Entidades\Frequencia.cs" />
     <Compile Include="Entidades\Login.cs" />
     <Compile Include="Entidades\MatriculaEnt.cs" />
@@ -77,7 +78,7 @@
     <Compile Include="Entidades\ProfDiscEnt.cs" />
     <Compile Include="Entidades\ProfessorEnt.cs" />
     <Compile Include="Entidades\ProfTurmaEnt.cs" />
-    <Compile Include="Entidades\Tarefa.cs" />
+    <Compile Include="Entidades\TarefaEnt.cs" />
     <Compile Include="Entidades\TurmaEnt.cs" />
     <Compile Include="Formulários\Admin\Curso\AlterarCurso.cs">
       <SubType>Form</SubType>
@@ -355,11 +356,11 @@
     <Compile Include="Formulários\Usuarios\AlunoForms\FrequenciaForm.Designer.cs">
       <DependentUpon>FrequenciaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Professor\Boletim.cs">
+    <Compile Include="Formulários\Usuarios\Professor\InserirBoletim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\Usuarios\Professor\Boletim.Designer.cs">
-      <DependentUpon>Boletim.cs</DependentUpon>
+    <Compile Include="Formulários\Usuarios\Professor\InserirBoletim.Designer.cs">
+      <DependentUpon>InserirBoletim.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\Usuarios\Professor\InserirFrequencia.cs">
       <SubType>Form</SubType>
@@ -513,8 +514,8 @@
     <EmbeddedResource Include="Formulários\Usuarios\AlunoForms\FrequenciaForm.resx">
       <DependentUpon>FrequenciaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\Usuarios\Professor\Boletim.resx">
-      <DependentUpon>Boletim.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\Usuarios\Professor\InserirBoletim.resx">
+      <DependentUpon>InserirBoletim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\Usuarios\Professor\InserirFrequencia.resx">
       <DependentUpon>InserirFrequencia.cs</DependentUpon>

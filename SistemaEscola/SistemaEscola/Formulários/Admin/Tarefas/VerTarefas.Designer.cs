@@ -50,6 +50,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VerTarefas";
             this.Text = "Minhas Tarefas";
+            this.Load += new System.EventHandler(this.VerTarefas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarefas)).EndInit();
             this.ResumeLayout(false);
 

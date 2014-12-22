@@ -47,7 +47,7 @@ namespace SistemaEscola.DAO
             con.Open();
 
             MySqlDataAdapter mySqlDataAdapter;
-            mySqlDataAdapter = new MySqlDataAdapter("SELECT DISTINCT Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Matricula, Aluno WHERE Aluno_Login_Login = Login_Login ORDER BY nome", con);
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT DISTINCT idMatricula as 'ID', Login_Login as 'Matrícula', Turma_idTurma as 'Turma', nome as 'Nome', email as 'E-mail', cpf as 'CPF', telefone as 'Telefone', data_nascimento as 'Data de Nascimento' FROM Matricula, Aluno WHERE Aluno_Login_Login = Login_Login ORDER BY nome", con);
             DataSet DS = new DataSet();
             mySqlDataAdapter.Fill(DS);
             dgvDados.DataSource = DS.Tables[0];

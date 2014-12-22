@@ -102,6 +102,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Tarefas";
             this.Text = "Tarefas";
+            this.Load += new System.EventHandler(this.Tarefas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

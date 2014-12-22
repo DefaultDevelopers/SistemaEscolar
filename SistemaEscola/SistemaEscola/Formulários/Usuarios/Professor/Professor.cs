@@ -36,7 +36,7 @@ namespace SistemaEscola.Formulários.Usuarios.Professor
 
         private void btnBoletim_Click(object sender, EventArgs e)
         {
-            Boletim bolet = new Boletim();
+            InserirBoletim bolet = new InserirBoletim();
             bolet.Show();
         }
 
@@ -49,6 +49,7 @@ namespace SistemaEscola.Formulários.Usuarios.Professor
         private void btnTarefas_Click(object sender, EventArgs e)
         {
             Tarefas taref = new Tarefas();
+            taref.getUserObj(userData);
             taref.Show();
         }
 

@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Entidades
 {
-    class Tarefa
+    class TarefaEnt
     {
         DateTime dataCriada, dataFim;
-        String assunto, descricao;       
+        String assunto, descricao, login;
+
+        public String Login
+        {
+            get { return login; }
+            set { login = value; }
+        }   
 
         public String Assunto
         {

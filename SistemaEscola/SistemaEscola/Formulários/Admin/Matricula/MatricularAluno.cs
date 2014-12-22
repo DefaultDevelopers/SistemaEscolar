@@ -89,23 +89,16 @@ namespace SistemaEscola.Formulários.Admin.Matricula
 
             endDAO.salvarEnd(endEnt);
 
-            SistemaEscola.Entidades.MatriculaEnt matrEnt = new SistemaEscola.Entidades.MatriculaEnt();
+            MatriculaEnt matrEnt = new MatriculaEnt();
 
             login = txtLoginAno.Text + txtLoginNumAleat.Text + txtLoginNumId.Text;
             turma = Convert.ToInt32(cmbTurma.SelectedValue);
 
-            //MATRÍCULA        
+            //MATRÍCULA
             matrEnt.Login = login;
             matrEnt.IdTurma = turma;
 
             matrDAO.salvarMatricula(matrEnt, login, senha);
-
-            //BOLETIM
-            BoletimEnt boletimEnt = new BoletimEnt();
-            boletimEnt.AlunoLogin = login;      
-            boletimEnt.IdTurma = turma;       
-
-            boletimDAO.salvarBoletim(boletimEnt);
         }
 
         private void cmbTipo_SelectionChangeCommitted(object sender, EventArgs e)

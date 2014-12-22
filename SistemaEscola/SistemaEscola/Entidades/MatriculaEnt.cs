@@ -9,18 +9,18 @@ namespace SistemaEscola.Entidades
     class MatriculaEnt
     {
         private int idTurma;
-        private String login;       
+        private String login;
 
         public int IdTurma
         {
             get { return idTurma; }
-            set { idTurma= value; }
+            set { idTurma = value; }
         }
 
         public String Login
         {
             get { return login; }
             set { login = value; }
-        }        
+        }
     }
 }

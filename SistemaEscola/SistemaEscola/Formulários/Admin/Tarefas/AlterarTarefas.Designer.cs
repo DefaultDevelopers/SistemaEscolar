@@ -40,12 +40,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.grpbDadosAlterar = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(198, 281);
+            this.btnLimpar.Location = new System.Drawing.Point(207, 281);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 24);
             this.btnLimpar.TabIndex = 15;
@@ -54,7 +53,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(64, 281);
+            this.btnSalvar.Location = new System.Drawing.Point(73, 281);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 14;
@@ -65,14 +64,14 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(90, 91);
+            this.dateTimePicker1.Location = new System.Drawing.Point(100, 87);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 13;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 123);
+            this.textBox2.Location = new System.Drawing.Point(133, 119);
             this.textBox2.MaxLength = 200;
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -81,7 +80,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 65);
+            this.textBox1.Location = new System.Drawing.Point(119, 61);
             this.textBox1.MaxLength = 45;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(181, 20);
@@ -91,7 +90,7 @@
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(44, 124);
+            this.lblDescricao.Location = new System.Drawing.Point(54, 120);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(73, 16);
             this.lblDescricao.TabIndex = 10;
@@ -101,7 +100,7 @@
             // 
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(44, 95);
+            this.lblData.Location = new System.Drawing.Point(54, 91);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(40, 16);
             this.lblData.TabIndex = 9;
@@ -111,7 +110,7 @@
             // 
             this.lblAssunto.AutoSize = true;
             this.lblAssunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAssunto.Location = new System.Drawing.Point(44, 66);
+            this.lblAssunto.Location = new System.Drawing.Point(54, 62);
             this.lblAssunto.Name = "lblAssunto";
             this.lblAssunto.Size = new System.Drawing.Size(59, 16);
             this.lblAssunto.TabIndex = 8;
@@ -142,16 +141,7 @@
             this.btnPesquisar.TabIndex = 18;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
-            // 
-            // grpbDadosAlterar
-            // 
-            this.grpbDadosAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbDadosAlterar.Location = new System.Drawing.Point(24, 43);
-            this.grpbDadosAlterar.Name = "grpbDadosAlterar";
-            this.grpbDadosAlterar.Size = new System.Drawing.Size(301, 232);
-            this.grpbDadosAlterar.TabIndex = 19;
-            this.grpbDadosAlterar.TabStop = false;
-            this.grpbDadosAlterar.Text = "Dados a alterar";
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // AlterarTarefas
             // 
@@ -169,7 +159,6 @@
             this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblAssunto);
-            this.Controls.Add(this.grpbDadosAlterar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlterarTarefas";
             this.Text = "Alterar Suas Tarefas";
@@ -191,6 +180,5 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPesquisar;
-        private System.Windows.Forms.GroupBox grpbDadosAlterar;
     }
 }

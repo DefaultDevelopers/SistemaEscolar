@@ -37,6 +37,7 @@ namespace SistemaEscola.Formulários.Usuarios.AlunoForms
         private void btnTarefas_Click(object sender, EventArgs e)
         {
             Tarefas tar = new Tarefas();
+            tar.getUserObj(userData);
             tar.Show();
         }
 

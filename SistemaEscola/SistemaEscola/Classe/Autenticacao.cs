@@ -55,7 +55,7 @@ namespace SistemaEscola.Classe
                 }
                 else
                 {
-                    MessageBox.Show("Usuário e/ou senha estão incorretos!");
+                    MessageBox.Show("Login e/ou senha estão incorretos!");
                     form.txtSenha.Text = "";
                 }
         }

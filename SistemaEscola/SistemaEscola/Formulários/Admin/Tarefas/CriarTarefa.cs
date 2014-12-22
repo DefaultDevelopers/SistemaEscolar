@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemaEscola.DAO;
+using SistemaEscola.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,40 @@ namespace SistemaEscola.Formulários.Admin.Tarefas
 {
     public partial class CriarTarefa : Form
     {
-        public CriarTarefa()
+
+        DadosUsuarioEnt ent = new DadosUsuarioEnt();
+        TarefaDAO tarefaDAO = new TarefaDAO();
+        TarefaEnt tarefaEnt = new TarefaEnt();
+
+        public CriarTarefa(DadosUsuarioEnt entUser)
         {
             InitializeComponent();
+            ent = entUser;
+        }
+
+        private void CriarTarefa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            DateTime dataInicio, dataFim;
+            String assunto, descricao, login;
+
+            dataInicio = DateTime.Now.Date;
+            dataFim = dtpFim.Value;
+            assunto = txtAssunto.Text;
+            descricao = txtDescricao.Text;
+            login = ent.Login;
+
+            tarefaEnt.DataCriada = dataInicio;
+            tarefaEnt.DataFim = dataFim;
+            tarefaEnt.Assunto = assunto;
+            tarefaEnt.Descricao = descricao;
+            tarefaEnt.Login = login;
+
+            tarefaDAO.salvar(tarefaEnt);
         }
     }
 }
