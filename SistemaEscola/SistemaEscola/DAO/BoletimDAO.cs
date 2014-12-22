@@ -66,6 +66,22 @@ namespace SistemaEscola.DAO
 
             con.Close();
         }
+
+        public void pesquisaBoletimAluno(DataGridView dgvDados, BoletimEnt boletim)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            con.Open();
+
+            MySqlDataAdapter mySqlDataAdapter;
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT DISTINCT nome as 'Disciplina', nota1 as 'Nota 1º BM', nota2 as 'Nota 2º BM', nota3 as 'Nota 3º BM', nota4 as 'Nota 4º BM' FROM boletim, Disciplina WHERE Aluno_Login_Login = '" + boletim.Login + "' AND Turma_idTurma = '" + boletim.IdTurma + "' AND ano = '" + boletim.Ano + "' AND Disciplina_idDisciplina = idDisciplina", con);
+            DataSet DS = new DataSet();
+            mySqlDataAdapter.Fill(DS);
+            dgvDados.DataSource = DS.Tables[0];
+
+
+            con.Close();
+        }
         //Para mostrar os códigos dos alunos
         public void pesqCodigo(DataGridView dgvDados, BoletimEnt boletim)
         {

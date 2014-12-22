@@ -32,16 +32,16 @@ namespace SistemaEscola.Formulários.Admin.Tarefas
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            DateTime dataInicio, dataFim;
+            DateTime dataCriado, dataFim;
             String assunto, descricao, login;
 
-            dataInicio = DateTime.Now.Date;
+            dataCriado = DateTime.Now;
             dataFim = dtpFim.Value;
             assunto = txtAssunto.Text;
             descricao = txtDescricao.Text;
             login = ent.Login;
 
-            tarefaEnt.DataCriada = dataInicio;
+            tarefaEnt.DataCriada = dataCriado;
             tarefaEnt.DataFim = dataFim;
             tarefaEnt.Assunto = assunto;
             tarefaEnt.Descricao = descricao;

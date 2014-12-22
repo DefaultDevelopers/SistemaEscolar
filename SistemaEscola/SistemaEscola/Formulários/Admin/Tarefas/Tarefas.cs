@@ -45,7 +45,7 @@ namespace SistemaEscola.Formulários.Admin.Tarefas
 
         private void btnDeletarTarefas_Click(object sender, EventArgs e)
         {
-            DeletarTarefas delTarefa = new DeletarTarefas();
+            DeletarTarefas delTarefa = new DeletarTarefas(ent);
             delTarefa.Show();
         }
 

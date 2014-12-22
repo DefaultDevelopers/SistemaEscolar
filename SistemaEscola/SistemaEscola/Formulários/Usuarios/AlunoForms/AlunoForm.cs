@@ -31,6 +31,7 @@ namespace SistemaEscola.Formulários.Usuarios.AlunoForms
         private void btnBoletim_Click(object sender, EventArgs e)
         {
             BoletimForm bol = new BoletimForm();
+            bol.getUserObj(userData);
             bol.Show();
         }
 
@@ -44,6 +45,7 @@ namespace SistemaEscola.Formulários.Usuarios.AlunoForms
         private void btnFrequencia_Click(object sender, EventArgs e)
         {
             FrequenciaForm freq = new FrequenciaForm();
+            freq.getUserObj(userData);
             freq.Show();
         }
 
@@ -52,6 +54,11 @@ namespace SistemaEscola.Formulários.Usuarios.AlunoForms
             EnviarMsg msg = new EnviarMsg();
             msg.getUserObj(userData);
             msg.Show();
+        }
+
+        private void AlunoForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

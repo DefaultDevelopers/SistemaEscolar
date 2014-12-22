@@ -20,7 +20,7 @@ namespace SistemaEscola.DAO
 
             MySqlConnection con = new MySqlConnection(b.Conex());
 
-            String AlunoCmd = "SELECT Login_Login, nome, email, cpf, telefone FROM Aluno WHERE Login_Login = '" + loginPesq + "'";
+            String AlunoCmd = "SELECT Login_Login, nome, email, cpf, telefone, Turma_idTurma FROM Aluno, Matricula WHERE Aluno_Login_Login = Login_Login AND Login_Login = '" + loginPesq + "'";
 
             MySqlCommand cmd = new MySqlCommand(AlunoCmd, con);
 
@@ -34,6 +34,7 @@ namespace SistemaEscola.DAO
                 dadosUserEnt.Nome = reader["nome"].ToString();
                 dadosUserEnt.Email = reader["email"].ToString();
                 dadosUserEnt.Telefone = reader["telefone"].ToString();
+                dadosUserEnt.IdTurma = Convert.ToInt32(reader["Turma_idTurma"].ToString());
             }
 
             con.Close();

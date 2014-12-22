@@ -55,9 +55,9 @@
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.Location = new System.Drawing.Point(14, 42);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(40, 16);
+            this.lblData.Size = new System.Drawing.Size(108, 16);
             this.lblData.TabIndex = 1;
-            this.lblData.Text = "Data:";
+            this.lblData.Text = "Data para tarefa:";
             // 
             // lblDescricao
             // 
@@ -88,9 +88,12 @@
             // 
             // dtpFim
             // 
-            this.dtpFim.Location = new System.Drawing.Point(60, 38);
+            this.dtpFim.CustomFormat = "dd/MM/yyyy hh:mm";
+            this.dtpFim.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFim.Location = new System.Drawing.Point(128, 38);
             this.dtpFim.Name = "dtpFim";
-            this.dtpFim.Size = new System.Drawing.Size(200, 20);
+            this.dtpFim.ShowUpDown = true;
+            this.dtpFim.Size = new System.Drawing.Size(132, 20);
             this.dtpFim.TabIndex = 5;
             // 
             // btnSalvar

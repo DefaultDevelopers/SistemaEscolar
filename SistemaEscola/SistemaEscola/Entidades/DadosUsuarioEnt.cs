@@ -9,6 +9,13 @@ namespace SistemaEscola.Entidades
     public class DadosUsuarioEnt
     {
         private String nome, email, telefone, login;
+        private int idTurma;
+
+        public int IdTurma
+        {
+            get { return idTurma; }
+            set { idTurma = value; }
+        } 
 
         public String Login
         {

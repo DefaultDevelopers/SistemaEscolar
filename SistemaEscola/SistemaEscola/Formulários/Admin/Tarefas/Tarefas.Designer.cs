@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tarefas));
             this.btnDeletarTarefas = new System.Windows.Forms.Button();
             this.btnAlterarTarefas = new System.Windows.Forms.Button();
             this.btnVerTarefas = new System.Windows.Forms.Button();
@@ -100,6 +101,7 @@
             this.Controls.Add(this.btnVerTarefas);
             this.Controls.Add(this.btnCriarTarefa);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tarefas";
             this.Text = "Tarefas";
             this.Load += new System.EventHandler(this.Tarefas_Load);

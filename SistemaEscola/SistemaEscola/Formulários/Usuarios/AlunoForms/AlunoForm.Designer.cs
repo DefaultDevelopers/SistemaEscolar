@@ -101,6 +101,7 @@
             this.Name = "AlunoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aluno";
+            this.Load += new System.EventHandler(this.AlunoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAluno)).EndInit();
             this.ResumeLayout(false);
 

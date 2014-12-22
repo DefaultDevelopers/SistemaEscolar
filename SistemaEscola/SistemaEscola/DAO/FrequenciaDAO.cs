@@ -118,5 +118,21 @@ namespace SistemaEscola.DAO
 
             con.Close();
         }
+
+        public void pesquisaFrequenciaAluno(DataGridView dgvDados, FrequenciaEnt frequencia)
+        {
+            MySqlConnection con = new MySqlConnection(b.Conex());
+
+            con.Open();
+
+            MySqlDataAdapter mySqlDataAdapter;
+            mySqlDataAdapter = new MySqlDataAdapter("SELECT nome as 'Disciplina', falta as 'Total de Faltas' FROM Frequencia, Disciplina WHERE Disciplina_idDisciplina = idDisciplina AND Turma_idTurma = '" + frequencia.IdTurma + "' AND Aluno_Login_Login = '" + frequencia.IdAluno + "'", con);
+            DataSet DS = new DataSet();
+            mySqlDataAdapter.Fill(DS);
+            dgvDados.DataSource = DS.Tables[0];
+
+
+            con.Close();
+        }
     }
 }
